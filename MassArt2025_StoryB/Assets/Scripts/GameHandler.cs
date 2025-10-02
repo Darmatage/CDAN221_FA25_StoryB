@@ -7,7 +7,10 @@ using UnityEngine.SceneManagement;
 
 public class GameHandler : MonoBehaviour{
 
-        public static int playerStat1;
+        //public static int playerStat1;
+        public static int basementWeapon;
+        public static bool metRoomie;
+        public static bool metMaid;
         // public GameObject textGameObject;
 
         // void Start () { UpdateScore (); }
