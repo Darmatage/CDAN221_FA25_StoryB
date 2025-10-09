@@ -40,6 +40,13 @@ public class Scene3aDialogue : MonoBehaviour {
              NextScene1Button.SetActive(false);
              NextScene2Button.SetActive(false);
              nextButton.SetActive(true);
+
+        //check how I got here:
+             if (GameHandler.prevScene == "Scene2a"){
+                primeInt=1
+             } else {
+
+             }
         }
 
 // Use the spacebar as a faster "Next" button:
@@ -64,46 +71,49 @@ public void Next(){
         if (primeInt == 1){
                 // audioSource1.Play();
         }
+
+        //start from single room:
         else if (primeInt == 2){
                 ArtChar1a.SetActive(true);
                 DialogueDisplay.SetActive(true);
-                Char1name.text = "";
-                Char1speech.text = "";
-                Char2name.text = "Jeda";
-                Char2speech.text = "Wakey wakey, human.";
-        }
-       else if (primeInt ==3){
-                Char1name.text = "YOU";
-                Char1speech.text = "Wuh..? What happened?";
+                Char1name.text = playerName;
+                Char1speech.text = "What just happened? God, my head hurts.";
                 Char2name.text = "";
                 Char2speech.text = "";
-                //gameHandler.AddPlayerStat(1);
+        }
+       else if (primeInt ==3){
+                Char1name.text = playerName;
+                Char1speech.text = "...";
+                Char2name.text = "";
+                Char2speech.text = "";
+             
         }
        else if (primeInt == 4){
-                Char1name.text = "";
-                Char1speech.text = "";
-                Char2name.text = "Jeda";
-                Char2speech.text = "I know I did not hit you that hard.";
+                Char1name.text = playerName;
+                Char1speech.text = "What is this place?";
+                Char2name.text = "";
+                Char2speech.text = "";
+                primeInt=14;
         }
-       else if (primeInt == 5){
+
+        //start from double room:
+       else if (primeInt == 10){
                 Char1name.text = "YOU";
                 Char1speech.text = "Hit me? Why?";
                 Char2name.text = "";
                 Char2speech.text = "";
         }
-       else if (primeInt == 6){
+       else if (primeInt == 11){
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "Jeda";
                 Char2speech.text = "I am searching for a fugitive. Ragu Fahn.";
+                primeInt=14;
         }
-       else if (primeInt ==7){
-                Char1name.text = "YOU";
-                Char1speech.text = "Why do you think I know anything?";
-                Char2name.text = "";
-                Char2speech.text = "";
-        }
-       else if (primeInt == 8){
+
+
+        //resume from both entrances:
+       else if (primeInt == 15){
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "Jeda";
@@ -128,10 +138,7 @@ public void Next(){
                 Char1speech.text = "";
                 Char2name.text = "Jeda";
                 Char2speech.text = "Come back here! Do not think you can hide from me!";
-                // Turn off the "Next" button, turn on "Scene" button/s
-                nextButton.SetActive(false);
-                allowSpace = false;
-                NextScene1Button.SetActive(true);
+                primeInt=49;
         }
 
        // after choice 1b
@@ -146,11 +153,22 @@ public void Next(){
                 Char1speech.text = "Ragu hangs out in a rough part of town. I'll take you now.";
                 Char2name.text = "";
                 Char2speech.text = "";
+                primeInt=49;
+        }
+
+
+        else if (primeInt == 50){
+                Char1name.text = "YOU";
+                Char1speech.text = "Ragu hangs out in a rough part of town. I'll take you now.";
+                Char2name.text = "";
+                Char2speech.text = "";
                 // Turn off the "Next" button, turn on "Scene" button/s
                 nextButton.SetActive(false);
                 allowSpace = false;
+                NextScene1Button.SetActive(true);
                 NextScene2Button.SetActive(true);
         }
+
 
       //Please do NOT delete this final bracket that ends the Next() function:
      }

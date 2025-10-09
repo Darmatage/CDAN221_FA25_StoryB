@@ -23,6 +23,7 @@ public class GameHandler : MonoBehaviour{
         public static bool metMaid;
         public static int endingNumber;
         public static string prevScene;
+        
         /*
                 1 = checkout ending
                 2 = basement monster death
