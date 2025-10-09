@@ -179,10 +179,18 @@ public void Next(){
                 allowSpace = true;
         }
 
-        public void SceneChange1(){
+        public void SceneChange1(){ //bad end
+                GameHandler.prevScene = "Scene3a";
+                GameHandler.endingNumber = 2;
                SceneManager.LoadScene("Scene3a");
         }
-        public void SceneChange2(){
+        public void SceneChange2(){ //leave hotel
+                GameHandler.prevScene = "Scene3a";
+                GameHandler.endingNumber = 3;
                 SceneManager.LoadScene("Scene3b");
+        }
+        public void SceneChange3(){ //open door
+                GameHandler.prevScene = "Scene3a";
+                SceneManager.LoadScene("Scene6");
         }
 }

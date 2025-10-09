@@ -10,12 +10,12 @@ public class Scene4cDialogue : MonoBehaviour {
 // These are the script variables.
 // For more character images / buttons, copy & renumber the variables:
         public int primeInt = 1;        // This integer drives game progress!
-        public TMP_Text Char1name;
+        public TMP_Text Char1name; //MC
         public TMP_Text Char1speech;
-        public TMP_Text Char2name;
+        public TMP_Text Char2name; //Buzzboy
         public TMP_Text Char2speech;
-       //public TMP_Text Char3name;
-       //public TMP_Text Char3speech;
+        public TMP_Text Char3name; //Maid
+        public TMP_Text Char3speech;
         public GameObject DialogueDisplay;
         public GameObject ArtChar1a;
        //public GameObject ArtChar1b;
@@ -24,6 +24,8 @@ public class Scene4cDialogue : MonoBehaviour {
         public GameObject ArtBG1;
         public GameObject Choice1a;
         public GameObject Choice1b;
+        public GameObject Choice2a;
+        public GameObject Choice2b;
         public GameObject NextScene1Button;
         public GameObject NextScene2Button;
         public GameObject nextButton;
@@ -37,6 +39,8 @@ public class Scene4cDialogue : MonoBehaviour {
              ArtBG1.SetActive(true);
              Choice1a.SetActive(false);
              Choice1b.SetActive(false);
+             Choice2a.SetActive(false);
+             Choice2b.SetActive(false);
              NextScene1Button.SetActive(false);
              NextScene2Button.SetActive(false);
              nextButton.SetActive(true);
@@ -151,6 +155,30 @@ public void Next(){
                 allowSpace = false;
                 NextScene2Button.SetActive(true);
         }
+        //before bad ending
+        else if (primeInt == 40){
+                Char1name.text = "";
+                Char1speech.text = "";
+                Char2name.text = "Jeda";
+                Char2speech.text = "Do not think you can fool me, human. Where will we find him?";
+        }
+        else if (primeInt == 41){
+                nextButton.SetActive(false);
+                allowSpace = false;
+                SceneChange1();
+        }
+        //before good ending
+        else if (primeInt == 50){
+                Char1name.text = "";
+                Char1speech.text = "";
+                Char2name.text = "Jeda";
+                Char2speech.text = "Do not think you can fool me, human. Where will we find him?";
+        }
+        else if (primeInt == 51){
+                nextButton.SetActive(false);
+                allowSpace = false;
+                SceneChange2();
+        }
 
       //Please do NOT delete this final bracket that ends the Next() function:
      }
@@ -179,10 +207,32 @@ public void Next(){
                 allowSpace = true;
         }
 
-        public void SceneChange1(){
-               SceneManager.LoadScene("Scene3a");
+        public void Choice2aFunct(){
+                //scene choice dialogue
+                Char1name.text = "YOU";
+                Char1speech.text = "Sure, anything you want... just lay off the club.";
+                Char2name.text = "";
+                Char2speech.text = "";
+                primeInt = 39;
+
         }
-        public void SceneChange2(){
-                SceneManager.LoadScene("Scene3b");
+
+        public void Choice2bFunct(){
+                //scene choice dialogue
+                Char1name.text = "YOU";
+                Char1speech.text = "Sure, anything you want... just lay off the club.";
+                Char2name.text = "";
+                Char2speech.text = "";
+                primeInt = 49;
+
+        }
+
+        public void SceneChange1(){ //bad ending
+                GameHandler.endingNumber = 6;
+               SceneManager.LoadScene("EndLose");
+        }
+        public void SceneChange2(){ //romance
+                GameHandler.endingNumber = 5;
+                SceneManager.LoadScene("EndLose");
         }
 }

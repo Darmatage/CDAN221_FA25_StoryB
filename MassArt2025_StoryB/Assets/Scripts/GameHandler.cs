@@ -9,8 +9,31 @@ public class GameHandler : MonoBehaviour{
 
         //public static int playerStat1;
         public static int basementWeapon;
+        /*
+                1 = rusty pipe
+                2 = toolbox
+                3 = fire axe
+        */
+        public static bool hair;
+        public static bool teeth;
+        public static bool note;
+        public static bool journal;
+        public static bool key;
         public static bool metRoomie;
         public static bool metMaid;
+        public static int endingNumber;
+        public static string prevScene;
+        /*
+                1 = checkout ending
+                2 = basement monster death
+                3 = cold case
+                4 = receptionist death
+                5 = buzzboy romance
+                6 = worker death
+                7 = bathroom death
+                8 = assimilation death
+                9 = good end :)
+        */
         // public GameObject textGameObject;
 
         // void Start () { UpdateScore (); }

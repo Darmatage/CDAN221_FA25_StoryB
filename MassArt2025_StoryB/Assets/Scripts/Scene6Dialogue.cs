@@ -179,10 +179,12 @@ public void Next(){
                 allowSpace = true;
         }
 
-        public void SceneChange1(){
-               SceneManager.LoadScene("Scene3a");
+        public void SceneChange1(){ //assimilation
+                GameHandler.endingNumber = 8;
+               SceneManager.LoadScene("EndLose");
         }
-        public void SceneChange2(){
-                SceneManager.LoadScene("Scene3b");
+        public void SceneChange2(){ //ignore voices
+                GameHandler.endingNumber = 9;
+                SceneManager.LoadScene("EndWin");
         }
 }

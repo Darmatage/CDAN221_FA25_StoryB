@@ -32,7 +32,7 @@ public class Scene2aDialogue : MonoBehaviour {
 
 // Set initial visibility. Added images or buttons need to also be SetActive(false);
         void Start(){  
-             DialogueDisplay.SetActive(false);
+             DialogueDisplay.SetActive(false); //sets text displays to active
              ArtChar1a.SetActive(false);
              ArtBG1.SetActive(true);
              Choice1a.SetActive(false);
@@ -179,10 +179,17 @@ public void Next(){
                 allowSpace = true;
         }
 
-        public void SceneChange1(){
+        public void SceneChange1(){ //basement
+                GameHandler.prevScene = "Scene2a";
                SceneManager.LoadScene("Scene3a");
         }
-        public void SceneChange2(){
+        public void SceneChange2(){ //rest corner
+                GameHandler.prevScene = "Scene2a";
                 SceneManager.LoadScene("Scene3b");
+        }
+
+        public void SceneChange3(){ //ignore
+                GameHandler.endingNumber = 1;
+                SceneManager.LoadScene("EndLose");
         }
 }

@@ -179,10 +179,12 @@ public void Next(){
                 allowSpace = true;
         }
 
-        public void SceneChange1(){
+        public void SceneChange1(){ //single
+                GameHandler.prevScene = "Scene1";
                SceneManager.LoadScene("Scene2a");
         }
-        public void SceneChange2(){
+        public void SceneChange2(){ //double
+                GameHandler.prevScene = "Scene1";
                 SceneManager.LoadScene("Scene2b");
         }
 }
