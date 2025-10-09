@@ -149,7 +149,7 @@ GameObject:
   - component: {fileID: 4301105743233903434}
   - component: {fileID: 9216547007853093285}
   m_Layer: 5
-  m_Name: Button_MENU
+  m_Name: CircleButton_MENU
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

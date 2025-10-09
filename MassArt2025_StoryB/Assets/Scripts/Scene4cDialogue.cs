@@ -71,55 +71,68 @@ public void Next(){
         else if (primeInt == 2){
                 ArtChar1a.SetActive(true);
                 DialogueDisplay.SetActive(true);
-                Char1name.text = "";
-                Char1speech.text = "";
-                Char2name.text = "Jeda";
-                Char2speech.text = "Wakey wakey, human.";
-        }
-       else if (primeInt ==3){
-                Char1name.text = "YOU";
-                Char1speech.text = "Wuh..? What happened?";
+                Char1name.text = "yourName";
+                Char1speech.text = "Damn, there's people in here";
                 Char2name.text = "";
                 Char2speech.text = "";
+                Char3name.text = "";
+                Char3speech.text = "";
+        }
+       else if (primeInt ==3){
+                Char1name.text = "";
+                Char1speech.text = "";
+                Char2name.text = "";
+                Char2speech.text = "";
+                Char3name.text = "Maid";
+                Char3speech.text = "You're not allowed in here, dear guest.";
                 //gameHandler.AddPlayerStat(1);
         }
        else if (primeInt == 4){
                 Char1name.text = "";
                 Char1speech.text = "";
-                Char2name.text = "Jeda";
-                Char2speech.text = "I know I did not hit you that hard.";
-        }
-       else if (primeInt == 5){
-                Char1name.text = "YOU";
-                Char1speech.text = "Hit me? Why?";
-                Char2name.text = "";
-                Char2speech.text = "";
-        }
-       else if (primeInt == 6){
-                Char1name.text = "";
-                Char1speech.text = "";
-                Char2name.text = "Jeda";
-                Char2speech.text = "I am searching for a fugitive. Ragu Fahn.";
-        }
-       else if (primeInt ==7){
-                Char1name.text = "YOU";
-                Char1speech.text = "Why do you think I know anything?";
-                Char2name.text = "";
-                Char2speech.text = "";
-        }
-       else if (primeInt == 8){
-                Char1name.text = "";
-                Char1speech.text = "";
-                Char2name.text = "Jeda";
-                Char2speech.text = "Do not play the stupid. You will take me to him.";
-                // Turn off the "Next" button, turn on "Choice" buttons
+                Char2name.text = "Bellboy";
+                Char2speech.text = "Come on, REDACTED, I've told you not to talk like that. It freaks the guests out.";
+                Char3name.text = "";
+                Char3speech.text = "";
+
+        }// Turn off the "Next" button, turn on "Choice" buttons
                 nextButton.SetActive(false);
                 allowSpace = false;
                 Choice1a.SetActive(true); // function Choice1aFunct()
                 Choice1b.SetActive(true); // function Choice1bFunct()
+
+// after choice Be Nice
+       else if (primeInt == 14){
+                Char1name.text = "yourName";
+                Char1speech.text = "I'm very sorry. I didn't mean to interrupt you. I just got, uh, lost looking for a bathroom.";
+                Char2name.text = "";
+                Char2speech.text = "";
+                Char3name.text = "";
+                Char3speech.text = "";
+        }
+       else if (primeInt == 15){
+                Char1name.text = "";
+                Char1speech.text = "";
+                Char2name.text = "Bellboy";
+                Char2speech.text = "There's a sign outside.";
+                Char3name.text = "";
+                Char3speech.text = "";
+        }
+       else if (primeInt ==16){
+                Char1name.text = "yourName";
+                Char1speech.text = "Must have missed it, haha.";
+                Char2name.text = "";
+                Char2speech.text = "";
+                Char3name.text = "";
+                Char3speech.text = "";
+        }
+       else if (primeInt == 17){
+                Char1name.text = "";
+                Char1speech.text = "";
+                Char2name.text = "Bellboy";
+                Char2speech.text = "Seems unlikely.";
         }
 
-       // after choice 1a
        else if (primeInt == 20){
                 //gameHandler.AddPlayerStat(1);
                 Char1name.text = "";
