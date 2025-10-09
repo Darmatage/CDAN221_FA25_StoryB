@@ -95,11 +95,14 @@ public void Next(){
                 Char3name.text = "";
                 Char3speech.text = "";
 
-        }// Turn off the "Next" button, turn on "Choice" buttons
+        // Turn off the "Next" button, turn on "Choice" buttons
+                /*
                 nextButton.SetActive(false);
                 allowSpace = false;
                 Choice1a.SetActive(true); // function Choice1aFunct()
                 Choice1b.SetActive(true); // function Choice1bFunct()
+                */
+       }
 
 // after choice Be Nice
        else if (primeInt == 14){

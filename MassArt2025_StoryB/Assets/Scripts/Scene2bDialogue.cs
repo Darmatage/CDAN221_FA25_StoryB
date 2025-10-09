@@ -69,50 +69,28 @@ public void Next(){
                 DialogueDisplay.SetActive(true);
                 Char1name.text = "";
                 Char1speech.text = "";
-                Char2name.text = "Jeda";
-                Char2speech.text = "Wakey wakey, human.";
+                Char2name.text = "Ruben";
+                Char2speech.text = "Oh, hey! Didn't know they were actually gonna send me a roomie.";
         }
-       else if (primeInt ==3){
-                Char1name.text = "YOU";
-                Char1speech.text = "Wuh..? What happened?";
-                Char2name.text = "";
-                Char2speech.text = "";
-                //gameHandler.AddPlayerStat(1);
-        }
-       else if (primeInt == 4){
+
+        else if (primeInt == 3){
                 Char1name.text = "";
                 Char1speech.text = "";
-                Char2name.text = "Jeda";
-                Char2speech.text = "I know I did not hit you that hard.";
+                Char2name.text = "Ruben";
+                Char2speech.text = "Kind of a bummer, no offense. I thought I was getting a cheaper room all to myself... ";
         }
-       else if (primeInt == 5){
-                Char1name.text = "YOU";
-                Char1speech.text = "Hit me? Why?";
-                Char2name.text = "";
-                Char2speech.text = "";
-        }
-       else if (primeInt == 6){
+
+        else if (primeInt == 4){
                 Char1name.text = "";
                 Char1speech.text = "";
-                Char2name.text = "Jeda";
-                Char2speech.text = "I am searching for a fugitive. Ragu Fahn.";
-        }
-       else if (primeInt ==7){
-                Char1name.text = "YOU";
-                Char1speech.text = "Why do you think I know anything?";
-                Char2name.text = "";
-                Char2speech.text = "";
-        }
-       else if (primeInt == 8){
-                Char1name.text = "";
-                Char1speech.text = "";
-                Char2name.text = "Jeda";
-                Char2speech.text = "Do not play the stupid. You will take me to him.";
+                Char2name.text = "Ruben";
+                Char2speech.text = "... been here a while already. Anyways, I'm Ruben. Nice to meet you, dude.";
+
                 // Turn off the "Next" button, turn on "Choice" buttons
-                nextButton.SetActive(false);
-                allowSpace = false;
-                Choice1a.SetActive(true); // function Choice1aFunct()
-                Choice1b.SetActive(true); // function Choice1bFunct()
+              nextButton.SetActive(false);
+              allowSpace = false;
+              Choice1a.SetActive(true); // function Choice1aFunct()
+              Choice1b.SetActive(true); // function Choice1bFunct()
         }
 
        // after choice 1a
@@ -120,14 +98,49 @@ public void Next(){
                 //gameHandler.AddPlayerStat(1);
                 Char1name.text = "";
                 Char1speech.text = "";
-                Char2name.text = "Jeda";
-                Char2speech.text = "Then you are no use to me, and must be silenced.";
+                Char2name.text = "Ruben";
+                Char2speech.text = "Okay, man, no need for the 'tude. I got you, though...";
         }
-       else if (primeInt == 21){
+        else if (primeInt == 21){
+                //gameHandler.AddPlayerStat(1);
+                Char1name.text = "YOU";
+                Char1speech.text = "By the way, have you seen anything weird around here?";
+                Char2name.text = "";
+                Char2speech.text = "";
+        }
+         else if (primeInt == 22){
+                //gameHandler.AddPlayerStat(1);
                 Char1name.text = "";
                 Char1speech.text = "";
-                Char2name.text = "Jeda";
-                Char2speech.text = "Come back here! Do not think you can hide from me!";
+                Char2name.text = "Ruben";
+                Char2speech.text = "Sure have. What kinda weird are we talking?";
+        }
+         else if (primeInt == 23){
+                //gameHandler.AddPlayerStat(1);
+                Char1name.text = "YOU";
+                Char1speech.text = "I'm a PI, just tell me something useful.";
+                Char2name.text = "";
+                Char2speech.text = "";
+        }
+         else if (primeInt == 24){
+                //gameHandler.AddPlayerStat(1);
+                Char1name.text = "";
+                Char1speech.text = "";
+                Char2name.text = "Ruben";
+                Char2speech.text = "That little rest spot at the end of the hall gives me the creeeeeps. And that freaky laundry room... doesn't work and there's always people leaving stuff all over. Like, hair, and... teeth. What're you lookin' for anyway?";
+        }
+        else if (primeInt == 25){
+                //gameHandler.AddPlayerStat(1);
+                Char1name.text = "YOU";
+                Char1speech.text = "Can't disclose.";
+                Char2name.text = "";
+                Char2speech.text = "";
+        }
+       else if (primeInt == 26){
+                Char1name.text = "";
+                Char1speech.text = "";
+                Char2name.text = "Ruben";
+                Char2speech.text = "...Kay. Nice talking to you, I guess.";
                 // Turn off the "Next" button, turn on "Scene" button/s
                 nextButton.SetActive(false);
                 allowSpace = false;
@@ -138,12 +151,89 @@ public void Next(){
        else if (primeInt == 30){
                 Char1name.text = "";
                 Char1speech.text = "";
-                Char2name.text = "Jeda";
-                Char2speech.text = "Do not think you can fool me, human. Where will we find him?";
+                Char2name.text = "Ruben";
+                Char2speech.text = "Work? What kinda work are you doing in some run-down joint like this?";
         }
        else if (primeInt == 31){
                 Char1name.text = "YOU";
-                Char1speech.text = "Ragu hangs out in a rough part of town. I'll take you now.";
+                Char1speech.text = "I'm a private investigator. I'm on a missing person's case right now.";
+                Char2name.text = "";
+                Char2speech.text = "";
+       }
+        else if (primeInt == 32){
+                //gameHandler.AddPlayerStat(1);
+                Char1name.text = "";
+                Char1speech.text = "";
+                Char2name.text = "Ruben";
+                Char2speech.text = "Damn, that's cool. Missing person at this hotel? Now I'm really creeped out.";
+        }
+        else if (primeInt == 33){
+                //gameHandler.AddPlayerStat(1);
+                Char1name.text = "YOU";
+                Char1speech.text = "";
+                Char2name.text = "";
+                Char2speech.text = "";
+        }
+        else if (primeInt == 34){
+                //gameHandler.AddPlayerStat(1);
+                Char1name.text = "";
+                Char1speech.text = "";
+                Char2name.text = "Ruben";
+                Char2speech.text = "";
+        }
+        else if (primeInt == 35){
+                //gameHandler.AddPlayerStat(1);
+                Char1name.text = "YOU";
+                Char1speech.text = "";
+                Char2name.text = "";
+                Char2speech.text = "";
+        }
+        else if (primeInt == 36){
+                //gameHandler.AddPlayerStat(1);
+                Char1name.text = "";
+                Char1speech.text = "";
+                Char2name.text = "Ruben";
+                Char2speech.text = "";
+        }
+        else if (primeInt == 37){
+                //gameHandler.AddPlayerStat(1);
+                Char1name.text = "YOU";
+                Char1speech.text = "";
+                Char2name.text = "";
+                Char2speech.text = "";
+        }
+        else if (primeInt == 38){
+                //gameHandler.AddPlayerStat(1);
+                Char1name.text = "";
+                Char1speech.text = "";
+                Char2name.text = "Ruben";
+                Char2speech.text = "";
+        }
+        else if (primeInt == 39){
+                //gameHandler.AddPlayerStat(1);
+                Char1name.text = "";
+                Char1speech.text = "";
+                Char2name.text = "Ruben";
+                Char2speech.text = "";
+        }
+        else if (primeInt == 40){
+                //gameHandler.AddPlayerStat(1);
+                Char1name.text = "YOU";
+                Char1speech.text = "";
+                Char2name.text = "";
+                Char2speech.text = "";
+        }
+        else if (primeInt == 41){
+                //gameHandler.AddPlayerStat(1);
+                Char1name.text = "";
+                Char1speech.text = "";
+                Char2name.text = "Ruben";
+                Char2speech.text = "";
+        }
+        else if (primeInt == 42){
+                //gameHandler.AddPlayerStat(1);
+                Char1name.text = "YOU";
+                Char1speech.text = "That's very helpful, thank you. I'll go take a look now and get out of your hair.";
                 Char2name.text = "";
                 Char2speech.text = "";
                 // Turn off the "Next" button, turn on "Scene" button/s
@@ -158,7 +248,7 @@ public void Next(){
 // FUNCTIONS FOR BUTTONS TO ACCESS (Choice #1 and SceneChanges)
         public void Choice1aFunct(){
                 Char1name.text = "YOU";
-                Char1speech.text = "I don't know what you're talking about!";
+                Char1speech.text = "Okay. Can you move your shit off my bed, please?";
                 Char2name.text = "";
                 Char2speech.text = "";
                 primeInt = 19; // so hitting "NEXT" goes to primeInt==20!
@@ -169,7 +259,7 @@ public void Next(){
         }
         public void Choice1bFunct(){
                 Char1name.text = "YOU";
-                Char1speech.text = "Sure, anything you want... just lay off the club.";
+                Char1speech.text = "Nice to meet you too... bro. I'm just gonna be staying here for a little, doing some work.";
                 Char2name.text = "";
                 Char2speech.text = "";
                 primeInt = 29; // so hitting "NEXT" goes to primeInt==30!

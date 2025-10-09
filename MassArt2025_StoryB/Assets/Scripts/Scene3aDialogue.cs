@@ -44,9 +44,9 @@ public class Scene3aDialogue : MonoBehaviour {
 
         //check how I got here:
              if (GameHandler.prevScene == "Scene2a"){
-                primeInt=1
+                primeInt=1;
              } else {
-
+                //go to the next area of the dialogue for the other room
              }
         }
 
