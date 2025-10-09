@@ -174,12 +174,18 @@ public void Next(){
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "Receptionist";
-                Char2speech.text = "If that's what you want, dear guest, I'll do that right away.";
+                Char2speech.text = "That wasn't very nice, dear guest.";
         }
-        else if (primeInt == 42){
+        else if (primeInt == 53){
+                Char1name.text = playerName;
+                Char1speech.text = "Oh god, what the hell are you?!";
+                Char2name.text = "";
+                Char2speech.text = "";
+        }
+        else if (primeInt == 54){
                 nextButton.SetActive(false);
                 allowSpace = false;
-                SceneChange1();
+                SceneChange2();
         }
       //Please do NOT delete this final bracket that ends the Next() function:
      }

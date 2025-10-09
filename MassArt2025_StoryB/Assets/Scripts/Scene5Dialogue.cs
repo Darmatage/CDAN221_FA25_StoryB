@@ -27,6 +27,7 @@ public class Scene5Dialogue : MonoBehaviour {
         public GameObject NextScene1Button;
         public GameObject NextScene2Button;
         public GameObject nextButton;
+        public string playerName = GameHandler.playerName;
        //public AudioSource audioSource1;
         private bool allowSpace = true;
 
@@ -65,55 +66,47 @@ public void Next(){
                 // audioSource1.Play();
         }
         else if (primeInt == 2){
-                ArtChar1a.SetActive(true);
+                
                 DialogueDisplay.SetActive(true);
                 Char1name.text = "";
-                Char1speech.text = "";
-                Char2name.text = "Jeda";
-                Char2speech.text = "Wakey wakey, human.";
-        }
-       else if (primeInt ==3){
-                Char1name.text = "YOU";
-                Char1speech.text = "Wuh..? What happened?";
+                Char1speech.text = "You enter the bathroom. You feel a presence.";
                 Char2name.text = "";
                 Char2speech.text = "";
-                //gameHandler.AddPlayerStat(1);
-        }
-       else if (primeInt == 4){
-                Char1name.text = "";
-                Char1speech.text = "";
-                Char2name.text = "Jeda";
-                Char2speech.text = "I know I did not hit you that hard.";
-        }
-       else if (primeInt == 5){
-                Char1name.text = "YOU";
-                Char1speech.text = "Hit me? Why?";
-                Char2name.text = "";
-                Char2speech.text = "";
-        }
-       else if (primeInt == 6){
-                Char1name.text = "";
-                Char1speech.text = "";
-                Char2name.text = "Jeda";
-                Char2speech.text = "I am searching for a fugitive. Ragu Fahn.";
-        }
-       else if (primeInt ==7){
-                Char1name.text = "YOU";
-                Char1speech.text = "Why do you think I know anything?";
-                Char2name.text = "";
-                Char2speech.text = "";
-        }
-       else if (primeInt == 8){
-                Char1name.text = "";
-                Char1speech.text = "";
-                Char2name.text = "Jeda";
-                Char2speech.text = "Do not play the stupid. You will take me to him.";
-                // Turn off the "Next" button, turn on "Choice" buttons
                 nextButton.SetActive(false);
                 allowSpace = false;
                 Choice1a.SetActive(true); // function Choice1aFunct()
-                Choice1b.SetActive(true); // function Choice1bFunct()
+                Choice1b.SetActive(true);
         }
+
+        //choice 1: NOTICE
+       else if (primeInt == 10){
+                ArtChar1a.SetActive(true);
+                Char1name.text = playerName;
+                Char1speech.text = "What a small bathroom.";
+                Char2name.text = "";
+                Char2speech.text = "";
+        }
+       else if (primeInt == 11){
+                Char1name.text = playerName;
+                Char1speech.text = "Is that someone in the bathtub?";
+                Char2name.text = "";
+                Char2speech.text = "";
+        }
+
+        //choice 2: MIRROR
+       else if (primeInt == 20){
+                Char1name.text = playerName;
+                Char1speech.text = "God, all this running around has messed up my hair.";
+                Char2name.text = "";
+                Char2speech.text = "";
+        }
+       else if (primeInt == 21){
+                Char1name.text = playerName;
+                Char1speech.text = "Man, and I looked so nice today.";
+                Char2name.text = "";
+                Char2speech.text = "";
+        }
+        
 
        // after choice 1a
        else if (primeInt == 20){

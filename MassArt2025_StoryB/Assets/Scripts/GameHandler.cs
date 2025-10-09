@@ -19,11 +19,9 @@ public class GameHandler : MonoBehaviour{
         public static bool note;
         public static bool journal;
         public static bool key;
-        public static bool metRoomie;
-        public static bool metMaid;
+        //public static bool metRoomie;
+        //public static bool metMaid;
         public static int endingNumber;
-        public static string prevScene;
-        
         /*
                 1 = checkout ending
                 2 = basement monster death
@@ -35,6 +33,8 @@ public class GameHandler : MonoBehaviour{
                 8 = assimilation death
                 9 = good end :)
         */
+        public static string prevScene;
+        public static string playerName = "YOU";
         // public GameObject textGameObject;
 
         // void Start () { UpdateScore (); }

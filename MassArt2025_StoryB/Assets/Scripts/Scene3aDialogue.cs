@@ -27,6 +27,7 @@ public class Scene3aDialogue : MonoBehaviour {
         public GameObject NextScene1Button;
         public GameObject NextScene2Button;
         public GameObject nextButton;
+        public string playerName = GameHandler.playerName;
        //public AudioSource audioSource1;
         private bool allowSpace = true;
 
