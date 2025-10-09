@@ -180,9 +180,9 @@ public void Next(){
         }
 
         public void SceneChange1(){
-               SceneManager.LoadScene("Scene3a");
+               SceneManager.LoadScene("Scene3b");
         }
         public void SceneChange2(){
-                SceneManager.LoadScene("Scene3b");
+                SceneManager.LoadScene("Scene4c");
         }
 }
