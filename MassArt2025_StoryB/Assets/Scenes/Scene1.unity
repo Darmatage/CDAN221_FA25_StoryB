@@ -127,6 +127,12 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 627891053}
     m_Modifications:
+    - target: {fileID: 1491983679418228758, guid: 10957b83d3fddc34db9b3e320427e89c, type: 3}
+      propertyPath: m_text
+      value: 'Be straightforward
+
+'
+      objectReference: {fileID: 0}
     - target: {fileID: 1963530302545590291, guid: 10957b83d3fddc34db9b3e320427e89c, type: 3}
       propertyPath: m_Name
       value: ButtonStoryChoice1a
@@ -374,6 +380,28 @@ MonoBehaviour:
     m_MipBias: 0
     m_VarianceClampScale: 0.9
     m_ContrastAdaptiveSharpening: 0
+--- !u!114 &309540219 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 522494295462047528, guid: 546b0d0df9aabfd449255d13a1b2ae65, type: 3}
+  m_PrefabInstance: {fileID: 1631430632927961401}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &573531878 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5870733472505982480, guid: 546b0d0df9aabfd449255d13a1b2ae65, type: 3}
+  m_PrefabInstance: {fileID: 1631430632927961401}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &578727216 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 4529427112106553041, guid: 546b0d0df9aabfd449255d13a1b2ae65, type: 3}
@@ -513,13 +541,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7639e7aa26c7ee5488118ff084344557, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerName: 
   primeInt: 1
   Char1name: {fileID: 1044605231}
   Char1speech: {fileID: 628994032}
   Char2name: {fileID: 1988735706}
   Char2speech: {fileID: 578727216}
+  Char3name: {fileID: 573531878}
+  Char3speech: {fileID: 309540219}
   DialogueDisplay: {fileID: 1105949995}
-  ArtChar1a: {fileID: 1704192176}
   ArtBG1: {fileID: 1243399250}
   Choice1a: {fileID: 609516061}
   Choice1b: {fileID: 4281670167327920676}
@@ -852,6 +882,12 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 627891053}
     m_Modifications:
+    - target: {fileID: 1491983679418228758, guid: 10957b83d3fddc34db9b3e320427e89c, type: 3}
+      propertyPath: m_text
+      value: '"I''ll take the double room"
+
+'
+      objectReference: {fileID: 0}
     - target: {fileID: 1963530302545590291, guid: 10957b83d3fddc34db9b3e320427e89c, type: 3}
       propertyPath: m_Name
       value: ButtonSceneChange2
@@ -1102,6 +1138,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 627891053}
     m_Modifications:
+    - target: {fileID: 1491983679418228758, guid: 10957b83d3fddc34db9b3e320427e89c, type: 3}
+      propertyPath: m_text
+      value: '"I''ll take the single room"'
+      objectReference: {fileID: 0}
     - target: {fileID: 1963530302545590291, guid: 10957b83d3fddc34db9b3e320427e89c, type: 3}
       propertyPath: m_Name
       value: ButtonSceneChange1
@@ -1323,11 +1363,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4220242984224648939, guid: 546b0d0df9aabfd449255d13a1b2ae65, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6407037423156922695, guid: 546b0d0df9aabfd449255d13a1b2ae65, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8429478271873713529, guid: 546b0d0df9aabfd449255d13a1b2ae65, type: 3}
       propertyPath: m_Name
@@ -1469,6 +1509,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 627891053}
     m_Modifications:
+    - target: {fileID: 1491983679418228758, guid: 10957b83d3fddc34db9b3e320427e89c, type: 3}
+      propertyPath: m_text
+      value: Make conversation
+      objectReference: {fileID: 0}
     - target: {fileID: 1963530302545590291, guid: 10957b83d3fddc34db9b3e320427e89c, type: 3}
       propertyPath: m_Name
       value: ButtonStoryChoice1b
