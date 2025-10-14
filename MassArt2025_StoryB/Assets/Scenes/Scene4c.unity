@@ -553,8 +553,8 @@ MonoBehaviour:
   Choice1a: {fileID: 39047798}
   Choice1b: {fileID: 4464584315333755947}
   Choice1c: {fileID: 939165936}
-  Choice2a: {fileID: 1849660019}
-  Choice2b: {fileID: 2045626647}
+  NextScene1Button: {fileID: 1849660019}
+  NextScene2Button: {fileID: 2045626647}
   nextButton: {fileID: 4229811803855364286}
 --- !u!1001 &684613669
 PrefabInstance:
@@ -715,7 +715,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1963530302545590291, guid: 10957b83d3fddc34db9b3e320427e89c, type: 3}
       propertyPath: m_Name
-      value: ButtonSCENEChange2b
+      value: NextScene2Button
       objectReference: {fileID: 0}
     - target: {fileID: 1963530302545590291, guid: 10957b83d3fddc34db9b3e320427e89c, type: 3}
       propertyPath: m_IsActive
@@ -807,7 +807,7 @@ PrefabInstance:
       objectReference: {fileID: 627891054}
     - target: {fileID: 4336425045522110956, guid: 10957b83d3fddc34db9b3e320427e89c, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: Choice2bFunct
+      value: NextScene2ButtonFunct
       objectReference: {fileID: 0}
     - target: {fileID: 4336425045522110956, guid: 10957b83d3fddc34db9b3e320427e89c, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
@@ -1132,7 +1132,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1963530302545590291, guid: 10957b83d3fddc34db9b3e320427e89c, type: 3}
       propertyPath: m_Name
-      value: ButtonSCENEChange2a
+      value: NextScene1Button
       objectReference: {fileID: 0}
     - target: {fileID: 1963530302545590291, guid: 10957b83d3fddc34db9b3e320427e89c, type: 3}
       propertyPath: m_IsActive
@@ -1236,7 +1236,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4336425045522110956, guid: 10957b83d3fddc34db9b3e320427e89c, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: Choice2aFunct
+      value: NextScene1ButtonFunct
       objectReference: {fileID: 0}
     - target: {fileID: 4336425045522110956, guid: 10957b83d3fddc34db9b3e320427e89c, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName

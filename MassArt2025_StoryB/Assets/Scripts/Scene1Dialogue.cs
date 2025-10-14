@@ -30,6 +30,9 @@ public class Scene1Dialogue : MonoBehaviour {
         public GameObject nextButton;
        //public AudioSource audioSource1;
         private bool allowSpace = true;
+
+        public bool canScene1 = false;
+        public bool canScene2 = false;
        
 // Set initial visibility. Added images or buttons need to also be SetActive(false);
         void Start(){  
@@ -56,7 +59,7 @@ public class Scene1Dialogue : MonoBehaviour {
                       Next();
                  }
              }
-        }
+         }
 
 //Story Units! The main story function.
 //Players hit [NEXT] to progress to the next primeInt:
@@ -233,30 +236,11 @@ public void Next(){
        else if (primeInt == 33){
                 nextButton.SetActive(false);
                 allowSpace = false;
-                SceneChange1();
+                if (canScene1 == true) {SceneChange1();} 
+                else if (canScene2 == true) {SceneChange2();}
         }         
-       else if (primeInt == 41){
-                Char1name.text = "";
-                Char1speech.text = "";
-                Char2name.text = "";
-                Char2speech.text = "";
-                Char3name.text = "Receptionist";
-                Char3speech.text = "Fantastic! I'll just need to see your ID.";     
         }
-       else if (primeInt == 42){
-                Char1name.text = "";
-                Char1speech.text = "";
-                Char2name.text = "";
-                Char2speech.text = "";
-                Char3name.text = "Receptionist";
-                Char3speech.text = "Great! Thank you, and here are your keys.";     
-        }
-        else if (primeInt == 43){
-                nextButton.SetActive(false);
-                allowSpace = false;
-                SceneChange2();  
-     }
-     }
+        
 // FUNCTIONS FOR BUTTONS TO ACCESS (Choice #1 and SceneChanges)
         public void Choice1aFunct(){
                 Char1name.text = "???";
@@ -286,32 +270,24 @@ public void Next(){
                 allowSpace = true;
         }
         public void NextScene1ButtonFunct(){
-                Char1name.text = "???";
-                Char1speech.text = "I'll take the single room";
-                Char2name.text = "";
-                Char2speech.text = "";
-                Char3name.text = "";
-                Char3speech.text = "";
-                primeInt = 30; // so hitting "NEXT" goes to primeInt==30!
+                primeInt = 30; 
                 NextScene1Button.SetActive(false);
                 NextScene2Button.SetActive(false);
                 nextButton.SetActive(true);
                 allowSpace = true;
+                canScene1 = true;
+                Next();
         }        
         public void NextScene2ButtonFunct(){
-                Char1name.text = "???";
-                Char1speech.text = "I'll take the double room";
-                Char2name.text = "";
-                Char2speech.text = "";
-                Char3name.text = "";
-                Char3speech.text = "";
-                primeInt = 40; // so hitting "NEXT" goes to primeInt==30!
+                primeInt = 30; 
                 NextScene1Button.SetActive(false);
                 NextScene2Button.SetActive(false);
                 nextButton.SetActive(true);
                 allowSpace = true;
-        }        
-
+                canScene2 = true;
+                Next();
+        }          
+   
         public void SceneChange1(){ //single
                GameHandler.prevScene = "Scene1";
                SceneManager.LoadScene("Scene2a");
@@ -320,4 +296,4 @@ public void Next(){
                 GameHandler.prevScene = "Scene1";
                 SceneManager.LoadScene("Scene2b");
         }
-}   
+   } 

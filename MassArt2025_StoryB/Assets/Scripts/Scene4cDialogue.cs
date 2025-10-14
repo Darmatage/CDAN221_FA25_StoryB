@@ -7,10 +7,8 @@ using UnityEngine.SceneManagement;
 using UnityEngine.Audio;
 
 public class Scene4cDialogue : MonoBehaviour {
-// These are the script variables.
-// For more character images / buttons, copy & renumber the variables:
         public string playerName;
-        public int primeInt = 1;        // This integer drives game progress!
+        public int primeInt = 1; // This integer drives game progress!
         public TMP_Text Char1name; //MC
         public TMP_Text Char1speech;
         public TMP_Text Char2name; //Buzzboy
@@ -18,21 +16,21 @@ public class Scene4cDialogue : MonoBehaviour {
         public TMP_Text Char3name; //Maid
         public TMP_Text Char3speech;
         public GameObject DialogueDisplay;
-       //public GameObject ArtChar1a;
-       //public GameObject ArtChar1b;
-       //public GameObject ArtChar1c;
-       //public GameObject ArtChar2;
+        //public GameObject ArtChar1a;
+        //public GameObject ArtChar1b;
+        //public GameObject ArtChar1c;
+        //public GameObject ArtChar2;
         public GameObject ArtBG1;
         public GameObject Choice1a;
         public GameObject Choice1b;
         public GameObject Choice1c;
-        public GameObject Choice2a;
-        public GameObject Choice2b;
+        public GameObject NextScene1Button;
+        public GameObject NextScene2Button;
         public GameObject nextButton;
-       //public AudioSource audioSource1;
+        //public AudioSource audioSource1;
         private bool allowSpace = true;
 
-// Set initial visibility. Added images or buttons need to also be SetActive(false);
+// Set initial visibility.
         void Start(){  
              DialogueDisplay.SetActive(false);
              //ArtChar1a.SetActive(false);
@@ -40,8 +38,8 @@ public class Scene4cDialogue : MonoBehaviour {
              Choice1a.SetActive(false);
              Choice1b.SetActive(false);
              Choice1c.SetActive(false);
-             Choice2a.SetActive(false);
-             Choice2b.SetActive(false);
+             NextScene1Button.SetActive(false);
+             NextScene2Button.SetActive(false);
              nextButton.SetActive(true);
         }
 
@@ -50,18 +48,15 @@ public class Scene4cDialogue : MonoBehaviour {
              if (allowSpace == true){
                  if (Input.GetKeyDown("space")){
                       Next();
-                 }
+                }
 
-                 // secret debug code: go back 1 Story Unit, if NEXT is visible
+                // secret debug code: go back 1 Story Unit, if NEXT is visible
                  if (Input.GetKeyDown("p")) {
                       primeInt -= 2;
                       Next();
-                 }
-             }
-         }
-
-
-//Players hit [NEXT] to progress to the next primeInt:
+                }
+                }
+        }
 public void Next(){
         primeInt += 1;
         if (primeInt == 1){
@@ -100,7 +95,7 @@ public void Next(){
                 Choice1a.SetActive(true); // function Choice1aFunct()
                 Choice1b.SetActive(true); // function Choice1bFunct()
                 Choice1c.SetActive(true); // function Choice1cFunct()
-        }
+         }
 
 // after choice1a Be Nice
        else if (primeInt == 11){
@@ -130,8 +125,8 @@ public void Next(){
         // Turn off the "Next" button, turn on "Scene" button/s
                 nextButton.SetActive(false);
                 allowSpace = false;
-                Choice2a.SetActive(true);
-                Choice2b.SetActive(true);       
+                NextScene1Button.SetActive(true);
+                NextScene2Button.SetActive(true);     
         }
 // after choice 1b Be Rude
        else if (primeInt == 21){
@@ -152,7 +147,7 @@ public void Next(){
 
                 nextButton.SetActive(false);
                 allowSpace = false;
-                Choice2a.SetActive(true);
+                NextScene1Button.SetActive(true);
                 
         }
 // after choice1c Blood
@@ -174,8 +169,8 @@ public void Next(){
 
                 nextButton.SetActive(false);
                 allowSpace = false;
-                Choice2a.SetActive(true);
-                Choice2b.SetActive(true);
+                NextScene1Button.SetActive(true);
+                NextScene2Button.SetActive(true);
         }
 // scene change flirt           
        else if (primeInt == 51){
@@ -268,7 +263,7 @@ public void Next(){
                 Choice1c.SetActive(false);
                 nextButton.SetActive(true);
                 allowSpace = true;
-         }
+        }
         public void Choice1bFunct(){ // be rude
                 Char1name.text = "YOU";
                 Char1speech.text = "Can't forgive a simple mistake? This place really does suck.";
@@ -282,7 +277,7 @@ public void Next(){
                 Choice1c.SetActive(false);
                 nextButton.SetActive(true);
                 allowSpace = true;
-         }
+        }
         public void Choice1cFunct(){ // blood
                 Char1name.text = "YOU";
                 Char1speech.text = "Is...is that blood on the sheets?";
@@ -296,11 +291,9 @@ public void Next(){
                 Choice1c.SetActive(false);
                 nextButton.SetActive(true);
                 allowSpace = true;
-         }
-
+        }
 // scene changes
-        public void Choice2aFunct(){ // tell them off
-                //scene choice dialogue
+        public void NextScene1ButtonFunct(){ // tell them off
                 Char1name.text = "YOU";
                 Char1speech.text = "Just, leave me be, alright? I'll just go.";
                 Char2name.text = "";
@@ -308,12 +301,12 @@ public void Next(){
                 Char3name.text = "";
                 Char3speech.text = "";
                 primeInt = 40;
-                Choice2a.SetActive(false);
-                Choice2b.SetActive(false);
+                NextScene1Button.SetActive(false);
+                NextScene2Button.SetActive(false);
                 nextButton.SetActive(true);
                 allowSpace = true;
-         }
-        public void Choice2bFunct(){ // flirt
+        }
+        public void NextScene2ButtonFunct(){ // flirt
                 Char1name.text = "YOU";
                 Char1speech.text = "That's a cute bellboy outfit you have. Is it custom made?";
                 Char2name.text = "";
@@ -321,8 +314,8 @@ public void Next(){
                 Char3name.text = "";
                 Char3speech.text = "";
                 primeInt = 50;
-                Choice2a.SetActive(false);
-                Choice2b.SetActive(false);
+                NextScene1Button.SetActive(false);
+                NextScene2Button.SetActive(false);
                 nextButton.SetActive(true);
                 allowSpace = true;
         }
@@ -330,9 +323,9 @@ public void Next(){
 public void SceneChange1(){ //bad ending
                 GameHandler.endingNumber = 6;
                SceneManager.LoadScene("EndLose");
-         }
+        }
 public void SceneChange2(){ //romance
                 GameHandler.endingNumber = 5;
                 SceneManager.LoadScene("EndLose");
-         }
+        }
 }

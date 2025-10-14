@@ -7,8 +7,7 @@ using UnityEngine.SceneManagement;
 using UnityEngine.Audio;
 
 public class Scene3bDialogue : MonoBehaviour {
-// These are the script variables.
-// For more character images / buttons, copy & renumber the variables:
+        public string playerName;
         public int primeInt = 1;        // This integer drives game progress!
         public TMP_Text Char1name;
         public TMP_Text Char1speech;
@@ -24,6 +23,7 @@ public class Scene3bDialogue : MonoBehaviour {
         public GameObject ArtBG1;
         public GameObject Choice1a;
         public GameObject Choice1b;
+        public GameObject Choice1c;
         public GameObject NextScene1Button;
         public GameObject NextScene2Button;
         public GameObject nextButton;
@@ -37,6 +37,7 @@ public class Scene3bDialogue : MonoBehaviour {
              ArtBG1.SetActive(true);
              Choice1a.SetActive(false);
              Choice1b.SetActive(false);
+             Choice1c.SetActive(false);
              NextScene1Button.SetActive(false);
              NextScene2Button.SetActive(false);
              nextButton.SetActive(true);

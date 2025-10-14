@@ -7,8 +7,7 @@ using UnityEngine.SceneManagement;
 using UnityEngine.Audio;
 
 public class Scene3aDialogue : MonoBehaviour {
-// These are the script variables.
-// For more character images / buttons, copy & renumber the variables:
+        public string playerName = GameHandler.playerName;
         public int primeInt = 1;        // This integer drives game progress!
         public TMP_Text Char1name;
         public TMP_Text Char1speech;
@@ -27,7 +26,6 @@ public class Scene3aDialogue : MonoBehaviour {
         public GameObject NextScene1Button;
         public GameObject NextScene2Button;
         public GameObject nextButton;
-        public string playerName = GameHandler.playerName;
        //public AudioSource audioSource1;
         private bool allowSpace = true;
 

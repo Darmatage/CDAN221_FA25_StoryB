@@ -127,6 +127,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 627891053}
     m_Modifications:
+    - target: {fileID: 1491983679418228758, guid: 10957b83d3fddc34db9b3e320427e89c, type: 3}
+      propertyPath: m_text
+      value: Be sharp
+      objectReference: {fileID: 0}
     - target: {fileID: 1963530302545590291, guid: 10957b83d3fddc34db9b3e320427e89c, type: 3}
       propertyPath: m_Name
       value: ButtonStoryChoice1a
@@ -502,13 +506,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c39e012c33f54b42a3e473017beeadc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerName: 
   primeInt: 1
   Char1name: {fileID: 1631430632927961406}
   Char1speech: {fileID: 1631430632927961405}
   Char2name: {fileID: 1631430632927961404}
   Char2speech: {fileID: 1631430632927961403}
   DialogueDisplay: {fileID: 1631430632927961402}
-  ArtChar1a: {fileID: 1704192176}
   ArtBG1: {fileID: 1243399250}
   Choice1a: {fileID: 39047798}
   Choice1b: {fileID: 4464584315333755947}
@@ -804,6 +808,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 627891053}
     m_Modifications:
+    - target: {fileID: 1491983679418228758, guid: 10957b83d3fddc34db9b3e320427e89c, type: 3}
+      propertyPath: m_text
+      value: Go to the laundry room
+      objectReference: {fileID: 0}
     - target: {fileID: 1963530302545590291, guid: 10957b83d3fddc34db9b3e320427e89c, type: 3}
       propertyPath: m_Name
       value: ButtonSceneChange2
@@ -1059,6 +1067,12 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 627891053}
     m_Modifications:
+    - target: {fileID: 1491983679418228758, guid: 10957b83d3fddc34db9b3e320427e89c, type: 3}
+      propertyPath: m_text
+      value: 'Go to the rest corner
+
+'
+      objectReference: {fileID: 0}
     - target: {fileID: 1963530302545590291, guid: 10957b83d3fddc34db9b3e320427e89c, type: 3}
       propertyPath: m_Name
       value: ButtonSceneChange1
@@ -1464,6 +1478,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 627891053}
     m_Modifications:
+    - target: {fileID: 1491983679418228758, guid: 10957b83d3fddc34db9b3e320427e89c, type: 3}
+      propertyPath: m_text
+      value: Be friendly
+      objectReference: {fileID: 0}
     - target: {fileID: 1963530302545590291, guid: 10957b83d3fddc34db9b3e320427e89c, type: 3}
       propertyPath: m_Name
       value: ButtonStoryChoice1b
