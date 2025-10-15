@@ -215,28 +215,27 @@ public void Next(){
                 Char2name.text = "";
                 Char2speech.text = "";
 
-                if (canScene1 == true){
+                if (canScene1 == true){        
                 Char1name.text = "YOU";
                 Char1speech.text = "Maybe the receptionist has thougth of something?";
                 Char2name.text = "";
                 Char2speech.text = "";
+                primeInt = 60;}
 
-                nextButton.SetActive(false);
-                allowSpace = false;   
-                SceneChange1();  
-                }
                 else if (canScene2 == true){
                 Char1name.text = "YOU";
                 Char1speech.text = "I should go back to my room and take a look at what's been said about this place. Gives me the creeps.";
                 Char2name.text = "";
                 Char2speech.text = "";
-
-                nextButton.SetActive(false);
-                allowSpace = false;   
-                SceneChange2(); 
-                }
+                primeInt = 70;}
+        }        
+        else if (primeInt == 61){  
+                SceneChange1();  
+        }     
+        else if (primeInt == 71){   
+                SceneChange2();     
         }
-     }
+        }
 
 // FUNCTIONS FOR BUTTONS TO ACCESS (Choice #1 and SceneChanges)
         public void Choice1aFunct(){
@@ -277,7 +276,7 @@ public void Next(){
         }
         public void NextScene1ButtonFunct(){
                 Char1name.text = "YOU";
-                Char1speech.text = "This didn't really point me in any particular way. God, this case keeps hitting dead ends. I should have been an actuary insetad.";
+                Char1speech.text = "This didn't really point me in any particular way. God, this case keeps hitting dead ends. I should have been an actuary instead.";
                 Char2name.text = "";
                 Char2speech.text = "";
                 primeInt = 50; 
@@ -289,7 +288,7 @@ public void Next(){
         }
         public void NextScene2ButtonFunct(){
                 Char1name.text = "YOU";
-                Char1speech.text = "This didn't really point me in any particular way. God, this case keeps hitting dead ends. I should have been an actuary insetad.";
+                Char1speech.text = "This didn't really point me in any particular way. God, this case keeps hitting dead ends. I should have been an actuary instead.";
                 Char2name.text = "";
                 Char2speech.text = "";
                 primeInt = 50; 
@@ -301,7 +300,7 @@ public void Next(){
         }
         public void SceneChange1(){ //receptionist
                 GameHandler.prevScene = "Scene3b";
-               SceneManager.LoadScene("Scene4b");
+                SceneManager.LoadScene("Scene4b");
         }
         public void SceneChange2(){ //go back to room
                 GameHandler.prevScene = "Scene3b";

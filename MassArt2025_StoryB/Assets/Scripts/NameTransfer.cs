@@ -4,21 +4,20 @@ using System.Collections.Generic;
 using UnityEngine.UI;
 
 public class NameTransfer : MonoBehaviour
-{
-    public string name;
-    public GameObject inputField;
-    public GameObject textDisplay;
-    public GameHandler gameHandler;
-    public GameObject welcomeDisplay;
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
+{/*
+    public string theName;
+        public GameObject inputField;
+        public GameHandler gameHandler;
+        public GameObject nameDisplay;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+        void Start () {
+                nameDisplay.SetActive(false);
+        }
+
+        public void StoreName(){
+                theName = inputField.GetComponentInChildren< Text>().text;
+                nameDisplay.SetActive(true);
+                gameHandler.UpdateName(theName);
+        }
+        */
 }

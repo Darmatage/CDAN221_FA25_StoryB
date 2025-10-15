@@ -113,7 +113,6 @@ public void Next(){
                 allowSpace = false;
                 Choice1a.SetActive(true); 
                 Choice1b.SetActive(true); 
-                
         }
        
        // after choice 1a
@@ -238,7 +237,10 @@ public void Next(){
                 Char1speech.text = "Let's go. Hurry.";
                 Char2name.text = "";
                 Char2speech.text = "";
+        }
+        else if (primeInt == 74){
                 SceneChange2();
+
         }
 
       //Please do NOT delete this final bracket that ends the Next() function:
@@ -257,12 +259,12 @@ public void Next(){
                 allowSpace = true;
         }
         public void Choice1bFunct(){
-                GameHandler.endingNumber = 8;
+                GameHandler.endingNumber = 2;
                 SceneManager.LoadScene("EndLose");
         }
         public void Choice2aFunct(){
                 Char1name.text = "YOU";
-                Char1speech.text = "Now I've taken on too muuch. I don't wanna die like this!";
+                Char1speech.text = "Now I've taken on too much. I don't wanna die like this!";
                 Char2name.text = "";
                 Char2speech.text = "";
                 primeInt = 20;
@@ -290,7 +292,7 @@ public void Next(){
                 Char2name.text = "";
                 Char2speech.text = "";
                 primeInt = 40;
-                 Choice2a.SetActive(false);
+                Choice2a.SetActive(false);
                 Choice2b.SetActive(false);
                 Choice2c.SetActive(false);
                 nextButton.SetActive(true);
@@ -320,10 +322,9 @@ public void Next(){
         }
         public void SceneChange1(){ //assimilation
                 GameHandler.endingNumber = 8;
-               SceneManager.LoadScene("EndLose");
+                SceneManager.LoadScene("EndLose");
         }
         public void SceneChange2(){ //ignore voices
-                GameHandler.endingNumber = 9;
                 SceneManager.LoadScene("EndWin");
         }
         public void SkipTo(){

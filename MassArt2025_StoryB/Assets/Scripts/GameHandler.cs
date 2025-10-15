@@ -7,6 +7,7 @@ using UnityEngine.SceneManagement;
 
 public class GameHandler : MonoBehaviour{
 
+        public static string playerName = "YOU";
         //public static int playerStat1;
         public static int basementWeapon;
         /*
@@ -34,7 +35,6 @@ public class GameHandler : MonoBehaviour{
                 9 = good end :)
         */
         public static string prevScene;
-        public static string playerName = "YOU";
         // public GameObject textGameObject;
 
         // void Start () { UpdateScore (); }

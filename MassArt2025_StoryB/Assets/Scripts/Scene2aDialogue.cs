@@ -263,13 +263,16 @@ public void Next(){
                 allowSpace = true;
         }
         public void SceneChange1(){
-               SceneManager.LoadScene("Scene2a");
+                GameHandler.prevScene = "Scene2b";
+                SceneManager.LoadScene("Scene3b");
         }
         public void SceneChange2(){
-                SceneManager.LoadScene("Scene2b");
+                GameHandler.prevScene = "Scene2b";
+                SceneManager.LoadScene("Scene3a");
         }
         public void SceneChange3(){
                 GameHandler.endingNumber = 6;
                 SceneManager.LoadScene("EndLose");
         }
+
 }

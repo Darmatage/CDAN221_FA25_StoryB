@@ -267,7 +267,7 @@ public void Next(){
 
         public void SceneChange1(){ //rest corner
                 GameHandler.prevScene = "Scene2b";
-               SceneManager.LoadScene("Scene3a");
+                SceneManager.LoadScene("Scene3a");
         }
         public void SceneChange2(){ //laundry room
                 GameHandler.prevScene = "Scene2b";
