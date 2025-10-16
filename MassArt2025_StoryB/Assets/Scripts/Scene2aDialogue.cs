@@ -13,8 +13,13 @@ public class Scene2aDialogue : MonoBehaviour {
         public TMP_Text Char1speech;
         public TMP_Text Char2name;
         public TMP_Text Char2speech;
-       //public TMP_Text Char3name;
-       //public TMP_Text Char3speech;
+        //public TMP_Text Char3name;
+        //public TMP_Text Char3speech;
+
+
+        public GameObject ArtChar1a;
+        public GameObject ArtChar1b;
+        public GameObject ArtChar1c;
         public GameObject DialogueDisplay;
         //public GameObject ArtChar1a;
        //public GameObject ArtChar1b;
@@ -33,7 +38,9 @@ public class Scene2aDialogue : MonoBehaviour {
 // Set initial visibility. 
         void Start(){  
              DialogueDisplay.SetActive(false);
-             //ArtChar1a.SetActive(false);
+                ArtChar1a.SetActive(false);
+                ArtChar1b.SetActive(false);
+             ArtChar1c.SetActive(false);
              ArtBG1.SetActive(true);
              Choice1a.SetActive(false);
              Choice1b.SetActive(false);
@@ -66,9 +73,9 @@ public void Next(){
                 // audioSource1.Play();
         }
         else if (primeInt == 2){
-                // ArtChar1a.SetActive(true);
+                
                 DialogueDisplay.SetActive(true);
-                Char1name.text = "MC";
+                Char1name.text = GameHandler.playerName;
                 Char1speech.text = "Oh! I didn't know they were still working on the room.";
                 Char2name.text = "";
                 Char2speech.text = "";
@@ -80,18 +87,21 @@ public void Next(){
         }
 // after choice1a complain
         else if (primeInt == 11){
+                ArtChar1a.SetActive(true);
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "Maid";
                 Char2speech.text = "We're very sorry sir. An unexpected incident came up. I'm almost done.";
         }        
         else if (primeInt == 12){
-                Char1name.text = "YOU";
+                Char1name.text = GameHandler.playerName;
                 Char1speech.text = "Hurry up then. Don't make a guest wait. I've got work I gotta get to.";
                 Char2name.text = "";
                 Char2speech.text = "";
         }        
         else if (primeInt == 13){
+                        ArtChar1a.SetActive(false);
+                ArtChar1b.SetActive(true);
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "Maid";
@@ -111,7 +121,7 @@ public void Next(){
                 Char2speech.text = "It's not a problem, dear guest. I'm almost done. We had an unexpected incident. I'm terribly sorry.";
         }
        else if (primeInt == 22){
-                Char1name.text = "YOU";
+                Char1name.text = GameHandler.playerName;
                 Char1speech.text = "Take your time, then. I'll just unpack a bit.";
                 Char2name.text = "";
                 Char2speech.text = "";

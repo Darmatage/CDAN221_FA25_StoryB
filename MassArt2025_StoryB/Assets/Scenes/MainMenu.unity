@@ -3755,12 +3755,14 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'You''re a private investigator assigned to a missing person case. You
-    go stay at the Hilbert Holmes Hotel to investigate.
+  m_text: '
+
+    You''re a private investigator assigned to a missing person case.
+    You go stay at the Hilbert Holmes Hotel to investigate.
 
 
-    This elevator was last
-    checked on 19XX.
+    This elevator was
+    last checked on 19XX.
 
     The Elevator Security Company'
   m_isRightToLeft: 0
@@ -3796,7 +3798,7 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 1
+  m_HorizontalAlignment: 2
   m_VerticalAlignment: 256
   m_textAlignment: 65535
   m_characterSpacing: 0
@@ -4149,8 +4151,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "WARNING \nShall not be used in case of emergency or fire.\nIncludes depictions
-    of blood, bugs, \nKEEP OUT"
+  m_text: "WARNING \nIncludes depictions of body horror, blood, gore, bugs, strong
+    themes, death and injury - viewer discretion is advised\nKEEP OUT"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -4184,7 +4186,7 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 1
+  m_HorizontalAlignment: 2
   m_VerticalAlignment: 256
   m_textAlignment: 65535
   m_characterSpacing: 0
