@@ -41,6 +41,7 @@ public class Scene2aDialogue : MonoBehaviour {
              NextScene2Button.SetActive(false);
              NextScene3Button.SetActive(false);
              nextButton.SetActive(true);
+             GameHandler.singleDouble = true;
         }
 
 // Use the spacebar as a faster "Next" button:
@@ -213,7 +214,7 @@ public void Next(){
         public void Choice1bFunct(){ // sweet talk
                 Char1name.text = "YOU";
                 Char1speech.text = "Don't mind me! I'll just put my stuff down and go take a look around the place.";
-                Char2name.text = "Maid";
+                Char2name.text = "";
                 Char2speech.text = "";
                 primeInt = 20; 
 

@@ -477,7 +477,7 @@ public void Next(){
     public void SceneChange1(){ //bad end
                 GameHandler.prevScene = "Scene3a";
                 GameHandler.endingNumber = 2;
-               SceneManager.LoadScene("Scene3a");
+               SceneManager.LoadScene("EndLose");
         }
         public void SceneChange2(){ //enter boiler
                 GameHandler.prevScene = "Scene3a";
