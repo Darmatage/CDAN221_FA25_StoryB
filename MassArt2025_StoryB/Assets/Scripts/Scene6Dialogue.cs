@@ -259,7 +259,7 @@ public void Next(){
                 allowSpace = true;
         }
         public void Choice1bFunct(){
-                GameHandler.endingNumber = 2;
+                GameHandler.endingNumber = 3;
                 SceneManager.LoadScene("EndLose");
         }
         public void Choice2aFunct(){

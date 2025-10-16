@@ -70,7 +70,7 @@ public void Next(){
         else if (primeInt == 2){
                 ArtChar1a.SetActive(true);
                 DialogueDisplay.SetActive(true);
-                Char1name.text = "YOU";
+                Char1name.text = playerName;
                 Char1speech.text = "That guy was right, this place does kinda suck.";
                 Char2name.text = "";
                 Char2speech.text = "";
@@ -83,7 +83,7 @@ public void Next(){
                 //gameHandler.AddPlayerStat(1);
         }
        else if (primeInt == 4){
-                Char1name.text = "YOU";
+                Char1name.text = playerName;
                 Char1speech.text = "Laundry room.";
                 Char2name.text = "";
                 Char2speech.text = "";
@@ -95,7 +95,7 @@ public void Next(){
                 Char2speech.text = "The laundry rooms here are great! Thy're free so you never have to worry about carrying quarters.";
         }
        else if (primeInt == 6){
-                Char1name.text = "YOU";
+                Char1name.text = playerName;
                 Char1speech.text = "I literally don't care";
                 Char2name.text = "";
                 Char2speech.text = "";
@@ -115,13 +115,13 @@ public void Next(){
 
        // after choice 1a washers
        else if (primeInt == 11){
-                Char1name.text = "YOU";
+                Char1name.text = playerName;
                 Char1speech.text = "...";
                 Char2name.text = "";
                 Char2speech.text = "";
         }        
         else if (primeInt == 12){
-                Char1name.text = "YOU";
+                Char1name.text = playerName;
                 Char1speech.text = "Thats, uh, disgusting.";
                 Char2name.text = "";
                 Char2speech.text = "";
@@ -131,7 +131,7 @@ public void Next(){
         }
        // after choice 1b
        else if (primeInt == 21){
-                Char1name.text = "YOU";
+                Char1name.text = playerName;
                 Char1speech.text = "These are for sure a fire hazard.";
                 Char2name.text = "";
                 Char2speech.text = "";
@@ -142,14 +142,14 @@ public void Next(){
         }
 // after choice 1c
        else if (primeInt == 31){
-                Char1name.text = "YOU";
+                Char1name.text = playerName;
                 Char1speech.text = "...";
                 Char2name.text = "";
                 Char2speech.text = "";
                 
         }
         else if (primeInt == 32){
-                Char1name.text = "YOU";
+                Char1name.text = playerName;
                 Char1speech.text = "Gross, who spits out gum into their bedsheets?";
                 Char2name.text = "";
                 Char2speech.text = "";
@@ -171,7 +171,7 @@ public void Next(){
                 Char2speech.text = "";
         }
         else if (primeInt == 42){
-                Char1name.text = "YOU";
+                Char1name.text = playerName;
                 Char1speech.text = "Now you care about being productive?";
                 Char2name.text = "";
                 Char2speech.text = "";
@@ -186,7 +186,7 @@ public void Next(){
 
 // FUNCTIONS FOR BUTTONS TO ACCESS (Choice #1 and SceneChanges)
         public void Choice1aFunct(){
-                Char1name.text = "YOU";
+                Char1name.text = playerName;
                 Char1speech.text = "There's a weird noise coming from the washing machines.";
                 Char2name.text = "";
                 Char2speech.text = "";
@@ -198,7 +198,7 @@ public void Next(){
                 allowSpace = true;
         }
         public void Choice1bFunct(){
-                Char1name.text = "YOU";
+                Char1name.text = playerName;
                 Char1speech.text = "Dryers seem like less of a gross bet for now.";
                 Char2name.text = "";
                 Char2speech.text = "";
@@ -210,7 +210,7 @@ public void Next(){
                 allowSpace = true;
         }
         public void Choice1cFunct(){
-                Char1name.text = "YOU";
+                Char1name.text = playerName;
                 Char1speech.text = "Maybe I'll find some more items in the laundry baskets over there.";
                 Char2name.text = "";
                 Char2speech.text = "";
@@ -232,7 +232,7 @@ public void Next(){
         }
         public void SkipTo(){
                 primeInt = 40;
-                Char1name.text = "YOU";
+                Char1name.text = playerName;
                 Char1speech.text = "I could try that door over there. I think it's an employee only area. They seem a bit scatterbrained, so it's probably unlocked.";
                 Char2name.text = "";
                 Char2speech.text = "";

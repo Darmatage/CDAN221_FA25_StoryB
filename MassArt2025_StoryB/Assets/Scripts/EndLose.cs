@@ -18,7 +18,7 @@ public class EndLose : MonoBehaviour
             endDesc.text = "You promptly check out after waking up refreshed. You decide to transfer the case to someone else and go take a vacation.";
         }
         else if (GameHandler.endingNumber == 2){ // BASEMENT BAD ENDING
-            endDesc.text = "You charge at the monster with all the force you possess. It is not enough. The horned monster impales you.";
+            endDesc.text = "The monster skewers you on its horn. It carries your corpse around as a trophy until it decomposes.";
         }
         else if (GameHandler.endingNumber == 3){ //  RECEPTION NEUTRAL ENDING
             endDesc.text = "You decide the hotel is weird, so you leave and try to follow other leads from the comfort of your office. You never solve the case. It will forever haunt you.";
