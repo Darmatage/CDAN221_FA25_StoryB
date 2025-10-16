@@ -20,8 +20,11 @@ public class GameHandler : MonoBehaviour{
         public static bool note;
         public static bool journal;
         public static bool key;
-        //public static bool metRoomie;
-        //public static bool metMaid;
+        public static bool singleDouble;
+        /*
+         *      true = single
+         *      false = double
+         */
         public static int endingNumber;
         /*
                 1 = checkout ending
@@ -75,4 +78,5 @@ public class GameHandler : MonoBehaviour{
                 Application.Quit();
                 #endif
         }
+  
 }
