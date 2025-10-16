@@ -127,6 +127,8 @@ public void Next(){
         //coming from double
         else if (primeInt == 10)
         {
+            ArtChar1a.SetActive(true);
+            DialogueDisplay.SetActive(true);
             Char1name.text = playerName;
             Char1speech.text = "This hotel seems to just get bigger and bigger.";
             Char2name.text = "";

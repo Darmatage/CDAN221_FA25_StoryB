@@ -44,13 +44,21 @@ public class Scene3aDialogue : MonoBehaviour {
              ArtBG1.SetActive(true);
              Choice1a.SetActive(false);
              Choice1b.SetActive(false);
-             NextScene1Button.SetActive(false);
+        Choice2a.SetActive(false);
+        Choice2b.SetActive(false);
+        Choice3a.SetActive(false);
+        Choice3b.SetActive(false);
+        Choice3c.SetActive(false);
+        Choice4a.SetActive(false);
+        Choice4b.SetActive(false);
+        Choice4c.SetActive(false);
+        NextScene1Button.SetActive(false);
              NextScene2Button.SetActive(false);
              nextButton.SetActive(true);
 
         //check how I got here:
-             if (GameHandler.prevScene == "Scene2a"){
-                primeInt=1;
+             if (GameHandler.singleDouble == false){
+                primeInt=9;
              } else {
                 //go to the next area of the dialogue for the other room
              }
@@ -110,6 +118,8 @@ public void Next(){
         //start from double room:
         else if (primeInt == 10)
         {
+            ArtChar1a.SetActive(true);
+            DialogueDisplay.SetActive(true);
             Char1name.text = playerName;
             Char1speech.text = "Creepy basement, naturally.";
             Char2name.text = "";
@@ -134,7 +144,7 @@ public void Next(){
             nextButton.SetActive(false);
             allowSpace = false;
             Choice1a.SetActive(true); // function Choice1aFunct()
-            Choice1b.SetActive(true); // function Choice1bFunct()
+            Choice2b.SetActive(true); // function Choice1bFunct()
         }
 
         // after choice 1a
@@ -181,8 +191,8 @@ public void Next(){
             // Turn off the "Next" button, turn on "Scene" button/s
             nextButton.SetActive(false);
             allowSpace = false;
-            NextScene1Button.SetActive(true);
-            NextScene2Button.SetActive(true);
+            Choice2a.SetActive(true);
+            Choice2b.SetActive(true);
         }
         //choice: HIDE
         else if (primeInt == 60)
