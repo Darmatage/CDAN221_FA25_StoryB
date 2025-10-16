@@ -98,6 +98,8 @@ public void Next(){
        // after choice 1a
        else if (primeInt == 20){
                 //gameHandler.AddPlayerStat(1);
+                ArtChar2a.SetActive(false);
+                ArtChar2b.SetActive(true);
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "Ruben";
