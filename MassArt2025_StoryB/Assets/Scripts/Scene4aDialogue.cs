@@ -345,6 +345,29 @@ public void Next(){
             Char2name.text = "";
             Char2speech.text = "";
         }
+        else if (primeInt == 132)
+        {
+            Char1name.text = playerName;
+            Char1speech.text = "A revolver! It's full of bullets.";
+            Char2name.text = "";
+            Char2speech.text = "";
+        }
+        else if (primeInt == 133)
+        {
+            if (GameHandler.singleDouble == true){
+                Char1name.text = playerName;
+            Char1speech.text = "Looks like the owner didn't get a chance to use it...";
+            Char2name.text = "";
+            Char2speech.text = "";
+            }
+            else{
+                Char1name.text = playerName;
+            Char1speech.text = "Looks like Ruben didn't get a chance to use it...";
+            Char2name.text = "";
+            Char2speech.text = "";
+            }
+            primeInt = 140;
+        }
         //Leave, monster alive
         else if (primeInt == 140)
         {
