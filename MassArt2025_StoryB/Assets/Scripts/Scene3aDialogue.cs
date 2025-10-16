@@ -144,7 +144,7 @@ public void Next(){
             nextButton.SetActive(false);
             allowSpace = false;
             Choice1a.SetActive(true); // function Choice1aFunct()
-            Choice2b.SetActive(true); // function Choice1bFunct()
+            Choice1b.SetActive(true); // function Choice1bFunct()
         }
 
         // after choice 1a
@@ -264,12 +264,12 @@ public void Next(){
             primeInt = 90;
         }
         //toolbox, charge
-        else if (primeInt == 98)
+        else if (primeInt == 109)
         {
             Char1name.text = "";
             Char1speech.text = "You run at the monster screaming, with the toolbox held above your head.";
         }
-        else if (primeInt == 99)
+        else if (primeInt ==110)
         {
             Char1name.text = "";
             Char1speech.text = "You were hoping this would intimidate it. Not one of your finest ideas.";
@@ -395,8 +395,9 @@ public void Next(){
             Char2speech.text = "";
             primeInt = 79; 
             GameHandler.basementWeapon = 3;
-            Choice2a.SetActive(false);
-            Choice2b.SetActive(false);
+            Choice3a.SetActive(false);
+            Choice3b.SetActive(false);
+            Choice3c.SetActive(false);
             nextButton.SetActive(true);
             allowSpace = true;
         }
@@ -436,7 +437,7 @@ public void Next(){
         }
         else if (GameHandler.basementWeapon == 2)
         {
-            primeInt = 97;
+            primeInt = 108;
         }
         else if (GameHandler.basementWeapon == 3)
         {

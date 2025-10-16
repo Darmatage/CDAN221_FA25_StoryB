@@ -42,6 +42,10 @@ public class Scene5Dialogue : MonoBehaviour {
              ArtBG1.SetActive(true);
              Choice1a.SetActive(false);
              Choice1b.SetActive(false);
+             Choice2a.SetActive(false);
+             Choice2b.SetActive(false);
+             Choice2c.SetActive(false);
+             Choice2d.SetActive(false);
              NextScene1Button.SetActive(false);
              NextScene2Button.SetActive(false);
              nextButton.SetActive(true);
@@ -105,12 +109,12 @@ public void Next(){
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "Phone";
-            Char2speech.text = "What? Don’t be a creep or something, just leave them be.";
+            Char2speech.text = "What? Don't be a creep or something, just leave them be.";
         }
         else if (primeInt == 13)
         {
             Char1name.text = playerName;
-            Char1speech.text = "But what if it’s the missing girl?";
+            Char1speech.text = "But what if it's the missing girl?";
             Char2name.text = "";
             Char2speech.text = "";
         }
@@ -120,6 +124,7 @@ public void Next(){
             Char1speech.text = "";
             Char2name.text = "Phone";
             Char2speech.text = "Point still stands.";
+            primeInt = 29;
         }
         //choice 2: MIRROR
         else if (primeInt == 20)
@@ -152,14 +157,20 @@ public void Next(){
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "Phone";
-            Char2speech.text = "What? What’s going on?";
+            Char2speech.text = "What? What's going on?";
         }
-        else if (primeInt == 31)
+        else if (primeInt == 33)
         {
             Char1name.text = playerName;
-            Char1speech.text = "I’ve got to do something fast.";
+            Char1speech.text = "I've got to do something fast.";
             Char2name.text = "";
             Char2speech.text = "";
+            nextButton.SetActive(false);
+            allowSpace = false;
+            Choice2a.SetActive(true); // function Choice1aFunct()
+            Choice2b.SetActive(true);
+            Choice2c.SetActive(true);
+            Choice2d.SetActive(true);
         }
         //Scene changes
         else if (primeInt == 40)
@@ -213,7 +224,7 @@ public void Next(){
         public void Choice2bFunct()
         {
             Char1name.text = playerName;
-            Char1speech.text = "Shit, it’s so big. What can I do?";
+            Char1speech.text = "Shit, it's so big. What can I do?";
             Char2name.text = "";
             Char2speech.text = "";
             primeInt = 49; // so hitting "NEXT" goes to primeInt==30!
