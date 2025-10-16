@@ -325,12 +325,55 @@ public void Next(){
             Char2name.text = "";
             Char2speech.text = "";
         }
-        else if (primeInt == 110)
+        else if (primeInt == 121)
         {
             SceneChange3();
 
         }
         //Search, mosnter dead
+        else if (primeInt == 130)
+        {
+            Char1name.text = playerName;
+            Char1speech.text = "(...)";
+            Char2name.text = "";
+            Char2speech.text = "";
+        }
+        else if (primeInt == 131)
+        {
+            Char1name.text = playerName;
+            Char1speech.text = "Oh, there's something in this drawer...";
+            Char2name.text = "";
+            Char2speech.text = "";
+        }
+        //Leave, monster alive
+        else if (primeInt == 140)
+        {
+            Char1name.text = playerName;
+            Char1speech.text = "I'm outta here!";
+            Char2name.text = "";
+            Char2speech.text = "";
+        }
+        else if (primeInt == 141)
+        {
+            Char1name.text = playerName;
+            Char1speech.text = "I'll check the basement next.";
+            Char2name.text = "";
+            Char2speech.text = "";
+        }
+        else if (primeInt == 142)
+        {
+            SceneChange1();
+        }
+        //Leave, monster dead
+        else if (primeInt == 150)
+        {
+            Char1name.text = playerName;
+            Char1speech.text = "She might be in the basement. A classic place to store victims!";
+            Char2name.text = "";
+            Char2speech.text = "";
+            primeInt = 141;
+        }
+        
         //Please do NOT delete this final bracket that ends the Next() function:
     }
 
@@ -407,10 +450,31 @@ public void Next(){
                 }
                 else {
                     Char1name.text = playerName;
-                    Char1speech.text = "Let's' get searching!";
+                    Char1speech.text = "Let's get searching!";
                     Char2name.text = "";
                     Char2speech.text = "";
                     primeInt = 129;
+                }
+                 // so hitting "NEXT" goes to primeInt==30!
+                Choice2a.SetActive(false);
+                Choice2b.SetActive(false);
+                nextButton.SetActive(true);
+                allowSpace = true;
+        }
+    public void Choice2bFunct(){  //LEAVE
+                if (GameHandler.monsterAlive == true){
+                    Char1name.text = playerName;
+                    Char1speech.text = "Maybe it's best not to risk it.";
+                    Char2name.text = "";
+                    Char2speech.text = "";
+                    primeInt = 139;
+                }
+                else {
+                    Char1name.text = playerName;
+                    Char1speech.text = "I should hurry and find that girl, actually.";
+                    Char2name.text = "";
+                    Char2speech.text = "";
+                    primeInt = 149;
                 }
                  // so hitting "NEXT" goes to primeInt==30!
                 Choice2a.SetActive(false);
