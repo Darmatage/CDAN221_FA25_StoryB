@@ -23,9 +23,13 @@ public class Scene4aDialogue : MonoBehaviour {
        //public GameObject ArtChar1c;
        //public GameObject ArtChar2;
         public GameObject ArtBG1;
+        //Choice: reaction
         public GameObject Choice1a;
         public GameObject Choice1b;
         public GameObject Choice1c;
+        //Choice: stay or leave
+        public GameObject Choice2a;
+        public GameObject Choice2b;
         public GameObject NextScene1Button;
         public GameObject NextScene2Button;
         public GameObject nextButton;
@@ -44,14 +48,19 @@ public class Scene4aDialogue : MonoBehaviour {
              NextScene2Button.SetActive(false);
              nextButton.SetActive(true);
         //check how i got here
-            if (GameHandler.prevScene == "Scene5") //from bathroom
+            if (GameHandler.prevScene == "Scene5" && GameHandler.monsterAlive == true) //from bathroom
             {
             primeInt = 99;
+            }
+            else if (GameHandler.prevScene == "Scene5" && GameHandler.monsterAlive == false)
+            {
+            primeInt = 109;
             }
             else if (GameHandler.singleDouble == true)
             {
             primeInt = 9;
             }
+            
             else
             {
             //do nothing
@@ -250,12 +259,78 @@ public void Next(){
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "Phone";
-            Char2speech.text = "Take care, man. Who else is going to cover me when I�ve got a hangover?";
+            Char2speech.text = "Take care, man. Who else is going to cover me when I've got a hangover?";
             nextButton.SetActive(false);
             allowSpace = false;
             NextScene1Button.SetActive(true);
             NextScene2Button.SetActive(true);
         }
+        //From bathroom, monster alive
+        else if (primeInt == 100)
+        {
+            Char1name.text = playerName;
+            Char1speech.text = "Shit! I barely escaped!";
+            Char2name.text = "";
+            Char2speech.text = "";
+        }
+        else if (primeInt == 101)
+        {
+            Char1name.text = playerName;
+            Char1speech.text = "It should be stuck in there... no way it can open doors.";
+            Char2name.text = "";
+            Char2speech.text = "";
+        }
+        else if (primeInt == 102)
+        {
+            Char1name.text = "";
+            Char1speech.text = "";
+            Char2name.text = "Phone";
+            Char2speech.text = "Probably! What's the worst that could happen?";
+        }
+        else if (primeInt == 103)
+        {
+            Char1name.text = playerName;
+            Char1speech.text = "What to do now?";
+            Char2name.text = "";
+            Char2speech.text = "";
+            nextButton.SetActive(false);
+            allowSpace = false;
+            Choice2a.SetActive(true);
+            Choice2b.SetActive(true);
+        }
+        //From bathroom, monster dead
+        else if (primeInt == 110)
+        {
+            Char1name.text = playerName;
+            Char1speech.text = "That was close! I hope there's nothing else in here.";
+            Char2name.text = "";
+            Char2speech.text = "";
+        }
+        else if (primeInt == 111)
+        {
+            Char1name.text = playerName;
+            Char1speech.text = "Well, no monsters at least. But maybe there's some clues around here?";
+            Char2name.text = "";
+            Char2speech.text = "";
+            nextButton.SetActive(false);
+            allowSpace = false;
+            Choice2a.SetActive(true);
+            Choice2b.SetActive(true);
+        }
+        //Search, monster alive
+        else if (primeInt == 120)
+        {
+            Char1name.text = "";
+            Char1speech.text = "Suddenly, the bathroom door swings open!";
+            Char2name.text = "";
+            Char2speech.text = "";
+        }
+        else if (primeInt == 110)
+        {
+            SceneChange3();
+
+        }
+        //Search, mosnter dead
         //Please do NOT delete this final bracket that ends the Next() function:
     }
 
@@ -317,10 +392,33 @@ public void Next(){
                  }
         Choice1a.SetActive(false);
         Choice1b.SetActive(false);
+        Choice1c.SetActive(false);
         nextButton.SetActive(true);
         allowSpace = true;
     }
 
+    public void Choice2aFunct(){  //SEARCH ROOM
+                if (GameHandler.monsterAlive == true){
+                    Char1name.text = playerName;
+                    Char1speech.text = "Maybe I can look for clues while it's trapped.";
+                    Char2name.text = "";
+                    Char2speech.text = "";
+                    primeInt = 119;
+                }
+                else {
+                    Char1name.text = playerName;
+                    Char1speech.text = "Let's' get searching!";
+                    Char2name.text = "";
+                    Char2speech.text = "";
+                    primeInt = 129;
+                }
+                 // so hitting "NEXT" goes to primeInt==30!
+                Choice2a.SetActive(false);
+                Choice2b.SetActive(false);
+                nextButton.SetActive(true);
+                allowSpace = true;
+        }
+  
     public void SceneChange1(){ //basement
                 GameHandler.prevScene = "Scene4a";
                SceneManager.LoadScene("Scene3a");
@@ -328,5 +426,9 @@ public void Next(){
         public void SceneChange2(){ //bathroom
                 GameHandler.prevScene = "Scene4a";
                 SceneManager.LoadScene("Scene5");
+        }
+        public void SceneChange3(){ //monster
+                GameHandler.endingNumber = 7;
+                SceneManager.LoadScene("EndLose");
         }
 }

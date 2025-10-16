@@ -220,6 +220,7 @@ public void Next(){
         Choice2d.SetActive(false);
         nextButton.SetActive(true);
         allowSpace = true;
+        GameHandler.monsterAlive = false;
     }
         public void Choice2bFunct()
         {
@@ -261,6 +262,7 @@ public void Next(){
             Choice2c.SetActive(false);
             Choice2d.SetActive(false);
             nextButton.SetActive(true);
+            GameHandler.monsterAlive = true;
             allowSpace = true;
         }
 

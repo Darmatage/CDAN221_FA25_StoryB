@@ -20,6 +20,8 @@ public class GameHandler : MonoBehaviour{
         public static bool note;
         public static bool journal;
         public static bool key;
+        public static bool monsterAlive;
+        public static bool gotGun;
         public static bool singleDouble;
         /*
          *      true = single
