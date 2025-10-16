@@ -43,6 +43,7 @@ public class Scene2bDialogue : MonoBehaviour {
              NextScene1Button.SetActive(false);
              NextScene2Button.SetActive(false);
              nextButton.SetActive(true);
+             GameHandler.singleDouble = false;
         }
 
 // Use the spacebar as a faster "Next" button:
@@ -65,6 +66,7 @@ public void Next(){
         primeInt += 1;
         if (primeInt == 1){
                 // audioSource1.Play();
+                
         }
         else if (primeInt == 2){
                 ArtChar2a.SetActive(true);
@@ -299,7 +301,7 @@ public void Next(){
 
         public void SceneChange1(){ //rest corner
                 GameHandler.prevScene = "Scene2b";
-                SceneManager.LoadScene("Scene3a");
+                SceneManager.LoadScene("Scene3b");
         }
         public void SceneChange2(){ //laundry room
                 GameHandler.prevScene = "Scene2b";
