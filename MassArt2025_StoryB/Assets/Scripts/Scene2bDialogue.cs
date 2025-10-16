@@ -19,7 +19,9 @@ public class Scene2bDialogue : MonoBehaviour {
         //public GameObject ArtChar1a;
        //public GameObject ArtChar1b;
        //public GameObject ArtChar1c;
-       //public GameObject ArtChar2;
+        public GameObject ArtChar2a;
+        public GameObject ArtChar2b;
+        public GameObject ArtChar2c;
         public GameObject ArtBG1;
         public GameObject Choice1a;
         public GameObject Choice1b;
@@ -32,7 +34,9 @@ public class Scene2bDialogue : MonoBehaviour {
 // Set initial visibility. Added images or buttons need to also be SetActive(false);
         void Start(){  
              DialogueDisplay.SetActive(false);
-             //ArtChar1a.SetActive(false);
+             ArtChar2a.SetActive(false);
+             ArtChar2b.SetActive(false);
+             ArtChar2c.SetActive(false);
              ArtBG1.SetActive(true);
              Choice1a.SetActive(false);
              Choice1b.SetActive(false);
@@ -63,7 +67,7 @@ public void Next(){
                 // audioSource1.Play();
         }
         else if (primeInt == 2){
-                //ArtChar1a.SetActive(true);
+                ArtChar2a.SetActive(true);
                 DialogueDisplay.SetActive(true);
                 Char1name.text = "";
                 Char1speech.text = "";
@@ -128,7 +132,7 @@ public void Next(){
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "Ruben";
-                Char2speech.text = " What're you lookin' for anyway?";
+                Char2speech.text = "What're you lookin' for anyway?";
         }
         else if (primeInt == 26){
                 //gameHandler.AddPlayerStat(1);
