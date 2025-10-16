@@ -19,7 +19,11 @@ public class Scene4cDialogue : MonoBehaviour {
         //public GameObject ArtChar1a;
         //public GameObject ArtChar1b;
         //public GameObject ArtChar1c;
-        //public GameObject ArtChar2;
+        public GameObject ArtChar2a;
+        public GameObject ArtChar2b;
+        public GameObject ArtChar2c;
+        public GameObject ArtChar2d;
+        public GameObject ArtChar2e;
         public GameObject ArtBG1;
         public GameObject Choice1a;
         public GameObject Choice1b;
@@ -33,7 +37,11 @@ public class Scene4cDialogue : MonoBehaviour {
 // Set initial visibility.
         void Start(){  
              DialogueDisplay.SetActive(false);
-             //ArtChar1a.SetActive(false);
+             ArtChar2a.SetActive(false);
+             ArtChar2b.SetActive(false);
+             ArtChar2c.SetActive(false);
+             ArtChar2d.SetActive(false);
+             ArtChar2e.SetActive(false);
              ArtBG1.SetActive(true);
              Choice1a.SetActive(false);
              Choice1b.SetActive(false);
@@ -82,6 +90,7 @@ public void Next(){
                 //gameHandler.AddPlayerStat(1);
         }
        else if (primeInt == 4){
+                ArtChar2a.SetActive(true);
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "Bellboy";
@@ -99,6 +108,8 @@ public void Next(){
 
 // after choice1a Be Nice
        else if (primeInt == 11){
+                ArtChar2a.SetActive(false);
+                ArtChar2b.SetActive(true);
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "Bellboy";
@@ -115,6 +126,8 @@ public void Next(){
                 Char3speech.text = "";
         }
        else if (primeInt == 13){
+                ArtChar2b.SetActive(false);
+                ArtChar2c.SetActive(true);
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "Bellboy";
@@ -138,6 +151,8 @@ public void Next(){
                 Char3speech.text = "That's not very polite, dear guest.";
         }
        else if (primeInt == 22){
+                ArtChar2a.SetActive(false);
+                ArtChar2b.SetActive(true);
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "";
@@ -236,6 +251,10 @@ public void Next(){
         }    
 // scene change tell them off           
        else if (primeInt == 41){
+                ArtChar2a.SetActive(false);
+                ArtChar2b.SetActive(false);
+                ArtChar2c.SetActive(false);
+                ArtChar2d.SetActive(true);
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "Buzzboy";
@@ -243,7 +262,17 @@ public void Next(){
                 Char3name.text = "";
                 Char3speech.text = "";
         }
-       else if (primeInt == 42){
+        else if (primeInt == 42){
+                ArtChar2d.SetActive(false);
+                ArtChar2e.SetActive(true);
+                Char1name.text = "";
+                Char1speech.text = "";
+                Char2name.text = "Buzzboy";
+                Char2speech.text = "BUZZZZZZZZZ.";
+                Char3name.text = "";
+                Char3speech.text = "";
+        }
+       else if (primeInt == 43){
                 nextButton.SetActive(false);
                 allowSpace = false;
                 SceneChange1();
