@@ -245,9 +245,19 @@ public void Next(){
                 Char2name.text = "";
                 Char2speech.text = "";
                 Char3name.text = "Receptionist";
-                Char3speech.text = "Great! Thank you, and here are your keys.";     
+                Char3speech.text = "Great, " + GameHandler.playerName + "! Thank you, and here are your keys.";     
         } 
-       else if (primeInt == 34){
+
+	  else if (primeInt == 34){
+                Char1name.text = GameHandler.playerName;
+                Char1speech.text = "Thank you.";
+                Char2name.text = "";
+                Char2speech.text = "";
+                Char3name.text = "";
+                Char3speech.text = "";     
+        }
+
+       else if (primeInt == 35){
                 nextButton.SetActive(false);
                 allowSpace = false;
                 if (canScene1 == true) {SceneChange1();} 
@@ -321,7 +331,7 @@ public void Next(){
        // public GameHandler gameHandler;
 
         public void StoreName(){
-                theName = inputField.GetComponentInChildren<Text>().text;
+                theName = inputField.GetComponentInChildren<TMP_Text>().text;
                 NameDisplay.SetActive(false);
                 //gameHandler.UpdateName(theName);
                 GameHandler.playerName = theName;
