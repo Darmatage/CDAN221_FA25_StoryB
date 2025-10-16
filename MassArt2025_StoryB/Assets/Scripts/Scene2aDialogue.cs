@@ -271,7 +271,7 @@ public void Next(){
                 SceneManager.LoadScene("Scene3a");
         }
         public void SceneChange3(){
-                GameHandler.endingNumber = 6;
+                GameHandler.endingNumber = 1;
                 SceneManager.LoadScene("EndLose");
         }
 

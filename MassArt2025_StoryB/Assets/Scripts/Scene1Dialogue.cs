@@ -18,6 +18,8 @@ public class Scene1Dialogue : MonoBehaviour {
         public TMP_Text Char3name; //Receptionist
         public TMP_Text Char3speech;
         public GameObject DialogueDisplay;
+        public GameObject NameDisplay;
+
        //public GameObject ArtChar1a;
        //public GameObject ArtChar1b;
        //public GameObject ArtChar1c;
@@ -37,6 +39,7 @@ public class Scene1Dialogue : MonoBehaviour {
 // Set initial visibility. Added images or buttons need to also be SetActive(false);
         void Start(){  
              DialogueDisplay.SetActive(false);
+             NameDisplay.SetActive(false);
              //ArtChar1a.SetActive(false);
              ArtBG1.SetActive(true);
              Choice1a.SetActive(false);
@@ -225,7 +228,18 @@ public void Next(){
                 Char3name.text = "Receptionist";
                 Char3speech.text = "Fantastic! I'll just need to see your ID.";     
         }
-       else if (primeInt == 32){
+     else if (primeInt == 32){
+                NameDisplay.SetActive(true);
+                Char1name.text = "";
+                Char1speech.text = "";
+                Char2name.text = "";
+                Char2speech.text = "";
+                Char3name.text = "Receptionist";
+                Char3speech.text = "Fantastic! I'll just need to see your ID.";     
+                nextButton.SetActive(false);
+                allowSpace = false;
+        }
+       else if (primeInt == 33){
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "";
@@ -233,7 +247,7 @@ public void Next(){
                 Char3name.text = "Receptionist";
                 Char3speech.text = "Great! Thank you, and here are your keys.";     
         } 
-       else if (primeInt == 33){
+       else if (primeInt == 34){
                 nextButton.SetActive(false);
                 allowSpace = false;
                 if (canScene1 == true) {SceneChange1();} 
@@ -296,4 +310,25 @@ public void Next(){
                 GameHandler.prevScene = "Scene1";
                 SceneManager.LoadScene("Scene2b");
         }
+
+
+
+//transfer button for naming
+
+
+        public string theName;
+        public GameObject inputField;
+       // public GameHandler gameHandler;
+
+        public void StoreName(){
+                theName = inputField.GetComponentInChildren<Text>().text;
+                NameDisplay.SetActive(false);
+                //gameHandler.UpdateName(theName);
+                GameHandler.playerName = theName;
+
+                nextButton.SetActive(true);
+                allowSpace = true;
+                Next();
+        }
+
    } 
