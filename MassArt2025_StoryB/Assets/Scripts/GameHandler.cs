@@ -58,6 +58,10 @@ public class GameHandler : MonoBehaviour{
         //        Text scoreTemp = textGameObject.GetComponent<Text>();
         //        scoreTemp.text = "Score: " + score; }
 
+        public void UpdateName(string theName){
+                playerName = theName;
+        }
+
         public void StartGame(){
                 SceneManager.LoadScene("Scene1");
         }
