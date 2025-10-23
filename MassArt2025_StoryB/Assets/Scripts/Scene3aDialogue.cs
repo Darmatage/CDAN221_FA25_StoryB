@@ -335,16 +335,20 @@ public void Next(){
             Char1speech.text = "You throw the heavy axe at the monster, and it lodges itself directly in the monster's throat!";
             primeInt = 90;
         }
+        */
         else if (primeInt == 111)
         {
             Char1name.text = "";
             Char1speech.text = "You steady your revolver at the monster, and shoot it square in the forehead!";
-            primeInt = 90;
+        }
+        else if (primeInt == 112)
+        {
+            SceneChange2();
         }
 
         //Please do NOT delete this final bracket that ends the Next() function:
     }
-*/
+
 else if (primeInt == 100)
         {   Char1name.text = GameHandler.playerName;
             Char1speech.text = "Shit, there.";
