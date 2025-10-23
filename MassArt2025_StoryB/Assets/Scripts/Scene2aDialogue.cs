@@ -106,6 +106,14 @@ public void Next(){
                 Char1speech.text = "";
                 Char2name.text = "Maid";
                 Char2speech.text = "All done, dear guest.";
+        }
+        else if (primeInt == 14){
+                        ArtChar1a.SetActive(false);
+                ArtChar1b.SetActive(true);
+                Char1name.text = "";
+                Char1speech.text = "";
+                Char2name.text = "Maid";
+                Char2speech.text = "";
 
                 nextButton.SetActive(false);
                 allowSpace = false;
@@ -137,6 +145,12 @@ public void Next(){
                 Char1speech.text = "";
                 Char2name.text = "Maid";
                 Char2speech.text = "All done. Have a nice stay here at the Hilbert Holmes Hotel.";
+        }
+        else if (primeInt ==25){
+                Char1name.text = "";
+                Char1speech.text = "";
+                Char2name.text = "Maid";
+                Char2speech.text = "";
 
                 nextButton.SetActive(false);
                 allowSpace = false;
@@ -145,9 +159,7 @@ public void Next(){
                 NextScene3Button.SetActive(true);
         }
 // scene change missing girl
-       else if (primeInt == 30){
-                
-                
+       else if (primeInt == 30){                
         }
        else if (primeInt == 31){
                 Char1name.text = "";
@@ -171,7 +183,7 @@ public void Next(){
                 Char2speech.text = "What?";
         }
         else if (primeInt == 42){
-                Char1name.text = "YOU";
+                Char1name.text = GameHandler.playerName;
                 Char1speech.text = "The unexpected incident. Seems pretty grim. Those bedsheets are ruined.";
                 Char2name.text = "";
                 Char2speech.text = "";
@@ -189,13 +201,13 @@ public void Next(){
         }    
 // scene change ignore
         else if (primeInt == 50){
-                Char1name.text = "YOU";
+                Char1name.text = GameHandler.playerName;
                 Char1speech.text = "Mmhum";
                 Char2name.text = "";
                 Char2speech.text = "";
         }
         else if (primeInt == 51){
-                Char1name.text = "YOU";
+                Char1name.text = GameHandler.playerName;
                 Char1speech.text = "This place is kinda draining me. Maybe I'll just lay down for the night.";
                 Char2name.text = "";
                 Char2speech.text = "";
@@ -210,7 +222,7 @@ public void Next(){
 
 // choice changes
         public void Choice1aFunct(){ // be rude
-                Char1name.text = "YOU";
+                Char1name.text = GameHandler.playerName;
                 Char1speech.text = "The receptionist gave me this room saying it was available. What kind of incompetent system do you have going on in this place? I thought I was booking a luxury suite for that price";
                 Char2name.text = "";
                 Char2speech.text = "";
@@ -222,7 +234,7 @@ public void Next(){
                 allowSpace = true;
         }
         public void Choice1bFunct(){ // sweet talk
-                Char1name.text = "YOU";
+                Char1name.text = GameHandler.playerName;
                 Char1speech.text = "Don't mind me! I'll just put my stuff down and go take a look around the place.";
                 Char2name.text = "";
                 Char2speech.text = "";
@@ -235,7 +247,7 @@ public void Next(){
         }
 // scene changes
         public void NextScene1ButtonFunct(){ // sweet talk
-                Char1name.text = "YOU";
+                Char1name.text = GameHandler.playerName;
                 Char1speech.text = "Wait! Before you leave. Have you seen a guest fitting this description?";
                 Char2name.text = "";
                 Char2speech.text = "";
@@ -248,7 +260,7 @@ public void Next(){
                 allowSpace = true;
         }
         public void NextScene2ButtonFunct(){ // sweet talk
-                Char1name.text = "YOU";
+                Char1name.text = GameHandler.playerName;
                 Char1speech.text = "What was the incident?";
                 Char2name.text = "";
                 Char2speech.text = "";
@@ -261,7 +273,7 @@ public void Next(){
                 allowSpace = true;
         }
         public void NextScene3ButtonFunct(){ // ignore
-                Char1name.text = "YOU";
+                Char1name.text = GameHandler.playerName;
                 Char1speech.text = "Mmhum";
                 Char2name.text = "";
                 Char2speech.text = "";

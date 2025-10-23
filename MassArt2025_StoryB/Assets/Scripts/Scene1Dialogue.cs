@@ -229,7 +229,7 @@ public void Next(){
                 Char1speech.text = "";
                 Char2name.text = "";
                 Char2speech.text = "";
-                Char3name.text = "Which room?";
+                Char3name.text = "Receptionist";
                 Char3speech.text = "";
                 
                 nextButton.SetActive(false);
