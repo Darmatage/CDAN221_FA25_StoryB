@@ -29,15 +29,19 @@ public class GameHandler : MonoBehaviour{
          */
         public static int endingNumber;
         /*
-                1 = checkout ending
-                2 = basement monster death
-                3 = cold case
-                4 = receptionist death
-                5 = buzzboy romance
-                6 = worker death
-                7 = bathroom death
-                8 = assimilation death
-                9 = good end :)
+                1 = JOKE ENDING (checkout)
+                        BAD ENDING (basement)
+                        3. charge with pipe
+                        4. throw pipe
+                        5. toolbox ambush
+                        6. throw fire axe
+                3 = NEUTRAL ENDING (cold case)
+                4 = BAD ENDING (reception)
+                5 = ROMANCE ENDING
+                6 = BAD ENDING (laundry room)
+                7 = BAD ENDING (bathroom)
+                8 = CATASTROPHIC ENDING
+                9 = GOOD ENDING
         */
         public static string prevScene;
         // public GameObject textGameObject;
