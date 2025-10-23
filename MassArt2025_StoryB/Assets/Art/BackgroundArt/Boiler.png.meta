@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 915d348895492764dad0f6990bca6fd4
+guid: 9bf6981b4eaa1bb49aaf75d2f5dda770
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 3638397771720386063
-    second: workroom_0
+      213: 8578205390000648917
+    second: Boiler_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,7 +113,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: workroom_0
+      name: Boiler_0
       rect:
         serializedVersion: 2
         x: 0
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f0667fe0f7f2e7230800000000000000
-      internalID: 3638397771720386063
+      spriteID: 5d274595a58eb0770800000000000000
+      internalID: 8578205390000648917
       vertices: []
       indices: 
       edges: []
@@ -147,8 +147,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      workroom_0: 3638397771720386063
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
