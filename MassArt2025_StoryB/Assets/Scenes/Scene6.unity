@@ -921,6 +921,8 @@ MonoBehaviour:
   Char2speech: {fileID: 9784516}
   DialogueDisplay: {fileID: 1105949995}
   ArtChar1a: {fileID: 1704192176}
+  ArtChar1b: {fileID: 658357819}
+  ArtChar1c: {fileID: 713836884}
   ArtBG1: {fileID: 1243399250}
   Choice1a: {fileID: 604428837}
   Choice1b: {fileID: 730730818}
@@ -2494,6 +2496,10 @@ PrefabInstance:
 
 '
       objectReference: {fileID: 0}
+    - target: {fileID: 1061816296900662017, guid: 546b0d0df9aabfd449255d13a1b2ae65, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1397548433147854122, guid: 546b0d0df9aabfd449255d13a1b2ae65, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -2563,6 +2569,10 @@ PrefabInstance:
     - target: {fileID: 4475901798221893129, guid: 546b0d0df9aabfd449255d13a1b2ae65, type: 3}
       propertyPath: m_Name
       value: Button_CHOICE_A
+      objectReference: {fileID: 0}
+    - target: {fileID: 4475901798221893129, guid: 546b0d0df9aabfd449255d13a1b2ae65, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5933504422403853866, guid: 546b0d0df9aabfd449255d13a1b2ae65, type: 3}
       propertyPath: m_text
