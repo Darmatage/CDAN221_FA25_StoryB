@@ -214,11 +214,19 @@ public void Next(){
             Char1speech.text = "I need a weapon.";
             Char2name.text = "";
             Char2speech.text = "";
+            if (GameHandler.gotGun == true)
+            {
+                primeInt = 110;
+            }
+            else
+            {
             nextButton.SetActive(false);
-            allowSpace = false;
-            Choice3a.SetActive(true);
-            Choice3b.SetActive(true);
-            Choice3c.SetActive(true);
+             allowSpace = false;
+             Choice3a.SetActive(true);
+             Choice3b.SetActive(true);           
+             Choice3c.SetActive(true);                      
+            }
+                
         }
         else if (primeInt == 71)
         {
@@ -325,6 +333,12 @@ public void Next(){
         {
             Char1name.text = "";
             Char1speech.text = "You throw the heavy axe at the monster, and it lodges itself directly in the monster's throat!";
+            primeInt = 90;
+        }
+        else if (primeInt == 111)
+        {
+            Char1name.text = "";
+            Char1speech.text = "You steady your revolver at the monster, and shoot it square in the forehead!";
             primeInt = 90;
         }
 
