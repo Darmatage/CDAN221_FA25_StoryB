@@ -588,7 +588,7 @@ public void Choice4aFunct() //AMBUSH
         if (canAmbush == true) {primeInt = 100;}
         else if (canAmbush == false) {SceneChange1();}
     }   
-public void Choice4bFunct() //CHARGE
+        public void Choice4bFunct() //CHARGE
     {
         Char1name.text = GameHandler.playerName;
         Char1speech.text = "";
@@ -601,8 +601,14 @@ public void Choice4bFunct() //CHARGE
             nextButton.SetActive(true);
             allowSpace = true;
 
-        if (canCharge == true) {primeInt = 100;}
-        else if (canCharge == false) {SceneChange1();}
+        if (canCharge == true) {
+            primeInt = 100;
+            }
+
+        else if (canCharge == false)
+         {
+            SceneChange1();
+        }
     }
         public void Choice4cFunct() //THROW
     {
