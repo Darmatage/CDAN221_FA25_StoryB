@@ -651,6 +651,8 @@ MonoBehaviour:
   Choice1a: {fileID: 39047798}
   Choice1b: {fileID: 4464584315333755947}
   Choice1c: {fileID: 296100284}
+  Choice2a: {fileID: 0}
+  Choice2b: {fileID: 0}
   NextScene1Button: {fileID: 1831372702}
   NextScene2Button: {fileID: 1355122592}
   nextButton: {fileID: 4229811803855364286}
@@ -744,27 +746,31 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1493469522856077117, guid: 7dbc8f46cb0135545b7790ee75757710, type: 3}
       propertyPath: m_AnchorMax.x
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1493469522856077117, guid: 7dbc8f46cb0135545b7790ee75757710, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1493469522856077117, guid: 7dbc8f46cb0135545b7790ee75757710, type: 3}
       propertyPath: m_AnchorMin.x
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2293595607119162725, guid: 7dbc8f46cb0135545b7790ee75757710, type: 3}
       propertyPath: m_AnchorMax.x
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2293595607119162725, guid: 7dbc8f46cb0135545b7790ee75757710, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7800093768479809104, guid: 7dbc8f46cb0135545b7790ee75757710, type: 3}
       propertyPath: m_Name
       value: PAUSEMENU_HANDLER
+      objectReference: {fileID: 0}
+    - target: {fileID: 7800093768479809104, guid: 7dbc8f46cb0135545b7790ee75757710, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

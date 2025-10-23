@@ -208,7 +208,7 @@ public void Next(){
                 Char3speech.text = "Ah. Well, I'm seeing here we have two options available for you.";     
         }
         else if (primeInt == 26){
-        Char1name.text = "";
+                Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "";
                 Char2speech.text = "";
@@ -219,7 +219,7 @@ public void Next(){
                 allowSpace = false;
                 NextScene1Button.SetActive(true);
                 NextScene2Button.SetActive(true);
-        }        
+        }         
      else if (primeInt == 31){
                 Char1name.text = "";
                 Char1speech.text = "";
@@ -248,7 +248,7 @@ public void Next(){
                 Char3speech.text = "Great, " + GameHandler.playerName + "! Thank you, and here are your keys.";     
         } 
 
-	  else if (primeInt == 34){
+       else if (primeInt == 34){
                 Char1name.text = GameHandler.playerName;
                 Char1speech.text = "Thank you.";
                 Char2name.text = "";
@@ -282,7 +282,7 @@ public void Next(){
         }
         public void Choice1bFunct(){
                 Char1name.text = "???";
-                Char1speech.text = "Good afternoon! i have a job around here, so I would like to book a room indefinitely.";
+                Char1speech.text = "Good afternoon! I have a job around here, so I would like to book a room indefinitely.";
                 Char2name.text = "";
                 Char2speech.text = "";
                 Char3name.text = "";
