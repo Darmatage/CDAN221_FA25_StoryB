@@ -73,7 +73,7 @@ public void Next(){
         else if (primeInt == 2){
                 //ArtChar1a.SetActive(true);
                 DialogueDisplay.SetActive(true);
-                Char1name.text = "YOU";
+                Char1name.text = playerName;
                 Char1speech.text = "Damn, there's people in here";
                 Char2name.text = "";
                 Char2speech.text = "";
@@ -118,7 +118,7 @@ public void Next(){
                 Char3speech.text = "";
         }
        else if (primeInt ==12){
-                Char1name.text = "YOU";
+                Char1name.text = playerName;
                 Char1speech.text = "Must have missed it, haha.";
                 Char2name.text = "";
                 Char2speech.text = "";
@@ -197,7 +197,7 @@ public void Next(){
                 Char3speech.text = "";
         }
        else if (primeInt == 52){
-                Char1name.text = "YOU";
+                Char1name.text = playerName;
                 Char1speech.text = "You look very handsome.";
                 Char2name.text = "";
                 Char2speech.text = "";
@@ -213,7 +213,7 @@ public void Next(){
                 Char3speech.text = "";
         }
        else if (primeInt == 54){
-                Char1name.text = "YOU";
+                Char1name.text = playerName;
                 Char1speech.text = "Haha, you're cute.";
                 Char2name.text = "";
                 Char2speech.text = "";
@@ -237,7 +237,7 @@ public void Next(){
                 Char3speech.text = "...";
         }
        else if (primeInt == 57){
-                Char1name.text = "YOU";
+                Char1name.text = playerName;
                 Char1speech.text = "Oh, you're gonna take care of me?";
                 Char2name.text = "";
                 Char2speech.text = "";
@@ -280,7 +280,7 @@ public void Next(){
         }
 // choice changes
         public void Choice1aFunct(){ // be nice
-                Char1name.text = "YOU";
+                Char1name.text = playerName;
                 Char1speech.text = "I'm very sorry, I didn't mean to interrupt you. I just got, uh, lost looking for a bathroom.";
                 Char2name.text = "";
                 Char2speech.text = "";
@@ -294,7 +294,7 @@ public void Next(){
                 allowSpace = true;
         }
         public void Choice1bFunct(){ // be rude
-                Char1name.text = "YOU";
+                Char1name.text = playerName;
                 Char1speech.text = "Can't forgive a simple mistake? This place really does suck.";
                 Char2name.text = "";
                 Char2speech.text = "";
@@ -308,7 +308,7 @@ public void Next(){
                 allowSpace = true;
         }
         public void Choice1cFunct(){ // blood
-                Char1name.text = "YOU";
+                Char1name.text = playerName;
                 Char1speech.text = "Is...is that blood on the sheets?";
                 Char2name.text = "";
                 Char2speech.text = "";
@@ -323,7 +323,7 @@ public void Next(){
         }
 // scene changes
         public void NextScene1ButtonFunct(){ // tell them off
-                Char1name.text = "YOU";
+                Char1name.text = playerName;
                 Char1speech.text = "Just, leave me be, alright? I'll just go.";
                 Char2name.text = "";
                 Char2speech.text = "";
@@ -336,7 +336,7 @@ public void Next(){
                 allowSpace = true;
         }
         public void NextScene2ButtonFunct(){ // flirt
-                Char1name.text = "YOU";
+                Char1name.text = playerName;
                 Char1speech.text = "That's a cute bellboy outfit you have. Is it custom made?";
                 Char2name.text = "";
                 Char2speech.text = "";

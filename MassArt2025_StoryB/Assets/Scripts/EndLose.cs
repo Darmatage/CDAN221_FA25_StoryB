@@ -15,7 +15,7 @@ public class EndLose : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        if (GameHandler.endingNumber == 1){ // JOKE ENDINNG
+        if (GameHandler.endingNumber == 1){ // JOKE ENDING
             endTitle.text = "JOKE ENDING";
             endDesc.text = "You promptly check out after waking up refreshed. You decide to transfer the case to someone else and go take a vacation.";
         }

@@ -75,38 +75,38 @@ public void Next(){
         else if (primeInt == 2){
                 
                 DialogueDisplay.SetActive(true);
-                Char1name.text = "YOU";
+                Char1name.text = playerName;
                 Char1speech.text = "Gross, eugh.";
                 Char2name.text = "";
                 Char2speech.text = "";
         }
        else if (primeInt ==3){
-                Char1name.text = "YOU";
+                Char1name.text = playerName;
                 Char1speech.text = "Got a key...I can probably use this to open that terrible looking door.";
                 Char2name.text = "";
                 Char2speech.text = "";
                 //gameHandler.AddPlayerStat(1);
         }
        else if (primeInt == 4){
-                Char1name.text = "YOU";
+                Char1name.text = playerName;
                 Char1speech.text = "Hey, I'm alive for now. Are you there?";
                 Char2name.text = "";
                 Char2speech.text = "";
         }
        else if (primeInt == 5){
-                Char1name.text = "YOU";
+                Char1name.text = playerName;
                 Char1speech.text = "...";
                 Char2name.text = "";
                 Char2speech.text = "";
         }
        else if (primeInt == 6){
-                Char1name.text = "YOU";
+                Char1name.text = playerName;
                 Char1speech.text = "Shit, my phone broke.";
                 Char2name.text = "";
                 Char2speech.text = "";
         }
        else if (primeInt ==7){
-                Char1name.text = "YOU";
+                Char1name.text = playerName;
                 Char1speech.text = "I don't know if I wanna follow through with this.";
                 Char2name.text = "";
                 Char2speech.text = "";
@@ -121,7 +121,7 @@ public void Next(){
        else if (primeInt == 11){
                 ArtChar1a.SetActive(true);
                 //gameHandler.AddPlayerStat(1);
-                Char1name.text = "YOU";
+                Char1name.text = playerName;
                 Char1speech.text = "Wait! You're that missing girl I've been looking for. And you!";
                 Char2name.text = "";
                 Char2speech.text = "";
@@ -152,7 +152,7 @@ public void Next(){
                 Char2speech.text = "...";
         }
         else if (primeInt == 32){
-                Char1name.text = "YOU";
+                Char1name.text = playerName;
                 Char1speech.text = "I've been looking all over for you, alright? We're all gonna be just fine.";
                 Char2name.text = "";
                 Char2speech.text = "";
@@ -161,7 +161,7 @@ public void Next(){
                 SkipTo();
         }
        else if (primeInt == 41){
-                Char1name.text = "YOU";
+                Char1name.text = playerName;
                 Char1speech.text = "...";
                 Char2name.text = "";
                 Char2speech.text = "";
@@ -173,7 +173,7 @@ public void Next(){
                 Char2speech.text = "...?";
         }       
         else if (primeInt == 43){
-                Char1name.text = "YOU";
+                Char1name.text = playerName;
                 Char1speech.text = "...";
                 Char2name.text = "";
                 Char2speech.text = "";
@@ -194,7 +194,7 @@ public void Next(){
                 Char2speech.text = "...?!";
         } 
         else if (primeInt == 52){
-                Char1name.text = "YOU";
+                Char1name.text = playerName;
                 Char1speech.text = "It's...talking to me.";
                 Char2name.text = "";
                 Char2speech.text = "";
@@ -205,19 +205,19 @@ public void Next(){
                 NextScene2Button.SetActive(true);
         } 
         else if (primeInt == 61){
-                Char1name.text = "YOU";
+                Char1name.text = playerName;
                 Char1speech.text = "It's telling me to open that boiler";
                 Char2name.text = "";
                 Char2speech.text = "";
         }  
         else if (primeInt == 62){
-                Char1name.text = "YOU";
+                Char1name.text = playerName;
                 Char1speech.text = "I should. I have to.";
                 Char2name.text = "";
                 Char2speech.text = "";
         } 
         else if (primeInt == 63){
-                Char1name.text = "YOU";
+                Char1name.text = playerName;
                 Char1speech.text = "We're gonna be okay. I just have to go into the boiler. It'll be just fine.";
                 Char2name.text = "";
                 Char2speech.text = "";
@@ -226,19 +226,19 @@ public void Next(){
                 SceneChange1();
         }
         else if (primeInt == 71){
-                Char1name.text = "YOU";
+                Char1name.text = playerName;
                 Char1speech.text = "I...";
                 Char2name.text = "";
                 Char2speech.text = "";
         }
         else if (primeInt == 72){
-                Char1name.text = "YOU";
+                Char1name.text = playerName;
                 Char1speech.text = "We have to go. Come on, get up. I'll help you out.";
                 Char2name.text = "";
                 Char2speech.text = "";
         }
         else if (primeInt == 73){
-                Char1name.text = "YOU";
+                Char1name.text = playerName;
                 Char1speech.text = "Let's go. Hurry.";
                 Char2name.text = "";
                 Char2speech.text = "";
@@ -253,7 +253,7 @@ public void Next(){
 
 // FUNCTIONS FOR BUTTONS TO ACCESS (Choice #1 and SceneChanges)
         public void Choice1aFunct(){
-                Char1name.text = "YOU";
+                Char1name.text = playerName;
                 Char1speech.text = "Now why do they have an even creepier basement? Who designed this place?";
                 Char2name.text = "";
                 Char2speech.text = "";
@@ -268,7 +268,7 @@ public void Next(){
                 SceneManager.LoadScene("EndLose");
         }
         public void Choice2aFunct(){
-                Char1name.text = "YOU";
+                Char1name.text = playerName;
                 Char1speech.text = "Now I've taken on too much. I don't wanna die like this!";
                 Char2name.text = "";
                 Char2speech.text = "";
@@ -280,7 +280,7 @@ public void Next(){
                 allowSpace = true;
         }
         public void Choice2bFunct(){
-                Char1name.text = "YOU";
+                Char1name.text = playerName;
                 Char1speech.text = "Don't worry. I'll get us out of here. I just gotta think for a moment.";
                 Char2name.text = "";
                 Char2speech.text = "";
@@ -292,7 +292,7 @@ public void Next(){
                 allowSpace = true;
         }
         public void Choice2cFunct(){
-                Char1name.text = "YOU";
+                Char1name.text = playerName;
                 Char1speech.text = "...";
                 Char2name.text = "";
                 Char2speech.text = "";
@@ -304,7 +304,7 @@ public void Next(){
                 allowSpace = true;
         }
         public void NextScene1ButtonFunct(){
-                Char1name.text = "YOU";
+                Char1name.text = playerName;
                 Char1speech.text = "...";
                 Char2name.text = "";
                 Char2speech.text = "";
@@ -315,7 +315,7 @@ public void Next(){
                 allowSpace = true;
         }
         public void NextScene2ButtonFunct(){
-                Char1name.text = "YOU";
+                Char1name.text = playerName;
                 Char1speech.text = "...";
                 Char2name.text = "";
                 Char2speech.text = "";
@@ -334,7 +334,7 @@ public void Next(){
         }
         public void SkipTo(){
                 primeInt = 50;
-                Char1name.text = "YOU";
+                Char1name.text = playerName;
                 Char1speech.text = "Do you guys hear that?";
                 Char2name.text = "";
                 Char2speech.text = "";      

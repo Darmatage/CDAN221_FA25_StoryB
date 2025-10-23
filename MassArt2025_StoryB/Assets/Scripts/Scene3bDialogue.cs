@@ -79,7 +79,7 @@ public void Next(){
                 Char2speech.text = "Do you copy? Over.";
         }
        else if (primeInt ==3){
-                Char1name.text = "YOU";
+                Char1name.text = playerName;
                 Char1speech.text = "Just got to the rest corner to investigate. Some witnesses said the girl was seen around here. What about you?";
                 Char2name.text = "";
                 Char2speech.text = "";
@@ -92,7 +92,7 @@ public void Next(){
                 Char2speech.text = "...";
         }
        else if (primeInt == 5){
-                Char1name.text = "YOU";
+                Char1name.text = playerName;
                 Char1speech.text = "...over.";
                 Char2name.text = "";
                 Char2speech.text = "";
@@ -104,7 +104,7 @@ public void Next(){
                 Char2speech.text = "Great! I just got to the Murder Mills Motel. I'm about to check in.";
         }
        else if (primeInt ==7){
-                Char1name.text = "YOU";
+                Char1name.text = playerName;
                 Char1speech.text = "Good luck with that. Hey, this is a nice little spot! Except for everything in it, I guess. Where should I start?";
                 Char2name.text = "";
                 Char2speech.text = "";
@@ -116,7 +116,7 @@ public void Next(){
                 Char2speech.text = "Come on, you have to use the codewords.";
         }        
        else if (primeInt ==9){
-                Char1name.text = "YOU";
+                Char1name.text = playerName;
                 Char1speech.text = "We're literally talking on the phone.";
                 Char2name.text = "";
                 Char2speech.text = "";        
@@ -135,7 +135,7 @@ public void Next(){
                 Char2speech.text = "Snacks! Probably expired, though.";
         } 
        else if (primeInt == 22){
-                Char1name.text = "YOU";
+                Char1name.text = playerName;
                 Char1speech.text = "Now what is this piece of trash doing here?";
                 Char2name.text = "";
                 Char2speech.text = "";
@@ -155,7 +155,7 @@ public void Next(){
 
 // after choice 1b couch cushions
        else if (primeInt == 31){
-                Char1name.text = "YOU";
+                Char1name.text = playerName;
                 Char1speech.text = "Is that...hair?";
                 Char2name.text = "";
                 Char2speech.text = "";
@@ -181,14 +181,14 @@ public void Next(){
                 
         }
         else if (primeInt == 42){
-                Char1name.text = "YOU";
+                Char1name.text = playerName;
                 Char1speech.text = "Not even gonna say anything, uh?";
                 Char2name.text = "";
                 Char2speech.text = "";
                 
         }
        else if (primeInt == 43){
-                Char1name.text = "YOU";
+                Char1name.text = playerName;
                 Char1speech.text = "Oh god, what the fuck is that?";
                 Char2name.text = "";
                 Char2speech.text = "";
@@ -212,20 +212,20 @@ public void Next(){
                 Char2speech.text = "You would have been a terrible actuary.";
         }
         else if (primeInt == 52){
-                Char1name.text = "YOU";
+                Char1name.text = playerName;
                 Char1speech.text = "I didn't ask you.";
                 Char2name.text = "";
                 Char2speech.text = "";
 
                 if (canScene1 == true){        
-                Char1name.text = "YOU";
+                Char1name.text = playerName;
                 Char1speech.text = "Maybe the receptionist has thought of something?";
                 Char2name.text = "";
                 Char2speech.text = "";
                 primeInt = 60;}
 
                 else if (canScene2 == true){
-                Char1name.text = "YOU";
+                Char1name.text = playerName;
                 Char1speech.text = "I should go back to my room and take a look at what's been said about this place. Gives me the creeps.";
                 Char2name.text = "";
                 Char2speech.text = "";
@@ -241,7 +241,7 @@ public void Next(){
 
 // FUNCTIONS FOR BUTTONS TO ACCESS (Choice #1 and SceneChanges)
         public void Choice1aFunct(){
-                Char1name.text = "YOU";
+                Char1name.text = playerName;
                 Char1speech.text = "That vending machine looks like it hasn't been used in years.";
                 Char2name.text = "";
                 Char2speech.text = "";
@@ -253,7 +253,7 @@ public void Next(){
                 allowSpace = true;
         }
         public void Choice1bFunct(){
-                Char1name.text = "YOU";
+                Char1name.text = playerName;
                 Char1speech.text = "Let's go the old fashioned coins in the couch route.";
                 Char2name.text = "";
                 Char2speech.text = "";
@@ -265,7 +265,7 @@ public void Next(){
                 allowSpace = true;
         }
         public void Choice1cFunct(){
-                Char1name.text = "YOU";
+                Char1name.text = playerName;
                 Char1speech.text = "Man, that trip made me thirsty.";
                 Char2name.text = "";
                 Char2speech.text = "";
@@ -277,7 +277,7 @@ public void Next(){
                 allowSpace = true;
         }
         public void NextScene1ButtonFunct(){
-                Char1name.text = "YOU";
+                Char1name.text = playerName;
                 Char1speech.text = "This didn't really point me in any particular way. God, this case keeps hitting dead ends. I should have been an actuary instead.";
                 Char2name.text = "";
                 Char2speech.text = "";
@@ -289,7 +289,7 @@ public void Next(){
                 canScene1 = true;
         }
         public void NextScene2ButtonFunct(){
-                Char1name.text = "YOU";
+                Char1name.text = playerName;
                 Char1speech.text = "This didn't really point me in any particular way. God, this case keeps hitting dead ends. I should have been an actuary instead.";
                 Char2name.text = "";
                 Char2speech.text = "";
