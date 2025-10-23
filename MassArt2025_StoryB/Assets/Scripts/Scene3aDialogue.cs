@@ -336,7 +336,7 @@ public void Next(){
             primeInt = 90;
         }
         */
-        else if (primeInt == 111)
+           else if (primeInt == 111)
         {
             Char1name.text = "";
             Char1speech.text = "You steady your revolver at the monster, and shoot it square in the forehead!";
@@ -571,7 +571,7 @@ else if (primeInt == 100)
    
 }
 */
-public void Choice4aFunct() //AMBUSH
+        public void Choice4aFunct() //AMBUSH
     {
         Char1name.text = GameHandler.playerName;
         Char1speech.text = "I can't take this thing in a direct fight. Gotta do something else.";
