@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      MissingGirl_0: 3068793580018628361
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
