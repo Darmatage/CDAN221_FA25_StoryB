@@ -347,7 +347,6 @@ public void Next(){
         }
 
         //Please do NOT delete this final bracket that ends the Next() function:
-    }
 
 else if (primeInt == 100)
         {   Char1name.text = GameHandler.playerName;
