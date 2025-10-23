@@ -1116,7 +1116,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4182802889550708974, guid: 10957b83d3fddc34db9b3e320427e89c, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -289
+      value: -272
       objectReference: {fileID: 0}
     - target: {fileID: 4182802889550708974, guid: 10957b83d3fddc34db9b3e320427e89c, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -1604,11 +1604,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4182802889550708974, guid: 10957b83d3fddc34db9b3e320427e89c, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -395
+      value: -378
       objectReference: {fileID: 0}
     - target: {fileID: 4182802889550708974, guid: 10957b83d3fddc34db9b3e320427e89c, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -289
+      value: -272
       objectReference: {fileID: 0}
     - target: {fileID: 4182802889550708974, guid: 10957b83d3fddc34db9b3e320427e89c, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -1898,6 +1898,10 @@ PrefabInstance:
     - target: {fileID: 1025389288312488619, guid: 546b0d0df9aabfd449255d13a1b2ae65, type: 3}
       propertyPath: m_text
       value: '"Is that blood?"'
+      objectReference: {fileID: 0}
+    - target: {fileID: 1061816296900662017, guid: 546b0d0df9aabfd449255d13a1b2ae65, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1397548433147854122, guid: 546b0d0df9aabfd449255d13a1b2ae65, type: 3}
       propertyPath: m_IsActive
