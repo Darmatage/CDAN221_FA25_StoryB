@@ -20,8 +20,11 @@ public class Scene1Dialogue : MonoBehaviour {
         public GameObject DialogueDisplay;
         public GameObject NameDisplay;
 
-       //public GameObject ArtChar1a;
-       //public GameObject ArtChar1b;
+       public GameObject ArtChar1a;
+       public GameObject ArtChar1b;
+       public GameObject ArtChar1c;
+       public GameObject ArtChar1d;
+       public GameObject ArtChar1e;
        //public GameObject ArtChar1c;
        //public GameObject ArtChar2;
         public GameObject ArtBG1;
@@ -40,7 +43,11 @@ public class Scene1Dialogue : MonoBehaviour {
         void Start(){  
              DialogueDisplay.SetActive(false);
              NameDisplay.SetActive(false);
-             //ArtChar1a.SetActive(false);
+             ArtChar1a.SetActive(false);
+             ArtChar1b.SetActive(false);
+             ArtChar1c.SetActive(false);
+             ArtChar1d.SetActive(false);
+             ArtChar1e.SetActive(false);
              ArtBG1.SetActive(true);
              Choice1a.SetActive(false);
              Choice1b.SetActive(false);
@@ -82,6 +89,7 @@ public void Next(){
                 Char3speech.text = "";
         }
        else if (primeInt ==3){
+                ArtChar1b.SetActive(true);
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "Felix";
@@ -99,6 +107,8 @@ public void Next(){
                 Char3speech.text = "";
         }
        else if (primeInt == 5){
+                ArtChar1b.SetActive(false);
+                ArtChar1a.SetActive(true);
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "Felix";
