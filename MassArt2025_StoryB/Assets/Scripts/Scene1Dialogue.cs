@@ -125,6 +125,7 @@ public void Next(){
                 Char3speech.text = "";
         }
        else if (primeInt ==7){
+                ArtChar1a.SetActive(false);
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "";
