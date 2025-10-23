@@ -1713,7 +1713,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &615219199
 Transform:
   m_ObjectHideFlags: 0
@@ -2020,6 +2020,9 @@ MonoBehaviour:
   NextScene2Button: {fileID: 1352824232}
   nextButton: {fileID: 4229811803855364286}
   phoneRing: {fileID: 0}
+  canAmbush: 0
+  canCharge: 0
+  canThrow: 0
 --- !u!1001 &684613669
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2771,7 +2774,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1073090551
 Transform:
   m_ObjectHideFlags: 0
@@ -3163,7 +3166,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1445539993
 Transform:
   m_ObjectHideFlags: 0
