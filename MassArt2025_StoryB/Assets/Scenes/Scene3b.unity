@@ -605,10 +605,10 @@ MonoBehaviour:
   Char2speech: {fileID: 1631430632927961403}
   DialogueDisplay: {fileID: 1631430632927961402}
   ArtChar1a: {fileID: 598767947}
-  ArtChar1b: {fileID: 0}
-  ArtChar1c: {fileID: 0}
-  ArtChar1d: {fileID: 0}
-  ArtChar1e: {fileID: 0}
+  ArtChar1b: {fileID: 1359517109}
+  ArtChar1c: {fileID: 1901252853}
+  ArtChar1d: {fileID: 1635159553}
+  ArtChar1e: {fileID: 1635016382}
   ArtBG1: {fileID: 1243399250}
   Choice1a: {fileID: 187092222}
   Choice1b: {fileID: 1174525129}
