@@ -189,7 +189,7 @@ public void Next(){
         }
        else if (primeInt == 43){
                 Char1name.text = "YOU";
-                Char1speech.text = "Oh god, the fuck is that?";
+                Char1speech.text = "Oh god, what the fuck is that?";
                 Char2name.text = "";
                 Char2speech.text = "";
                 
@@ -219,7 +219,7 @@ public void Next(){
 
                 if (canScene1 == true){        
                 Char1name.text = "YOU";
-                Char1speech.text = "Maybe the receptionist has thougth of something?";
+                Char1speech.text = "Maybe the receptionist has thought of something?";
                 Char2name.text = "";
                 Char2speech.text = "";
                 primeInt = 60;}

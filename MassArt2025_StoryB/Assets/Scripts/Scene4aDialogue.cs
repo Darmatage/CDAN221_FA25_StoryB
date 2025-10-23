@@ -428,7 +428,7 @@ public void Next(){
         }
         public void Choice1bFunct(){ //ANNOYED
                 Char1name.text = playerName;
-                Char1speech.text = "How does this job keep getting weirder? Why can't it ever be  a simple case where the person is alive and well and just broke their phone...";
+                Char1speech.text = "How does this job keep getting weirder? Why can't it ever be a simple case where the person is alive and well and just broke their phone...";
                 Char2name.text = "";
                 Char2speech.text = "";
                 primeInt = 29; // so hitting "NEXT" goes to primeInt==30!
