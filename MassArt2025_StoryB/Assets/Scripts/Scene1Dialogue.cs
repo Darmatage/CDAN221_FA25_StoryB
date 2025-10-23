@@ -222,7 +222,7 @@ public void Next(){
                 Char2name.text = "";
                 Char2speech.text = "";
                 Char3name.text = "Receptionist";
-                Char3speech.text = "There's a single room available on the thirteenth floor, or, if you're feeling frugal, we have a discounted double room that already has a guest in it.";
+                Char3speech.text = "There's a single room available on the thirteenth floor, or, if you're feeling frugal...";
         }     
         else if (primeInt == 27){
                 Char1name.text = "";
@@ -230,7 +230,7 @@ public void Next(){
                 Char2name.text = "";
                 Char2speech.text = "";
                 Char3name.text = "Receptionist";
-                Char3speech.text = "";
+                Char3speech.text = "...we have a discounted double room that already has a guest in it.";
                 
                 nextButton.SetActive(false);
                 allowSpace = false;

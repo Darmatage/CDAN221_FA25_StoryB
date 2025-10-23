@@ -1474,6 +1474,10 @@ PrefabInstance:
       propertyPath: m_text
       value: Go to the rest corner
       objectReference: {fileID: 0}
+    - target: {fileID: 1061816296900662017, guid: 546b0d0df9aabfd449255d13a1b2ae65, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1397548433147854122, guid: 546b0d0df9aabfd449255d13a1b2ae65, type: 3}
       propertyPath: m_IsActive
       value: 0
