@@ -121,6 +121,12 @@ public void Next(){
                 Char1speech.text = "We're literally talking on the phone.";
                 Char2name.text = "";
                 Char2speech.text = "";        
+        }
+        else if (primeInt ==10){
+                Char1name.text = playerName;
+                Char1speech.text = "";
+                Char2name.text = "";
+                Char2speech.text = "";        
                 
                 nextButton.SetActive(false);
                 allowSpace = false;

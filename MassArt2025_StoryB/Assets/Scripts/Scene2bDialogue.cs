@@ -7,7 +7,7 @@ using UnityEngine.SceneManagement;
 using UnityEngine.Audio;
 
 public class Scene2bDialogue : MonoBehaviour {
-    public string playerName;
+    public string playerName = GameHandler.playerName;
     public int primeInt = 1;        // This integer drives game progress!
         public TMP_Text Char1name;
         public TMP_Text Char1speech;

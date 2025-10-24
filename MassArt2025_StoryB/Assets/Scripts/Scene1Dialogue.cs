@@ -9,7 +9,7 @@ using UnityEngine.Audio;
 public class Scene1Dialogue : MonoBehaviour {
 // These are the script variables.
 // For more character images / buttons, copy & renumber the variables:
-        public string playerName; //Name Input
+        public string playerName = GameHandler.playerName; //Name Input
         public int primeInt = 1;        // This integer drives game progress!
         public TMP_Text Char1name; //YOU
         public TMP_Text Char1speech;
@@ -133,7 +133,6 @@ public void Next(){
                 Char3name.text = "Receptionist";
                 Char3speech.text = "Good afternoon, dear guest! How might I help you today?";
 
-         // Turn off the "Next" button, turn on "Choice" buttons
                 nextButton.SetActive(false);
                 allowSpace = false;
                 Choice1a.SetActive(true); // function Choice1aFunct()
@@ -170,7 +169,7 @@ public void Next(){
                 Char2name.text = "";
                 Char2speech.text = "";
                 Char3name.text = "Receptionist";
-                Char3speech.text = "There's a single room available on the thirteenth floor, or, if you're feeling frugal, we have a discounted double room that already has a guest in it.";
+                Char3speech.text = "There's a single room available on the thirteenth floor, or, if you're feeling frugal...";
         
         }   
         else if (primeInt == 15){
@@ -178,8 +177,8 @@ public void Next(){
                 Char1speech.text = "";
                 Char2name.text = "";
                 Char2speech.text = "";
-                Char3name.text = "Which room?";
-                Char3speech.text = "";
+                Char3name.text = "Receptionist";
+                Char3speech.text = "...we have a discounted double room that already has a guest in it.";
                 
                 nextButton.SetActive(false);
                 allowSpace = false;
@@ -273,11 +272,11 @@ public void Next(){
                 Char2name.text = "";
                 Char2speech.text = "";
                 Char3name.text = "Receptionist";
-                Char3speech.text = "Great, " + GameHandler.playerName + "! Thank you, and here are your keys.";     
+                Char3speech.text = "Great, " + playerName + "! Thank you, and here are your keys.";     
         } 
 
        else if (primeInt == 34){
-                Char1name.text = GameHandler.playerName;
+                Char1name.text = playerName;
                 Char1speech.text = "Thank you.";
                 Char2name.text = "";
                 Char2speech.text = "";

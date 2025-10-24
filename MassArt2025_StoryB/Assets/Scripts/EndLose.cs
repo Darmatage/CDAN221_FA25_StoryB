@@ -59,6 +59,10 @@ public class EndLose : MonoBehaviour
             endTitle.text = "CATASTROPHIC ENDING";
             endDesc.text = "The voices prompt you to open the boiler and go inside. You follow, and it feels just like home. Your skin melts first, becoming part of something much greater than you could ever have been. You are filled with purpose. Why did you wait so long to do this?";
         }
+        else if (GameHandler.endingNumber == 2){ // BAD ENDING BASEMENT
+            endTitle.text = "BAD ENDING";
+            endDesc.text = "The monster perks up at the sound of your phone. It quickly locates you. It all happens so fast you don't even get a chance to scream out.";
+        }
       
     }
 

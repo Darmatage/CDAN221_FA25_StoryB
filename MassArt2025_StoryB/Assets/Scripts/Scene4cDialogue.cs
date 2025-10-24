@@ -31,6 +31,7 @@ public class Scene4cDialogue : MonoBehaviour {
         public GameObject NextScene1Button;
         public GameObject NextScene2Button;
         public GameObject nextButton;
+        public AudioSource beeBuzz;
         //public AudioSource audioSource1;
         private bool allowSpace = true;
 
@@ -75,7 +76,7 @@ public void Next(){
                 //ArtChar1a.SetActive(true);
                 DialogueDisplay.SetActive(true);
                 Char1name.text = playerName;
-                Char1speech.text = "(Damn, there's people in here.)";
+                Char1speech.text = "Damn, there's people in here.";
                 Char2name.text = "";
                 Char2speech.text = "";
                 Char3name.text = "";
@@ -98,8 +99,16 @@ public void Next(){
                 Char2speech.text = "Come on, REDACTED, I've told you not to talk like that. It freaks the guests out.";
                 Char3name.text = "";
                 Char3speech.text = "";
+         }
+        else if (primeInt == 4){
+                ArtChar2a.SetActive(true);
+                Char1name.text = playerName;
+                Char1speech.text = "";
+                Char2name.text = "";
+                Char2speech.text = "";
+                Char3name.text = "";
+                Char3speech.text = "";
 
-        // Turn off the "Next" button, turn on "Choice" buttons
                 nextButton.SetActive(false);
                 allowSpace = false;
                 Choice1a.SetActive(true); // function Choice1aFunct()
@@ -265,12 +274,13 @@ public void Next(){
                 Char3speech.text = "";
         }
         else if (primeInt == 42){
+                beeBuzz.Play();
                 ArtChar2d.SetActive(false);
                 ArtChar2e.SetActive(true);
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "Buzzboy";
-                Char2speech.text = "BUZZZZZZZZZ.";
+                Char2speech.text = "...";
                 Char3name.text = "";
                 Char3speech.text = "";
         }

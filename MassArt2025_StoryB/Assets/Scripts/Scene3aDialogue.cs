@@ -230,7 +230,7 @@ public void Next(){
         {
             ArtChar2.SetActive(true);
             Char1name.text = playerName;
-            Char1speech.text = "(!?!)";
+            Char1speech.text = "?!";
             Char2name.text = "";
             Char2speech.text = "";
         }
@@ -257,10 +257,16 @@ public void Next(){
         //choice: HIDE
         else if (primeInt == 60)
         {
+            Char1name.text = playerName;
+            Char1speech.text = "";
+            Char2name.text = "";
+            Char2speech.text = "";
+
             phoneRing.Play();
         }
         else if (primeInt == 61)
-        {
+        { 
+            GameHandler.endingNumber = 2;
             SceneChange1();
         }
         //choice: FIGHT
@@ -270,129 +276,57 @@ public void Next(){
             Char1speech.text = "I need a weapon.";
             Char2name.text = "";
             Char2speech.text = "";
-            if (GameHandler.gotGun == true)
-            {
-                primeInt = 110;
-            }
-            else
-            {
-            nextButton.SetActive(false);
-             allowSpace = false;
-             Choice3a.SetActive(true);
-             Choice3b.SetActive(true);           
-             Choice3c.SetActive(true);                      
-            }
-                
+        
         }
         else if (primeInt == 71)
+        {
+            Char1name.text = playerName;
+            Char1speech.text = "";
+            Char2name.text = "";
+            Char2speech.text = "";
+
+            if (GameHandler.gotGun == true)
+            {primeInt = 110;}
+            else
+            {    
+            nextButton.SetActive(false);
+            allowSpace = false;
+            Choice3a.SetActive(true);
+            Choice3b.SetActive(true);
+            Choice3c.SetActive(true);             
+            }
+        }
+        
+        //after weapon choice
+        else if (primeInt == 80)
         {
             Char1name.text = playerName;
             Char1speech.text = "There, that's it!";
             Char2name.text = "";
             Char2speech.text = "";
-
-            nextButton.SetActive(false);
-            allowSpace = false;
-            Choice3a.SetActive(true);
-            Choice3b.SetActive(true);
-            Choice3c.SetActive(true);
         }
        
-        //after weapon choice
-        else if (primeInt == 80)
+        else if (primeInt == 81)
         {
             Char1name.text = playerName;
             Char1speech.text = "Now! I have one chance!";
             Char2name.text = "";
             Char2speech.text = "";
+        }
+        else if (primeInt == 82)
+        {
+            Char1name.text = playerName;
+            Char1speech.text = "";
+            Char2name.text = "";
+            Char2speech.text = "";
+            
             nextButton.SetActive(false);
             allowSpace = false;
             Choice4a.SetActive(true);
             Choice4b.SetActive(true);
             Choice4c.SetActive(true);
         }
-         /*
-        //rusty pipe, ambush
-        else if (primeInt == 90)
-        {
-            Char1name.text = "";
-            Char1speech.text = "You sneak up behind the monster, and whack it in the back of the head!";
-        }
-        else if (primeInt == 91)
-        {
-            SceneChange2();
-        }
-        //rusty pipe, charge
-        else if (primeInt == 93)
-        {
-            Char1name.text = "";
-            Char1speech.text = "You try a head-on attack, but the pipe is deflected by the monster's horn.";
-        }
-        else if (primeInt == 94)
-        {
-            SceneChange1();
-        }
-        //rusty pipe, throw
-        else if (primeInt == 96)
-        {
-            Char1name.text = "";
-            Char1speech.text = "You throw the pipe. It doinks uselessly against the monster's armored head.";
-            primeInt = 93;
-        }
-        //toolbox, ambush
-        else if (primeInt == 98)
-        {
-            Char1name.text = "";
-            Char1speech.text = "You wait patiently, then throw a screwdriver at the monster's neck!";
-            primeInt = 90;
-        }
-        //toolbox, charge
-        else if (primeInt == 109)
-        {
-            Char1name.text = "";
-            Char1speech.text = "You run at the monster screaming, with the toolbox held above your head.";
-        }
-        else if (primeInt ==110)
-        {
-            Char1name.text = "";
-            Char1speech.text = "You were hoping this would intimidate it. Not one of your finest ideas.";
-            primeInt = 93;
-        }
-        //toolbox, throw
-        else if (primeInt == 101)
-        {
-            Char1name.text = "";
-            Char1speech.text = "You throw a screwdriver directly into the monster's heart!";
-            primeInt = 90;
-        }
-        //axe, ambush
-        else if (primeInt == 103)
-        {
-            Char1name.text = "";
-            Char1speech.text = "You sneak up behind the monster, axe held high.";
-        }
-        else if (primeInt == 104)
-        {
-            Char1name.text = "";
-            Char1speech.text = "But it's too heavy! Before you can swing, the monster turns around and grabs you!";
-            primeInt = 93;
-        }
-        //axe, charge
-        else if (primeInt == 106)
-        {
-            Char1name.text = "";
-            Char1speech.text = "You chop off the monster's head in one clean swing!";
-            primeInt = 90;
-        }
-        //axe, throw
-        else if (primeInt == 108)
-        {
-            Char1name.text = "";
-            Char1speech.text = "You throw the heavy axe at the monster, and it lodges itself directly in the monster's throat!";
-            primeInt = 90;
-        }
-        */
-           else if (primeInt == 111)
+        else if (primeInt == 111)
         {
             Char1name.text = playerName;
             Char1speech.text = "EAT LEAD, YOU SON OF A BITCH!";
@@ -530,122 +464,8 @@ public void Next(){
             canAmbush = true;
             canCharge = true;
         }
-        /*
         public void Choice4aFunct() //AMBUSH
         {
-            Char1name.text = playerName;
-            Char1speech.text = "I can't take this thing in a direct fight. Gotta do something else.";
-            Char2name.text = "";
-            Char2speech.text = "";
-
-            if (canAmbush = true) + (GameHandler.basementWeapon = 1 || GameHandler.basementWeapon = 3); 
-            {primeInt = 100;}
-            else if (
-                GameHandler.endingNumber = 3;
-                SceneManager.LoadScene("Scene6");)}
-        }
-            
-            (GameHandler.basementWeapon == 1)
-            {
-                primeInt = 89;
-            }
-            else if (GameHandler.basementWeapon == 2)
-            {
-                primeInt = 97;
-            }
-            else if (GameHandler.basementWeapon == 3)
-            {
-                primeInt = 102;
-            }
-            
-            Choice4a.SetActive(false);
-            Choice4b.SetActive(false);
-            Choice4c.SetActive(false);
-            nextButton.SetActive(true);
-            allowSpace = true;
-        
-        public void Choice4bFunct() //CHARGE
-        {
-            Char1name.text = playerName;
-            Char1speech.text = "";
-            Char2name.text = "";
-            Char2speech.text = "";
-
-            if (canCharge = true) + (GameHandler.basementWeapon = 2 || GameHandler.basementWeapon = 3); {primeInt = 100;}
-            else if {
-                GameHandler.endingNumber = 3;
-                SceneManager.LoadScene("Scene6") }
-        /*
-        if (GameHandler.basementWeapon == 1)
-        {
-            primeInt = 92;
-        }
-        else if (GameHandler.basementWeapon == 2)
-        {
-            primeInt = 108;
-        }
-        else if (GameHandler.basementWeapon == 3)
-        {
-            primeInt = 105;
-        }
-        
-        Choice4a.SetActive(false);
-            Choice4b.SetActive(false);
-            Choice4c.SetActive(false);
-            nextButton.SetActive(true);
-            allowSpace = true;
-        }
-        public void Choice4cFunct() //THROW
-        {
-            Char1name.text = playerName;
-            Char1speech.text = "(That thing would maul me up close... guess I'll have to trust in my throwing arm.)";
-            Char2name.text = "";
-            Char2speech.text = "";
-
-            if (canThrow = true) + (GameHandler.basementWeapon = 2); {primeInt = 100;}
-            else if {
-                GameHandler.endingNumber = 3;
-                SceneManager.LoadScene("Scene6") }
-        /*        
-        if (GameHandler.basementWeapon == 1)
-        {
-            primeInt = 95;
-        }
-        else if (GameHandler.basementWeapon == 2)
-        {
-            primeInt = 100;
-        }
-        else if (GameHandler.basementWeapon == 3)
-        {
-            primeInt = 107;
-        }
-        Choice4a.SetActive(false);
-            Choice4b.SetActive(false);
-            Choice4c.SetActive(false);
-            nextButton.SetActive(true);
-            allowSpace = true;
-        }
-        
-        public void SceneChange1(){ //bad end
-                GameHandler.prevScene = "Scene3a";
-                GameHandler.endingNumber = 2;
-               SceneManager.LoadScene("EndLose");
-        }
-        public void SceneChange2(){ //enter boiler
-                GameHandler.prevScene = "Scene3a";
-                GameHandler.endingNumber = 3;
-                SceneManager.LoadScene("Scene6");
-        }
-        /*
-         public void SceneChange3(){ //open door
-                GameHandler.prevScene = "Scene3a";
-                SceneManager.LoadScene("Scene6");
-        }
-   
-}
-*/
-        public void Choice4aFunct() //AMBUSH
-    {
         Char1name.text = playerName;
         Char1speech.text = "I can't take this thing in a direct fight. Gotta do something else.";
         Char2name.text = "";
@@ -657,10 +477,9 @@ public void Next(){
             nextButton.SetActive(true);
             allowSpace = true;
 
-        if (canAmbush == true) {
-            primeInt = 100;
-        }
-        else if (canAmbush == false) {
+        if (canAmbush == true) {primeInt = 100;}
+        else if (canAmbush == false ) 
+        {
             GameHandler.endingNumber = 23;
             SceneChange1();
         }
@@ -677,13 +496,10 @@ public void Next(){
             Choice4c.SetActive(false);
             nextButton.SetActive(true);
             allowSpace = true;
-
-        if (canCharge == true) {
-            primeInt = 100;
-            }
-
+        
+        if (canCharge == true) {primeInt = 100;}
         else if (canCharge == false)
-         {
+        {
             GameHandler.endingNumber = 21;
             SceneChange1();
         }
@@ -701,55 +517,23 @@ public void Next(){
             nextButton.SetActive(true);
             allowSpace = true;   
 
-            if (canThrow == true) {
-            primeInt = 100;
-            }
-            else if (canThrow == false) {
+            if (canThrow == true) {primeInt = 100;}
+            else if (canThrow == false) 
+            {
                 if (GameHandler.basementWeapon == 1)
-                {
-                GameHandler.endingNumber = 22;
-                }
+                {GameHandler.endingNumber = 22;}
                 else if (GameHandler.basementWeapon == 3)
-                {
-                GameHandler.endingNumber = 24;
-            }
+                {GameHandler.endingNumber = 24;}
                 SceneChange1();
             }        
     }        
-        /*        
-        if (GameHandler.basementWeapon == 1)
-        {
-            primeInt = 95;
-        }
-        else if (GameHandler.basementWeapon == 2)
-        {
-            primeInt = 100;
-        }
-        else if (GameHandler.basementWeapon == 3)
-        {
-            primeInt = 107;
-        }
-        Choice4a.SetActive(false);
-            Choice4b.SetActive(false);
-            Choice4c.SetActive(false);
-            nextButton.SetActive(true);
-            allowSpace = true;
-        }
-        */
+        
         public void SceneChange1(){ //bad end
                 GameHandler.prevScene = "Scene3a";
-                GameHandler.endingNumber = 2;
                SceneManager.LoadScene("EndLose");
         }
         public void SceneChange2(){ //enter boiler
                 GameHandler.prevScene = "Scene3a";
-                GameHandler.endingNumber = 3;
                 SceneManager.LoadScene("Scene6");
         }
-        /*
-         public void SceneChange3(){ //open door
-                GameHandler.prevScene = "Scene3a";
-                SceneManager.LoadScene("Scene6");
-        }
-        */
 }

@@ -117,7 +117,7 @@ public void Next(){
         else if (primeInt == 3)
         {
             Char1name.text = playerName;
-            Char1speech.text = "...What the hell happened here? Where's Ruben?";
+            Char1speech.text = "...what the hell happened here? Where's Ruben?";
             Char2name.text = "";
             Char2speech.text = "";
             //gameHandler.AddPlayerStat(1);
@@ -142,6 +142,13 @@ public void Next(){
             Char1speech.text = "";
             Char2name.text = "Felix";
             Char2speech.text = "I liked the guy. Shame.";
+        }
+        else if (primeInt == 7)
+        {
+            Char1name.text = playerName;
+            Char1speech.text = "";
+            Char2name.text = "";
+            Char2speech.text = "";
             nextButton.SetActive(false);
             allowSpace = false;
             Choice1a.SetActive(true); // function Choice1aFunct()
@@ -203,7 +210,7 @@ public void Next(){
         else if (primeInt == 17)
         {
             Char1name.text = playerName;
-            Char1speech.text = "(...)";
+            Char1speech.text = "...right.";
             Char2name.text = "";
             Char2speech.text = "";
             nextButton.SetActive(false);
@@ -217,7 +224,7 @@ public void Next(){
         {
             //gameHandler.AddPlayerStat(1);
             Char1name.text = playerName;
-            Char1speech.text = "(...)";
+            Char1speech.text = "...";
             Char2name.text = "";
             Char2speech.text = "";
         }
@@ -352,7 +359,7 @@ public void Next(){
         else if (primeInt == 130)
         {
             Char1name.text = playerName;
-            Char1speech.text = "(...)";
+            Char1speech.text = "...";
             Char2name.text = "";
             Char2speech.text = "";
         }
@@ -366,7 +373,7 @@ public void Next(){
         else if (primeInt == 132)
         {
             Char1name.text = playerName;
-            Char1speech.text = "A revolver! It's full of bullets.";
+            Char1speech.text = "A revolver!";
             Char2name.text = "";
             Char2speech.text = "";
             GameHandler.gotGun = true;
@@ -410,7 +417,7 @@ public void Next(){
         else if (primeInt == 150)
         {
             Char1name.text = playerName;
-            Char1speech.text = "She might be in the basement. A classic place to store victims!";
+            Char1speech.text = "She might be in the basement. A classic place to store victims.";
             Char2name.text = "";
             Char2speech.text = "";
             primeInt = 141; //scene change: basement when hitting next
@@ -429,7 +436,7 @@ public void Next(){
                if (GameHandler.singleDouble == true) //from single
                 {
                     Char1name.text = playerName;
-                    Char1speech.text = "This idiot couldn't keep themselves alive, huh?";
+                    Char1speech.text = "This idiot couldn't keep themself alive, huh?";
                     Char2name.text = "";
                     Char2speech.text = "";
                     primeInt = 19;
@@ -467,7 +474,7 @@ public void Next(){
         if (GameHandler.singleDouble == true) //from single
                 {
                     Char1name.text = playerName;
-                    Char1speech.text = "...Was someone here?";
+                    Char1speech.text = "...was someone here?";
                     Char2name.text = "";
                     Char2speech.text = "";
                     primeInt = 39;

@@ -9,7 +9,7 @@ using UnityEngine.Audio;
 public class Scene3cDialogue : MonoBehaviour {
 // These are the script variables.
 // For more character images / buttons, copy & renumber the variables:
-        public string playerName;
+        public string playerName = GameHandler.playerName;
         public int primeInt = 1;       
         public TMP_Text Char1name;
         public TMP_Text Char1speech;
@@ -106,6 +106,12 @@ public void Next(){
                 Char1speech.text = "";
                 Char2name.text = "Felix";
                 Char2speech.text = "So, great detective, where are you starting? Over.";
+        }
+        else if (primeInt ==8){
+                Char1name.text = playerName;
+                Char1speech.text = "";
+                Char2name.text = "";
+                Char2speech.text = "";
                 
                 nextButton.SetActive(false);
                 allowSpace = false;
@@ -157,9 +163,9 @@ public void Next(){
         }
         else if (primeInt == 33){
                 Char1name.text = "";
-                Char1speech.text = "I do...sometimes.";
+                Char1speech.text = "";
                 Char2name.text = "Felix";
-                Char2speech.text = "";
+                Char2speech.text = "I do...sometimes.";
         }
         else if (primeInt == 34){
                 SkipTo();

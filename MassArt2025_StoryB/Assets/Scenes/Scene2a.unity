@@ -801,7 +801,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d263a1ddb8d63459b89c95c1064a9dd4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerName: 
+  playerName: SAmmy
   primeInt: 1
   Char1name: {fileID: 977627636}
   Char1speech: {fileID: 673256876}
