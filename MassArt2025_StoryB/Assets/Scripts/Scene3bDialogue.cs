@@ -75,7 +75,7 @@ public void Next(){
                 DialogueDisplay.SetActive(true);
                 Char1name.text = "";
                 Char1speech.text = "";
-                Char2name.text = "Phone";
+                Char2name.text = "Felix";
                 Char2speech.text = "Do you copy? Over.";
         }
        else if (primeInt ==3){
@@ -88,7 +88,7 @@ public void Next(){
        else if (primeInt == 4){
                 Char1name.text = "";
                 Char1speech.text = "";
-                Char2name.text = "Phone";
+                Char2name.text = "Felix";
                 Char2speech.text = "...";
         }
        else if (primeInt == 5){
@@ -100,7 +100,7 @@ public void Next(){
        else if (primeInt == 6){
                 Char1name.text = "";
                 Char1speech.text = "";
-                Char2name.text = "Phone";
+                Char2name.text = "Felix";
                 Char2speech.text = "Great! I just got to the Murder Mills Motel. I'm about to check in.";
         }
        else if (primeInt ==7){
@@ -112,7 +112,7 @@ public void Next(){
        else if (primeInt == 8){
                 Char1name.text = "";
                 Char1speech.text = "";
-                Char2name.text = "Phone";
+                Char2name.text = "Felix";
                 Char2speech.text = "Come on, you have to use the codewords.";
         }        
        else if (primeInt ==9){
@@ -131,7 +131,7 @@ public void Next(){
        else if (primeInt == 21){
                 Char1name.text = "";
                 Char1speech.text = "";
-                Char2name.text = "Phone";
+                Char2name.text = "Felix";
                 Char2speech.text = "Snacks! Probably expired, though.";
         } 
        else if (primeInt == 22){
@@ -144,7 +144,7 @@ public void Next(){
         else if (primeInt == 21){
                 Char1name.text = "";
                 Char1speech.text = "";
-                Char2name.text = "Phone";
+                Char2name.text = "Felix";
                 Char2speech.text = "Unsuccesful snacking, uh? What's the next step?";
                       
                 nextButton.SetActive(false);
@@ -164,7 +164,7 @@ public void Next(){
         else if (primeInt == 32){
                 Char1name.text = "";
                 Char1speech.text = "";
-                Char2name.text = "Phone";
+                Char2name.text = "Felix";
                 Char2speech.text = "Any coins? What's the next step?";
 
                 nextButton.SetActive(false);
@@ -176,7 +176,7 @@ public void Next(){
        else if (primeInt == 41){
                 Char1name.text = "";
                 Char1speech.text = "";
-                Char2name.text = "Phone";
+                Char2name.text = "Felix";
                 Char2speech.text = "...";
                 
         }
@@ -197,7 +197,7 @@ public void Next(){
         else if (primeInt == 44){
                 Char1name.text = "";
                 Char1speech.text = "";
-                Char2name.text = "Phone";
+                Char2name.text = "Felix";
                 Char2speech.text = "What's the plan now?";
 
                 nextButton.SetActive(false);
@@ -208,7 +208,7 @@ public void Next(){
         else if (primeInt == 51){
                 Char1name.text = "";
                 Char1speech.text = "";
-                Char2name.text = "Phone";
+                Char2name.text = "Felix";
                 Char2speech.text = "You would have been a terrible actuary.";
         }
         else if (primeInt == 52){

@@ -79,7 +79,7 @@ public void Next(){
        else if (primeInt ==3){
                 Char1name.text = "";
                 Char1speech.text = "";
-                Char2name.text = "Phone";
+                Char2name.text = "Felix";
                 Char2speech.text = "What place?";
                 //gameHandler.AddPlayerStat(1);
         }
@@ -92,7 +92,7 @@ public void Next(){
        else if (primeInt == 5){
                 Char1name.text = "";
                 Char1speech.text = "";
-                Char2name.text = "Phone";
+                Char2name.text = "Felix";
                 Char2speech.text = "The laundry rooms here are great! They're free so you never have to worry about carrying quarters.";
         }
        else if (primeInt == 6){
@@ -104,7 +104,7 @@ public void Next(){
        else if (primeInt ==7){
                 Char1name.text = "";
                 Char1speech.text = "";
-                Char2name.text = "Phone";
+                Char2name.text = "Felix";
                 Char2speech.text = "So, great detective, where are you starting? Over.";
                 
                 nextButton.SetActive(false);
@@ -158,7 +158,7 @@ public void Next(){
         else if (primeInt == 33){
                 Char1name.text = "";
                 Char1speech.text = "I do...sometimes.";
-                Char2name.text = "Phone";
+                Char2name.text = "Felix";
                 Char2speech.text = "";
         }
         else if (primeInt == 34){
@@ -168,7 +168,7 @@ public void Next(){
         else if (primeInt == 41){
                 Char1name.text = "";
                 Char1speech.text = "Your roomie mentioned seeing the missing girl in the rest corner, right? Seems like a more productive choice.";
-                Char2name.text = "Phone";
+                Char2name.text = "Felix";
                 Char2speech.text = "";
         }
         else if (primeInt == 42){

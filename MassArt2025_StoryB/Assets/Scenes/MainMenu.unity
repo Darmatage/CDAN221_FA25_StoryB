@@ -433,7 +433,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6796427988390960990, guid: a7064554e350b564bbce21beec40e804, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 27
+      value: 27.100008
       objectReference: {fileID: 0}
     - target: {fileID: 6796427988390960990, guid: a7064554e350b564bbce21beec40e804, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -1556,7 +1556,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6796427988390960990, guid: a7064554e350b564bbce21beec40e804, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -90.1
+      value: -92.60001
       objectReference: {fileID: 0}
     - target: {fileID: 6796427988390960990, guid: a7064554e350b564bbce21beec40e804, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -2126,7 +2126,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6796427988390960990, guid: a7064554e350b564bbce21beec40e804, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 86.1
+      value: 87.706
       objectReference: {fileID: 0}
     - target: {fileID: 6796427988390960990, guid: a7064554e350b564bbce21beec40e804, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -2528,8 +2528,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: FLOOR THIRTEEN
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: b5d0cd435054f4a79979951e0bd62bc7, type: 2}
+  m_sharedMaterial: {fileID: 7951898625317325601, guid: b5d0cd435054f4a79979951e0bd62bc7, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -3766,8 +3766,8 @@ MonoBehaviour:
 
     The Elevator Security Company'
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 52dac8b1d1dcd45e88f7fda21bce830c, type: 2}
+  m_sharedMaterial: {fileID: -4613142996553179135, guid: 52dac8b1d1dcd45e88f7fda21bce830c, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -4154,8 +4154,8 @@ MonoBehaviour:
   m_text: "WARNING \nIncludes depictions of body horror, blood, gore, bugs, strong
     themes, death and injury - viewer discretion is advised\nKEEP OUT"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 52dac8b1d1dcd45e88f7fda21bce830c, type: 2}
+  m_sharedMaterial: {fileID: -4613142996553179135, guid: 52dac8b1d1dcd45e88f7fda21bce830c, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -5067,7 +5067,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6796427988390960990, guid: a7064554e350b564bbce21beec40e804, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -148.7
+      value: -151.2
       objectReference: {fileID: 0}
     - target: {fileID: 6796427988390960990, guid: a7064554e350b564bbce21beec40e804, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -5462,7 +5462,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6796427988390960990, guid: a7064554e350b564bbce21beec40e804, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 145
+      value: 148.00002
       objectReference: {fileID: 0}
     - target: {fileID: 6796427988390960990, guid: a7064554e350b564bbce21beec40e804, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
