@@ -7,8 +7,8 @@ using UnityEngine.SceneManagement;
 using UnityEngine.Audio;
 
 public class Scene2aDialogue : MonoBehaviour {
-        public string playerName;
-        public int primeInt = 1;        // This integer drives game progress!
+    public string playerName = GameHandler.playerName;
+    public int primeInt = 1;        // This integer drives game progress!
         public TMP_Text Char1name;
         public TMP_Text Char1speech;
         public TMP_Text Char2name;
@@ -75,7 +75,7 @@ public void Next(){
         else if (primeInt == 2){
                 
                 DialogueDisplay.SetActive(true);
-                Char1name.text = GameHandler.playerName;
+                Char1name.text = playerName;
                 Char1speech.text = "Oh! I didn't know they were still working on the room.";
                 Char2name.text = "";
                 Char2speech.text = "";
@@ -94,7 +94,7 @@ public void Next(){
                 Char2speech.text = "We're very sorry sir. An unexpected incident came up. I'm almost done.";
         }        
         else if (primeInt == 12){
-                Char1name.text = GameHandler.playerName;
+                Char1name.text = playerName;
                 Char1speech.text = "Hurry up then. Don't make a guest wait. I've got work I gotta get to.";
                 Char2name.text = "";
                 Char2speech.text = "";
@@ -123,13 +123,14 @@ public void Next(){
         }
 // after choice1b sweet talk
        else if (primeInt == 21){
+                ArtChar1a.SetActive(true);
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "Maid";
                 Char2speech.text = "It's not a problem, dear guest. I'm almost done. We had an unexpected incident. I'm terribly sorry.";
         }
        else if (primeInt == 22){
-                Char1name.text = GameHandler.playerName;
+                Char1name.text = playerName;
                 Char1speech.text = "Take your time, then. I'll just unpack a bit.";
                 Char2name.text = "";
                 Char2speech.text = "";
@@ -159,8 +160,7 @@ public void Next(){
                 NextScene3Button.SetActive(true);
         }
 // scene change missing girl
-       else if (primeInt == 30){                
-        }
+      
        else if (primeInt == 31){
                 Char1name.text = "";
                 Char1speech.text = "";
@@ -173,9 +173,6 @@ public void Next(){
                 SceneChange1();
         }    
 // scene change mess
-       else if (primeInt == 40){
-                
-        }
        else if (primeInt == 41){
                 Char1name.text = "";
                 Char1speech.text = "";
@@ -183,7 +180,7 @@ public void Next(){
                 Char2speech.text = "What?";
         }
         else if (primeInt == 42){
-                Char1name.text = GameHandler.playerName;
+                Char1name.text = playerName;
                 Char1speech.text = "The unexpected incident. Seems pretty grim. Those bedsheets are ruined.";
                 Char2name.text = "";
                 Char2speech.text = "";
@@ -201,13 +198,13 @@ public void Next(){
         }    
 // scene change ignore
         else if (primeInt == 50){
-                Char1name.text = GameHandler.playerName;
+                Char1name.text = playerName;
                 Char1speech.text = "Mmhum";
                 Char2name.text = "";
                 Char2speech.text = "";
         }
         else if (primeInt == 51){
-                Char1name.text = GameHandler.playerName;
+                Char1name.text = playerName;
                 Char1speech.text = "This place is kinda draining me. Maybe I'll just lay down for the night.";
                 Char2name.text = "";
                 Char2speech.text = "";
@@ -222,7 +219,7 @@ public void Next(){
 
 // choice changes
         public void Choice1aFunct(){ // be rude
-                Char1name.text = GameHandler.playerName;
+                Char1name.text = playerName;
                 Char1speech.text = "The receptionist gave me this room saying it was available. What kind of incompetent system do you have going on in this place? I thought I was booking a luxury suite for that price";
                 Char2name.text = "";
                 Char2speech.text = "";
@@ -234,7 +231,7 @@ public void Next(){
                 allowSpace = true;
         }
         public void Choice1bFunct(){ // sweet talk
-                Char1name.text = GameHandler.playerName;
+                Char1name.text = playerName;
                 Char1speech.text = "Don't mind me! I'll just put my stuff down and go take a look around the place.";
                 Char2name.text = "";
                 Char2speech.text = "";
@@ -247,7 +244,7 @@ public void Next(){
         }
 // scene changes
         public void NextScene1ButtonFunct(){ // sweet talk
-                Char1name.text = GameHandler.playerName;
+                Char1name.text = playerName;
                 Char1speech.text = "Wait! Before you leave. Have you seen a guest fitting this description?";
                 Char2name.text = "";
                 Char2speech.text = "";
@@ -260,7 +257,7 @@ public void Next(){
                 allowSpace = true;
         }
         public void NextScene2ButtonFunct(){ // sweet talk
-                Char1name.text = GameHandler.playerName;
+                Char1name.text = playerName;
                 Char1speech.text = "What was the incident?";
                 Char2name.text = "";
                 Char2speech.text = "";
@@ -273,7 +270,7 @@ public void Next(){
                 allowSpace = true;
         }
         public void NextScene3ButtonFunct(){ // ignore
-                Char1name.text = GameHandler.playerName;
+                Char1name.text = playerName;
                 Char1speech.text = "Mmhum";
                 Char2name.text = "";
                 Char2speech.text = "";

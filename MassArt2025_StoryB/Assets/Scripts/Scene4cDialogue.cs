@@ -7,8 +7,8 @@ using UnityEngine.SceneManagement;
 using UnityEngine.Audio;
 
 public class Scene4cDialogue : MonoBehaviour {
-        public string playerName;
-        public int primeInt = 1; // This integer drives game progress!
+    public string playerName = GameHandler.playerName;
+    public int primeInt = 1; // This integer drives game progress!
         public TMP_Text Char1name; //MC
         public TMP_Text Char1speech;
         public TMP_Text Char2name; //Buzzboy
@@ -49,7 +49,8 @@ public class Scene4cDialogue : MonoBehaviour {
              NextScene1Button.SetActive(false);
              NextScene2Button.SetActive(false);
              nextButton.SetActive(true);
-        }
+        playerName = GameHandler.playerName;
+    }
 
 // Use the spacebar as a faster "Next" button:
         void Update(){        
@@ -74,7 +75,7 @@ public void Next(){
                 //ArtChar1a.SetActive(true);
                 DialogueDisplay.SetActive(true);
                 Char1name.text = playerName;
-                Char1speech.text = "Damn, there's people in here";
+                Char1speech.text = "(Damn, there's people in here.)";
                 Char2name.text = "";
                 Char2speech.text = "";
                 Char3name.text = "";
@@ -163,6 +164,7 @@ public void Next(){
                 nextButton.SetActive(false);
                 allowSpace = false;
                 NextScene1Button.SetActive(true);
+            //scene 2 button missing. seems intentional tho
                 
         }
 // after choice1c Blood

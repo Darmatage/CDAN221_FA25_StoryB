@@ -7,7 +7,7 @@ using UnityEngine.SceneManagement;
 
 public class GameHandler : MonoBehaviour{
 
-        public static string playerName = "YOU";
+        public static string playerName = "YOUU";
         //public static int playerStat1;
         public static int basementWeapon;
         /*
@@ -30,11 +30,11 @@ public class GameHandler : MonoBehaviour{
         public static int endingNumber;
         /*
                 1 = JOKE ENDING (checkout)
-                        BAD ENDING (basement)
-                        3. charge with pipe
-                        4. throw pipe
-                        5. toolbox ambush
-                        6. throw fire axe
+                2x =  BAD ENDING (basement)
+                        1. charge with pipe
+                        2. throw pipe
+                        3. toolbox ambush
+                        4. throw fire axe
                 3 = NEUTRAL ENDING (cold case)
                 4 = BAD ENDING (reception)
                 5 = ROMANCE ENDING

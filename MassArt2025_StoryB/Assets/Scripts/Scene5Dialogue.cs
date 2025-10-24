@@ -17,10 +17,10 @@ public class Scene5Dialogue : MonoBehaviour {
        //public TMP_Text Char3name;
        //public TMP_Text Char3speech;
         public GameObject DialogueDisplay;
-        public GameObject ArtChar1a;
-       //public GameObject ArtChar1b;
-       //public GameObject ArtChar1c;
-       //public GameObject ArtChar2;
+        public GameObject ArtChar1a; //Felix worried
+        public GameObject ArtChar1b; //Felix partying
+        public GameObject ArtChar1c; //Felix annoyed
+        public GameObject ArtChar2; //the monster
         public GameObject ArtBG1;
         public GameObject Choice1a;
         public GameObject Choice1b;
@@ -39,6 +39,9 @@ public class Scene5Dialogue : MonoBehaviour {
         void Start(){  
              DialogueDisplay.SetActive(false);
              ArtChar1a.SetActive(false);
+             ArtChar1b.SetActive(false);
+             ArtChar1c.SetActive(false);
+             ArtChar2.SetActive(false);
              ArtBG1.SetActive(true);
              Choice1a.SetActive(false);
              Choice1b.SetActive(false);
@@ -49,7 +52,8 @@ public class Scene5Dialogue : MonoBehaviour {
              NextScene1Button.SetActive(false);
              NextScene2Button.SetActive(false);
              nextButton.SetActive(true);
-        }
+            playerName = GameHandler.playerName;
+    }
 
 // Use the spacebar as a faster "Next" button:
         void Update(){        
@@ -91,10 +95,10 @@ public void Next(){
         //choice 1: NOTICE
         else if (primeInt == 10)
         {
-            ArtChar1a.SetActive(true);
+            ArtChar1b.SetActive(true);
             Char1name.text = "";
             Char1speech.text = "";
-            Char2name.text = "Phone";
+            Char2name.text = "Felix";
             Char2speech.text = "That sucks. The bathroom over here has a whole jacuzzi.";
         }
         else if (primeInt == 11)
@@ -106,9 +110,11 @@ public void Next(){
         }
         else if (primeInt == 12)
         {
+            ArtChar1b.SetActive(false);
+            ArtChar1c.SetActive(true);
             Char1name.text = "";
             Char1speech.text = "";
-            Char2name.text = "Phone";
+            Char2name.text = "Felix";
             Char2speech.text = "What? Don't be a creep or something, just leave them be.";
         }
         else if (primeInt == 13)
@@ -122,7 +128,7 @@ public void Next(){
         {
             Char1name.text = "";
             Char1speech.text = "";
-            Char2name.text = "Phone";
+            Char2name.text = "Felix";
             Char2speech.text = "Point still stands.";
             primeInt = 29;
         }
@@ -133,11 +139,23 @@ public void Next(){
             Char1speech.text = "Man, and I looked so nice today.";
             Char2name.text = "";
             Char2speech.text = "";
+
+        }
+        else if (primeInt == 21)
+        {
+            ArtChar1c.SetActive(true);
+            Char1name.text = "";
+            Char1speech.text = "";
+            Char2name.text = "Felix";
+            Char2speech.text = "That's seriously what you're worried about?";
             primeInt = 29;
         }
         //post choices
         else if (primeInt == 30)
         {
+            ArtChar1a.SetActive(true);
+            ArtChar1c.SetActive(false);
+            ArtChar2.SetActive(true);
             Char1name.text = playerName;
             Char1speech.text = "AAAAH!!!";
             Char2name.text = "";
@@ -154,9 +172,10 @@ public void Next(){
         }
         else if (primeInt == 32)
         {
+
             Char1name.text = "";
             Char1speech.text = "";
-            Char2name.text = "Phone";
+            Char2name.text = "Felix";
             Char2speech.text = "What? What's going on?";
         }
         else if (primeInt == 33)
@@ -173,14 +192,51 @@ public void Next(){
             Choice2d.SetActive(true);
         }
         //Scene changes
-        else if (primeInt == 40)
+        else if (primeInt == 41)
         {
-            SceneChange2();
+            SceneChange2(); //DEATH
         }
+        else if (primeInt == 42)
+        {
+            SceneChange1(); //LIFE
+        }
+        //Attack head
         else if (primeInt == 50)
         {
-            SceneChange1();
+            Char1name.text = "";
+            Char1speech.text = "You swing at its head, but it's way too tall!";
+            Char2name.text = "";
+            Char2speech.text = "";
+            primeInt = 40;
         }
+        //Attack neck
+        else if (primeInt == 55)
+        {
+            Char1name.text = "";
+            Char1speech.text = "You grab the monster's neck. It flails around wildly, before going still.";
+            Char2name.text = "";
+            Char2speech.text = "";
+            primeInt = 41;
+        }
+        //Run
+        else if (primeInt == 60)
+        {
+            Char1name.text = "";
+            Char1speech.text = "You flee, slamming the door behind you and shoving a dresser in front of it.";
+            Char2name.text = "";
+            Char2speech.text = "";
+            primeInt = 41;
+        }
+        //Trip
+        else if (primeInt == 65)
+        {
+            Char1name.text = "";
+            Char1speech.text = "You go to trip the monster, but it doesn't do much!";
+            Char2name.text = "";
+            Char2speech.text = "";
+            primeInt = 40;
+        }
+
         //Please do NOT delete this final bracket that ends the Next() function:
     }
 
@@ -213,7 +269,7 @@ public void Next(){
         Char1speech.text = "Classic move! Go for the head!";
         Char2name.text = "";
         Char2speech.text = "";
-        primeInt = 39; // so hitting "NEXT" goes to primeInt==30!
+        primeInt = 49; // so hitting "NEXT" goes to primeInt==30!
         Choice2a.SetActive(false);
         Choice2b.SetActive(false);
         Choice2c.SetActive(false);
@@ -222,47 +278,48 @@ public void Next(){
         allowSpace = true;
         GameHandler.monsterAlive = false;
     }
-        public void Choice2bFunct()
+        public void Choice2bFunct() //NECK
         {
             Char1name.text = playerName;
-            Char1speech.text = "Shit, it's so big. What can I do?";
+            Char1speech.text = "Strangulation! Now there's an idea!";
             Char2name.text = "";
             Char2speech.text = "";
-            primeInt = 49; // so hitting "NEXT" goes to primeInt==30!
+            primeInt = 54; // so hitting "NEXT" goes to primeInt==30!
             Choice2a.SetActive(false);
             Choice2b.SetActive(false);
             Choice2c.SetActive(false);
             Choice2d.SetActive(false);
             nextButton.SetActive(true);
+            GameHandler.monsterAlive = false;
             allowSpace = true;
         }
-        public void Choice2cFunct()
+        public void Choice2cFunct() //RUN
         {
             Char1name.text = playerName;
-            Char1speech.text = "There goes nothing!";
+            Char1speech.text = "Jesus christ, what the hell is that!?";
             Char2name.text = "";
             Char2speech.text = "";
-            primeInt = 49; // so hitting "NEXT" goes to primeInt==30!
-            Choice2a.SetActive(false);
-            Choice2b.SetActive(false);
-            Choice2c.SetActive(false);
-            Choice2d.SetActive(false);
-            nextButton.SetActive(true);
-            allowSpace = true;
-        }
-        public void Choice2dFunct()
-        {
-            Char1name.text = playerName;
-            Char1speech.text = "Maybe I can slow it down and run away.";
-            Char2name.text = "";
-            Char2speech.text = "";
-            primeInt = 39; // so hitting "NEXT" goes to primeInt==30!
+            primeInt = 59; // so hitting "NEXT" goes to primeInt==30!
             Choice2a.SetActive(false);
             Choice2b.SetActive(false);
             Choice2c.SetActive(false);
             Choice2d.SetActive(false);
             nextButton.SetActive(true);
             GameHandler.monsterAlive = true;
+            allowSpace = true;
+        }
+        public void Choice2dFunct() //TRIP
+        {
+            Char1name.text = playerName;
+            Char1speech.text = "Maybe I can slow it down and run away.";
+            Char2name.text = "";
+            Char2speech.text = "";
+            primeInt = 64; // so hitting "NEXT" goes to primeInt==30!
+            Choice2a.SetActive(false);
+            Choice2b.SetActive(false);
+            Choice2c.SetActive(false);
+            Choice2d.SetActive(false);
+            nextButton.SetActive(true);
             allowSpace = true;
         }
 

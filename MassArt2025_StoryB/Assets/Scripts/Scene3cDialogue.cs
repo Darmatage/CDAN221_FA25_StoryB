@@ -43,7 +43,8 @@ public class Scene3cDialogue : MonoBehaviour {
              NextScene1Button.SetActive(false);
              NextScene2Button.SetActive(false);
              nextButton.SetActive(true);
-        }
+        playerName = GameHandler.playerName;
+    }
 
 // Use the spacebar as a faster "Next" button:
         void Update(){        
@@ -92,11 +93,11 @@ public void Next(){
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "Phone";
-                Char2speech.text = "The laundry rooms here are great! Thy're free so you never have to worry about carrying quarters.";
+                Char2speech.text = "The laundry rooms here are great! They're free so you never have to worry about carrying quarters.";
         }
        else if (primeInt == 6){
                 Char1name.text = playerName;
-                Char1speech.text = "I literally don't care";
+                Char1speech.text = "I literally don't care.";
                 Char2name.text = "";
                 Char2speech.text = "";
         }
