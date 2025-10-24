@@ -61,13 +61,23 @@ public class Scene3aDialogue : MonoBehaviour {
         NextScene1Button.SetActive(false);
              NextScene2Button.SetActive(false);
              nextButton.SetActive(true);
+        playerName = GameHandler.playerName;
 
         //check how I got here:
-             if (GameHandler.singleDouble == false){
-                primeInt=9;
-             } else {
-                //go to the next area of the dialogue for the other room
-             }
+        if (GameHandler.prevScene == "Scene4a" && GameHandler.gotGun == true) // coming from double, got revolver
+        {
+            primeInt = 4;
+        }
+        else if (GameHandler.prevScene == "Scene4a" && GameHandler.gotGun == false) // coming from double, no revolver
+        {
+            primeInt = 7;
+        }
+        else if (GameHandler.singleDouble == false) { //met ruben
+            primeInt = 9;
+        }
+        else { //didn't meet ruben
+            //go to the next area of the dialogue for the other room
+        }
         }
 
 // Use the spacebar as a faster "Next" button:
@@ -118,6 +128,41 @@ public void Next(){
             Char2name.text = "";
             Char2speech.text = "";
             primeInt = 14;
+        }
+
+        //have gun:
+        else if (primeInt == 5)
+        {
+            DialogueDisplay.SetActive(true);
+            if (GameHandler.singleDouble == true) //met ruben
+            {
+                DialogueDisplay.SetActive(true);
+                Char1name.text = playerName;
+                Char1speech.text = "Sorry for taking your gun, Ruben, but I'll need it where I'm going.";
+                Char2name.text = "";
+                Char2speech.text = "";
+            }
+            else //didn't meet ruben
+            {
+                DialogueDisplay.SetActive(true);
+                Char1name.text = playerName;
+                Char1speech.text = "Creepy... at least I'm packing heat.";
+                Char2name.text = "";
+                Char2speech.text = "";
+            }
+                
+            primeInt = 10; //go to 11
+        }
+
+        //no gun:
+        else if (primeInt == 8)
+        {
+            DialogueDisplay.SetActive(true);
+            Char1name.text = playerName;
+            Char1speech.text = "I hope that thing didn't follow me.";
+            Char2name.text = "";
+            Char2speech.text = "";
+            primeInt = 10; //go to 11
         }
 
         //start from double room:
@@ -349,10 +394,15 @@ public void Next(){
         */
            else if (primeInt == 111)
         {
+            Char1name.text = playerName;
+            Char1speech.text = "EAT LEAD, YOU SON OF A BITCH!";
+        }
+        else if (primeInt == 112)
+        {
             Char1name.text = "";
             Char1speech.text = "You steady your revolver at the monster, and shoot it square in the forehead!";
         }
-        else if (primeInt == 112)
+        else if (primeInt == 113)
         {
             SceneChange2();
         }
@@ -416,7 +466,15 @@ public void Next(){
             Char1speech.text = "Maybe I could take it on in a fight...";
             Char2name.text = "";
             Char2speech.text = "";
+        if (GameHandler.gotGun == true)
+        {
+            primeInt = 110;
+        }
+        else
+        {
             primeInt = 69; // nice
+        }
+            
             Choice2a.SetActive(false);
             Choice2b.SetActive(false);
             nextButton.SetActive(true);

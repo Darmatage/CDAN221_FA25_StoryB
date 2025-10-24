@@ -49,7 +49,8 @@ public class Scene2aDialogue : MonoBehaviour {
              NextScene3Button.SetActive(false);
              nextButton.SetActive(true);
              GameHandler.singleDouble = true;
-        }
+        playerName = GameHandler.playerName;
+    }
 
 // Use the spacebar as a faster "Next" button:
         void Update(){        

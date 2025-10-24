@@ -77,6 +77,7 @@ public class GameHandler : MonoBehaviour{
         }
 
         public void RestartGame(){
+                gotGun = false;
                 Time.timeScale = 1f;
                 SceneManager.LoadScene("MainMenu");
         }

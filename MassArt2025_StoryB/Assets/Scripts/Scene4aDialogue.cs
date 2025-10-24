@@ -369,6 +369,7 @@ public void Next(){
             Char1speech.text = "A revolver! It's full of bullets.";
             Char2name.text = "";
             Char2speech.text = "";
+            GameHandler.gotGun = true;
         }
         else if (primeInt == 133)
         {

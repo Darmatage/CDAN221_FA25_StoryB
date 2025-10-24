@@ -53,6 +53,7 @@ public class Scene6Dialogue : MonoBehaviour {
              NextScene2Button.SetActive(false);
              nextButton.SetActive(true);
         playerName = GameHandler.playerName;
+        Next();
     }
 
 // Use the spacebar as a faster "Next" button:
@@ -352,7 +353,7 @@ public void Next(){
                 Char1speech.text = "No, I have to. Nobody else will go in for me.";
                 Char2name.text = "";
                 Char2speech.text = "";
-                primeInt = 10;
+                primeInt = 13;
                 Choice1a.SetActive(false);
                 Choice1b.SetActive(false);
                 nextButton.SetActive(true);
@@ -365,7 +366,7 @@ public void Next(){
             Char1speech.text = "I... I can't do this.";
             Char2name.text = "";
             Char2speech.text = "";
-            primeInt = 12;
+            primeInt = 10;
             Choice1a.SetActive(false);
             Choice1b.SetActive(false);
             nextButton.SetActive(true);
@@ -443,7 +444,7 @@ public void Next(){
         public void SkipTo(){
                 primeInt = 50;
                 Char1name.text = playerName;
-                Char1speech.text = "...?";
+                Char1speech.text = "...Hm?";
                 Char2name.text = "";
                 Char2speech.text = "";      
         }

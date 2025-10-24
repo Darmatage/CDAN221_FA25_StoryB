@@ -1001,9 +1001,9 @@ MonoBehaviour:
   ArtChar1a: {fileID: 1704192176}
   ArtChar1b: {fileID: 658357819}
   ArtChar1c: {fileID: 713836884}
-  ArtChar2: {fileID: 0}
+  ArtChar2: {fileID: 2067710628}
   ArtBG1: {fileID: 1243399250}
-  ArtBG2: {fileID: 0}
+  ArtBG2: {fileID: 354810088}
   Choice1a: {fileID: 604428837}
   Choice1b: {fileID: 730730818}
   Choice2a: {fileID: 1691138418}
