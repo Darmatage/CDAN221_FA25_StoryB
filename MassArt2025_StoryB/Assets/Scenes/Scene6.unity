@@ -2707,12 +2707,20 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 3607839878735421497, guid: 546b0d0df9aabfd449255d13a1b2ae65, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 3502715887467967171, guid: 56b2b3084f98d064ab425fca2a6adf5b, type: 3}
     - target: {fileID: 3697983447557600457, guid: 546b0d0df9aabfd449255d13a1b2ae65, type: 3}
       propertyPath: m_text
       value: 'Leave the hotel
 
 '
       objectReference: {fileID: 0}
+    - target: {fileID: 3807532288764637580, guid: 546b0d0df9aabfd449255d13a1b2ae65, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -5976837173748414268, guid: 88b0cd04de3c96c4e9b1299d6d5d7b91, type: 3}
     - target: {fileID: 3861675511769458044, guid: 546b0d0df9aabfd449255d13a1b2ae65, type: 3}
       propertyPath: m_text
       value: Open the door

@@ -165,7 +165,7 @@ public void Next(){
         else if (primeInt == 31)
         {
             Char1name.text = playerName;
-            Char1speech.text = "WHAT THE HELL.";
+            Char1speech.text = "WHAT THE HELL!";
             Char2name.text = "";
             Char2speech.text = "";
 

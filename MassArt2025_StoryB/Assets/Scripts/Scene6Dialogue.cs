@@ -122,7 +122,7 @@ public void Next(){
        else if (primeInt == 8){
             ArtChar2.SetActive(false);
             Char1name.text = playerName;
-                Char1speech.text = "(I don't know if I wanna follow through with this alone.)";
+                Char1speech.text = "I don't know if I wanna follow through with this alone.";
                 Char2name.text = "";
                 Char2speech.text = "";
 
@@ -137,14 +137,14 @@ public void Next(){
         else if (primeInt == 11)
         {
             Char1name.text = playerName;
-            Char1speech.text = "(Maybe someone else can, but...)";
+            Char1speech.text = "Maybe someone else can, but...";
             Char2name.text = "";
             Char2speech.text = "";
         }
         else if (primeInt == 12)
         {
             Char1name.text = playerName;
-            Char1speech.text = "(I don't want to die! I'm going home!)";
+            Char1speech.text = "I don't want to die! I'm going home!";
             Char2name.text = "";
             Char2speech.text = "";
         }
@@ -171,6 +171,15 @@ public void Next(){
                     ArtChar1b.SetActive(true);
                     Char1name.text = playerName;
                     Char1speech.text = "Wait, that's the missing girl!";
+                    Char2name.text = "";
+                    Char2speech.text = "";
+                }
+                else if (primeInt == 16)
+                {
+                    ArtChar1a.SetActive(false);
+                    ArtChar1b.SetActive(true);
+                    Char1name.text = playerName;
+                    Char1speech.text = "";
                     Char2name.text = "";
                     Char2speech.text = "";
 
@@ -209,25 +218,20 @@ public void Next(){
                 SkipTo();
         }
         //2c - STARE
-       else if (primeInt == 41){
-                Char1name.text = playerName;
-                Char1speech.text = "...";
-                Char2name.text = "";
-                Char2speech.text = "";
-        }        
-        else if (primeInt == 42){
+    
+        else if (primeInt == 41){
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "Girl";
                 Char2speech.text = "...?";
         }       
-        else if (primeInt == 43){
+        else if (primeInt == 42){
                 Char1name.text = playerName;
                 Char1speech.text = "...";
                 Char2name.text = "";
                 Char2speech.text = "";
         }
-        else if (primeInt == 44){
+        else if (primeInt == 43){
                 ArtChar1a.SetActive(false);
                 ArtChar1c.SetActive(true);
                 Char1name.text = "";
@@ -327,7 +331,7 @@ public void Next(){
         }
         else if (primeInt == 72){
                 Char1name.text = playerName;
-                Char1speech.text = "We-- We have to go. Come on, get up. I'll help you out.";
+                Char1speech.text = "We...we have to go. Come on, get up. I'll help you out.";
                 Char2name.text = "";
                 Char2speech.text = "";
         }
@@ -341,7 +345,6 @@ public void Next(){
         }
         else if (primeInt == 74){
                 SceneChange2();
-
         }
 
       //Please do NOT delete this final bracket that ends the Next() function:
