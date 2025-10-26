@@ -15,9 +15,11 @@ public class Scene4aDialogue : MonoBehaviour {
         public TMP_Text Char1speech;
         public TMP_Text Char2name;
         public TMP_Text Char2speech;
-       //public TMP_Text Char3name;
-       //public TMP_Text Char3speech;
-        public GameObject DialogueDisplay;
+	//public TMP_Text Char3name;
+	//public TMP_Text Char3speech;
+	public GameObject DialogueDisplay;
+	public GameObject CharacterNameTag;	
+
         public GameObject ArtChar1a;
        //public GameObject ArtChar1b;
        //public GameObject ArtChar1c;
@@ -41,8 +43,10 @@ public class Scene4aDialogue : MonoBehaviour {
         private bool allowSpace = true;
 
 // Set initial visibility. Added images or buttons need to also be SetActive(false);
-        void Start(){  
-             DialogueDisplay.SetActive(false);
+        void Start(){
+			CharacterNameTag.SetActive(true);
+			DialogueDisplay.SetActive(false);
+			 
              ArtChar1a.SetActive(false);
              ArtBG1.SetActive(true);
              Choice1a.SetActive(false);
@@ -344,14 +348,16 @@ public void Next(){
         }
         //Search, monster alive
         else if (primeInt == 120)
-        {
+		{
+			CharacterNameTag.SetActive(false);
             Char1name.text = "";
             Char1speech.text = "Suddenly, the bathroom door swings open!";
             Char2name.text = "";
             Char2speech.text = "";
         }
         else if (primeInt == 121)
-        {
+		{
+			CharacterNameTag.SetActive(true);
             SceneChange3();
 
         }
