@@ -1463,10 +1463,14 @@ PrefabInstance:
     - target: {fileID: 8433973507655175534, guid: eb108f292a4734d47b83367a7f5d9938, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 1789960356}
+      objectReference: {fileID: 502431803}
     - target: {fileID: 8433973507655175534, guid: eb108f292a4734d47b83367a7f5d9938, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: 
+      value: ClickElevatorButton
+      objectReference: {fileID: 0}
+    - target: {fileID: 8433973507655175534, guid: eb108f292a4734d47b83367a7f5d9938, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: SecretHandler, Assembly-CSharp
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
@@ -1475,7 +1479,10 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 1674798499691612847, guid: eb108f292a4734d47b83367a7f5d9938, type: 3}
       insertIndex: -1
       addedObject: {fileID: 346048262}
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 3913018809610385582, guid: eb108f292a4734d47b83367a7f5d9938, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 502431803}
   m_SourcePrefab: {fileID: 100100000, guid: eb108f292a4734d47b83367a7f5d9938, type: 3}
 --- !u!224 &502431801 stripped
 RectTransform:
@@ -1487,6 +1494,19 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 3913018809610385582, guid: eb108f292a4734d47b83367a7f5d9938, type: 3}
   m_PrefabInstance: {fileID: 502431800}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &502431803
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 502431802}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 42afcf0db7ab9f74b9a66aebbce8bd36, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  floorNum: 9
 --- !u!1001 &520636462
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2038,10 +2058,14 @@ PrefabInstance:
     - target: {fileID: 8433973507655175534, guid: eb108f292a4734d47b83367a7f5d9938, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 1789960356}
+      objectReference: {fileID: 732879811}
     - target: {fileID: 8433973507655175534, guid: eb108f292a4734d47b83367a7f5d9938, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: 
+      value: ClickElevatorButton
+      objectReference: {fileID: 0}
+    - target: {fileID: 8433973507655175534, guid: eb108f292a4734d47b83367a7f5d9938, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: SecretHandler, Assembly-CSharp
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
@@ -2050,7 +2074,10 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 1674798499691612847, guid: eb108f292a4734d47b83367a7f5d9938, type: 3}
       insertIndex: -1
       addedObject: {fileID: 953347796}
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 3913018809610385582, guid: eb108f292a4734d47b83367a7f5d9938, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 732879811}
   m_SourcePrefab: {fileID: 100100000, guid: eb108f292a4734d47b83367a7f5d9938, type: 3}
 --- !u!224 &732879809 stripped
 RectTransform:
@@ -2062,6 +2089,19 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 3913018809610385582, guid: eb108f292a4734d47b83367a7f5d9938, type: 3}
   m_PrefabInstance: {fileID: 732879808}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &732879811
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 732879810}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 42afcf0db7ab9f74b9a66aebbce8bd36, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  floorNum: 11
 --- !u!1001 &776158414
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2324,10 +2364,14 @@ PrefabInstance:
     - target: {fileID: 8433973507655175534, guid: eb108f292a4734d47b83367a7f5d9938, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 1789960356}
+      objectReference: {fileID: 865868607}
     - target: {fileID: 8433973507655175534, guid: eb108f292a4734d47b83367a7f5d9938, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: 
+      value: ClickElevatorButton
+      objectReference: {fileID: 0}
+    - target: {fileID: 8433973507655175534, guid: eb108f292a4734d47b83367a7f5d9938, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: SecretHandler, Assembly-CSharp
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
@@ -2336,7 +2380,10 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 1674798499691612847, guid: eb108f292a4734d47b83367a7f5d9938, type: 3}
       insertIndex: -1
       addedObject: {fileID: 618569851}
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 3913018809610385582, guid: eb108f292a4734d47b83367a7f5d9938, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 865868607}
   m_SourcePrefab: {fileID: 100100000, guid: eb108f292a4734d47b83367a7f5d9938, type: 3}
 --- !u!224 &865868605 stripped
 RectTransform:
@@ -2348,6 +2395,19 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 3913018809610385582, guid: eb108f292a4734d47b83367a7f5d9938, type: 3}
   m_PrefabInstance: {fileID: 865868604}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &865868607
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 865868606}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 42afcf0db7ab9f74b9a66aebbce8bd36, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  floorNum: 5
 --- !u!1 &866150922
 GameObject:
   m_ObjectHideFlags: 0
@@ -2719,10 +2779,14 @@ PrefabInstance:
     - target: {fileID: 8433973507655175534, guid: eb108f292a4734d47b83367a7f5d9938, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 1789960356}
+      objectReference: {fileID: 1914736206}
     - target: {fileID: 8433973507655175534, guid: eb108f292a4734d47b83367a7f5d9938, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: 
+      value: ClickElevatorButton
+      objectReference: {fileID: 0}
+    - target: {fileID: 8433973507655175534, guid: eb108f292a4734d47b83367a7f5d9938, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: SecretHandler, Assembly-CSharp
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
@@ -2731,7 +2795,10 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 1674798499691612847, guid: eb108f292a4734d47b83367a7f5d9938, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1885049021}
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 3913018809610385582, guid: eb108f292a4734d47b83367a7f5d9938, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1914736206}
   m_SourcePrefab: {fileID: 100100000, guid: eb108f292a4734d47b83367a7f5d9938, type: 3}
 --- !u!224 &948526347 stripped
 RectTransform:
@@ -4079,10 +4146,14 @@ PrefabInstance:
     - target: {fileID: 8433973507655175534, guid: eb108f292a4734d47b83367a7f5d9938, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 1789960356}
+      objectReference: {fileID: 1741359357}
     - target: {fileID: 8433973507655175534, guid: eb108f292a4734d47b83367a7f5d9938, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: 
+      value: ClickElevatorButton
+      objectReference: {fileID: 0}
+    - target: {fileID: 8433973507655175534, guid: eb108f292a4734d47b83367a7f5d9938, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: SecretHandler, Assembly-CSharp
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
@@ -4091,7 +4162,10 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 1674798499691612847, guid: eb108f292a4734d47b83367a7f5d9938, type: 3}
       insertIndex: -1
       addedObject: {fileID: 500928597}
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 3913018809610385582, guid: eb108f292a4734d47b83367a7f5d9938, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1741359357}
   m_SourcePrefab: {fileID: 100100000, guid: eb108f292a4734d47b83367a7f5d9938, type: 3}
 --- !u!224 &1741359355 stripped
 RectTransform:
@@ -4103,6 +4177,19 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 3913018809610385582, guid: eb108f292a4734d47b83367a7f5d9938, type: 3}
   m_PrefabInstance: {fileID: 1741359354}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1741359357
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1741359356}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 42afcf0db7ab9f74b9a66aebbce8bd36, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  floorNum: 1
 --- !u!114 &1789960356 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 5055129401466646222, guid: 4296810bb7adea749a34b7c362ab4ca6, type: 3}
@@ -4350,10 +4437,14 @@ PrefabInstance:
     - target: {fileID: 8433973507655175534, guid: eb108f292a4734d47b83367a7f5d9938, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 1789960356}
+      objectReference: {fileID: 1857136215}
     - target: {fileID: 8433973507655175534, guid: eb108f292a4734d47b83367a7f5d9938, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: 
+      value: ClickElevatorButton
+      objectReference: {fileID: 0}
+    - target: {fileID: 8433973507655175534, guid: eb108f292a4734d47b83367a7f5d9938, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: SecretHandler, Assembly-CSharp
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
@@ -4362,7 +4453,10 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 1674798499691612847, guid: eb108f292a4734d47b83367a7f5d9938, type: 3}
       insertIndex: -1
       addedObject: {fileID: 198538821}
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 3913018809610385582, guid: eb108f292a4734d47b83367a7f5d9938, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1857136215}
   m_SourcePrefab: {fileID: 100100000, guid: eb108f292a4734d47b83367a7f5d9938, type: 3}
 --- !u!224 &1857136213 stripped
 RectTransform:
@@ -4374,6 +4468,19 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 3913018809610385582, guid: eb108f292a4734d47b83367a7f5d9938, type: 3}
   m_PrefabInstance: {fileID: 1857136212}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1857136215
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1857136214}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 42afcf0db7ab9f74b9a66aebbce8bd36, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  floorNum: 3
 --- !u!1 &1885049020
 GameObject:
   m_ObjectHideFlags: 0
@@ -4745,10 +4852,14 @@ PrefabInstance:
     - target: {fileID: 8433973507655175534, guid: eb108f292a4734d47b83367a7f5d9938, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 1789960356}
+      objectReference: {fileID: 1907193152}
     - target: {fileID: 8433973507655175534, guid: eb108f292a4734d47b83367a7f5d9938, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: 
+      value: ClickElevatorButton
+      objectReference: {fileID: 0}
+    - target: {fileID: 8433973507655175534, guid: eb108f292a4734d47b83367a7f5d9938, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: SecretHandler, Assembly-CSharp
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
@@ -4757,7 +4868,10 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 1674798499691612847, guid: eb108f292a4734d47b83367a7f5d9938, type: 3}
       insertIndex: -1
       addedObject: {fileID: 350843085}
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 3913018809610385582, guid: eb108f292a4734d47b83367a7f5d9938, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1907193152}
   m_SourcePrefab: {fileID: 100100000, guid: eb108f292a4734d47b83367a7f5d9938, type: 3}
 --- !u!224 &1907193150 stripped
 RectTransform:
@@ -4769,6 +4883,37 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 3913018809610385582, guid: eb108f292a4734d47b83367a7f5d9938, type: 3}
   m_PrefabInstance: {fileID: 1907193149}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1907193152
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1907193151}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 42afcf0db7ab9f74b9a66aebbce8bd36, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  floorNum: 7
+--- !u!1 &1914736205 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3913018809610385582, guid: eb108f292a4734d47b83367a7f5d9938, type: 3}
+  m_PrefabInstance: {fileID: 948526346}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1914736206
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1914736205}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 42afcf0db7ab9f74b9a66aebbce8bd36, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  floorNum: 13
 --- !u!1 &1916278042
 GameObject:
   m_ObjectHideFlags: 0
@@ -5292,13 +5437,13 @@ RectTransform:
   - {fileID: 123393279}
   - {fileID: 1515105954}
   - {fileID: 1455771029}
-  - {fileID: 948526347}
   - {fileID: 1741359355}
   - {fileID: 1857136213}
   - {fileID: 865868605}
   - {fileID: 1907193150}
   - {fileID: 502431801}
   - {fileID: 732879809}
+  - {fileID: 948526347}
   - {fileID: 1737700565}
   - {fileID: 1494877220}
   - {fileID: 1218363476}
@@ -5322,12 +5467,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42afcf0db7ab9f74b9a66aebbce8bd36, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  button1: {fileID: 1741359356}
-  button3: {fileID: 1857136214}
-  button5: {fileID: 865868606}
-  button7: {fileID: 1907193151}
-  button9: {fileID: 502431802}
-  button11: {fileID: 732879810}
+  floorNum: 0
 --- !u!1001 &2851994758606061620
 PrefabInstance:
   m_ObjectHideFlags: 0

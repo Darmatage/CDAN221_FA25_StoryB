@@ -50,6 +50,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Scene6.unity
     guid: 92255f3d9676e43fabae1d3be5a9639f
+  - enabled: 1
+    path: Assets/Scenes/EndWin_Date.unity
+    guid: 6f43407702e966b44bc64837850ffe86
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0
