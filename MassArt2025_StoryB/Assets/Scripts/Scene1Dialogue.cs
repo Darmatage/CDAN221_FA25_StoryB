@@ -24,9 +24,10 @@ public class Scene1Dialogue : MonoBehaviour {
        public GameObject ArtChar1b;
        public GameObject ArtChar1c;
        public GameObject ArtChar1d;
-       public GameObject ArtChar1e;
-       //public GameObject ArtChar1c;
-       //public GameObject ArtChar2;
+	public GameObject ArtChar1e;
+       public GameObject ArtChar2a;
+	public GameObject ArtChar2b;
+	   
         public GameObject ArtBG1;
         public GameObject Choice1a; //be straightforward
         public GameObject Choice1b; //make conversation
@@ -47,7 +48,11 @@ public class Scene1Dialogue : MonoBehaviour {
              ArtChar1b.SetActive(false);
              ArtChar1c.SetActive(false);
              ArtChar1d.SetActive(false);
-             ArtChar1e.SetActive(false);
+		ArtChar1e.SetActive(false);
+			 ArtChar2a.SetActive(false);
+             ArtChar2b.SetActive(false);
+
+
              ArtBG1.SetActive(true);
              Choice1a.SetActive(false);
              Choice1b.SetActive(false);
@@ -81,7 +86,6 @@ public void Next(){
 		}
 		else if (primeInt == 2)
 		{
-			//ArtChar1a.SetActive(true);
 			DialogueDisplay.SetActive(true);
 			Char1name.text = "ME";
 			Char1speech.text = "Man, they sure built this hotel in the middle of nowhere.";
@@ -92,8 +96,6 @@ public void Next(){
 		}
 		else if (primeInt == 3)
 		{
-			//ArtChar1a.SetActive(true);
-			DialogueDisplay.SetActive(true);
 			Char1name.text = "ME";
 			Char1speech.text = "Oh. My pager-phone is buzzing.";
 			Char2name.text = "";
@@ -128,12 +130,24 @@ public void Next(){
 			Char1name.text = "";
 			Char1speech.text = "";
 			Char2name.text = "Felix";
-			Char2speech.text = "I'm still travelling. Over. Signal's bad. Over.";
+			Char2speech.text = "Signal's bad. Over. \nI'm still travelling to my job. Over.  \nWill call later--(crackle)";
 			Char3name.text = "";
 			Char3speech.text = "";
 		}
 		else if (primeInt == 7)
 		{
+			ArtChar1a.SetActive(false);
+			Char1name.text = "ME";
+			Char1speech.text = "And... he's gone.";
+			Char2name.text = "";
+			Char2speech.text = "";
+			Char3name.text = "";
+			Char3speech.text = "";
+		}
+
+		else if (primeInt == 8)
+		{
+			ArtChar1a.SetActive(false);
 			Char1name.text = "ME";
 			Char1speech.text = "I think I'll check in for the night, then I'll start my investigation.";
 			Char2name.text = "";
@@ -141,9 +155,10 @@ public void Next(){
 			Char3name.text = "";
 			Char3speech.text = "";
 		}
-		else if (primeInt == 8)
+		else if (primeInt == 9)
 		{
 			ArtChar1a.SetActive(false);
+			ArtChar2a.SetActive(true);
 			Char1name.text = "";
 			Char1speech.text = "";
 			Char2name.text = "";
@@ -151,9 +166,8 @@ public void Next(){
 			Char3name.text = "Receptionist";
 			Char3speech.text = "Good afternoon, dear guest! \nHow might I help you today?";
 		}
-		else if (primeInt == 9)
+		else if (primeInt == 10)
 		{
-			ArtChar1a.SetActive(false);
 			Char1name.text = "ME";
 			Char1speech.text = "Hmmm...";
 			Char2name.text = "";
@@ -179,6 +193,8 @@ public void Next(){
 		}
 		else if (primeInt == 12)
 		{
+			ArtChar2a.SetActive(false);
+			ArtChar2b.SetActive(true);
 			Char1name.text = "";
 			Char1speech.text = "";
 			Char2name.text = "";
@@ -188,6 +204,7 @@ public void Next(){
 		}
 		else if (primeInt == 13)
 		{
+
 			Char1name.text = "";
 			Char1speech.text = "";
 			Char1name.text = "";
@@ -197,6 +214,8 @@ public void Next(){
 		}
 		else if (primeInt == 14)
 		{
+			ArtChar2a.SetActive(true);
+			ArtChar2b.SetActive(false);
 			Char1name.text = "";
 			Char1speech.text = "";
 			Char2name.text = "";
@@ -252,6 +271,8 @@ public void Next(){
 		}
 		else if (primeInt == 23)
 		{
+			ArtChar2a.SetActive(false);
+			ArtChar2b.SetActive(true);
 			Char1name.text = "";
 			Char1speech.text = "";
 			Char2name.text = "";
@@ -294,35 +315,15 @@ public void Next(){
 			Char2speech.text = "";
 			Char3name.text = "Receptionist";
 			Char3speech.text = "Ah. Well, I'm seeing here we have two options available for you.";
-		}
-		else if (primeInt == 28)
-		{
-			Char1name.text = "";
-			Char1speech.text = "";
-			Char2name.text = "";
-			Char2speech.text = "";
-			Char3name.text = "Receptionist";
-			Char3speech.text = "There's a single room available on the thirteenth floor, or, if you're feeling frugal...";
-		}
-		else if (primeInt == 29)
-		{
-			Char1name.text = "";
-			Char1speech.text = "";
-			Char2name.text = "";
-			Char2speech.text = "";
-			Char3name.text = "Receptionist";
-			Char3speech.text = "...we have a discounted double room that already has a guest in it.";
-
-			nextButton.SetActive(false);
-			allowSpace = false;
-			NextScene1Button.SetActive(true);
-			NextScene2Button.SetActive(true);
+			primeInt = 13; 	//goes to end of other choice
 		}
 
 
 		//after both room selection choices:
 		else if (primeInt == 31)
 		{
+			ArtChar2a.SetActive(true);
+			ArtChar2b.SetActive(false);
 			Char1name.text = "";
 			Char1speech.text = "";
 			Char2name.text = "";
