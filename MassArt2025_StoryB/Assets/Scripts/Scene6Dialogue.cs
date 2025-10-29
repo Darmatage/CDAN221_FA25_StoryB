@@ -24,6 +24,7 @@ public class Scene6Dialogue : MonoBehaviour {
         public GameObject ArtChar2; //felix static
         public GameObject ArtBG1;//boiler bg
         public GameObject ArtBG2;//basement bg
+        public GameObject Key;
         public GameObject Choice1a;
         public GameObject Choice1b;
         public GameObject Choice2a;
@@ -44,6 +45,7 @@ public class Scene6Dialogue : MonoBehaviour {
              ArtChar2.SetActive(false);
              ArtBG1.SetActive(false);
         ArtBG2.SetActive(true);
+        Key.SetActive(false);
         Choice1a.SetActive(false);
              Choice1b.SetActive(false);
              Choice2a.SetActive(false);
@@ -91,7 +93,8 @@ public void Next(){
                 Char1speech.text = "Got a key...I can probably use this to open that terrible looking door.";
                 Char2name.text = "";
                 Char2speech.text = "";
-                //gameHandler.AddPlayerStat(1);
+                Key.SetActive(true);
+                
         }
        else if (primeInt == 4){
                 ArtChar2.SetActive(true);
@@ -99,6 +102,7 @@ public void Next(){
                 Char1speech.text = "Hey, I'm alive for now. Are you there?";
                 Char2name.text = "";
                 Char2speech.text = "";
+                Key.SetActive(false);
         }
        else if (primeInt == 5){
                 Char1name.text = playerName;

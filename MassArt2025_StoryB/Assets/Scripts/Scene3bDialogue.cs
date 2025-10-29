@@ -23,6 +23,9 @@ public class Scene3bDialogue : MonoBehaviour {
         public GameObject ArtChar1e;
        //public GameObject ArtChar2;
         public GameObject ArtBG1;
+        public GameObject Item1;
+        public GameObject Item2;
+        public GameObject Item3;
         public GameObject Choice1a;
         public GameObject Choice1b;
         public GameObject Choice1c;
@@ -40,6 +43,9 @@ public class Scene3bDialogue : MonoBehaviour {
              DialogueDisplay.SetActive(false);
              ArtChar1a.SetActive(false);
              ArtBG1.SetActive(true);
+             Item1.SetActive(false);
+             Item2.SetActive(false);
+             Item3.SetActive(false);
              Choice1a.SetActive(false);
              Choice1b.SetActive(false);
              Choice1c.SetActive(false);
@@ -146,6 +152,8 @@ public void Next(){
                 Char1speech.text = "Now what is this piece of trash doing here?";
                 Char2name.text = "";
                 Char2speech.text = "";
+                Item1.SetActive(true);
+                GameHandler.note = true;
         } 
 
         else if (primeInt == 21){
@@ -153,7 +161,8 @@ public void Next(){
                 Char1speech.text = "";
                 Char2name.text = "Felix";
                 Char2speech.text = "Unsuccesful snacking, uh? What's the next step?";
-                      
+                Item1.SetActive(false);
+
                 nextButton.SetActive(false);
                 allowSpace = false;
                 NextScene1Button.SetActive(true);
@@ -166,13 +175,15 @@ public void Next(){
                 Char1speech.text = "Is that...hair?";
                 Char2name.text = "";
                 Char2speech.text = "";
-                
+                Item2.SetActive(true);
+                GameHandler.hair = true;
         }
         else if (primeInt == 32){
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "Felix";
                 Char2speech.text = "Any coins? What's the next step?";
+                Item2.SetActive(false);
 
                 nextButton.SetActive(false);
                 allowSpace = false;
@@ -199,13 +210,16 @@ public void Next(){
                 Char1speech.text = "Oh god, what the fuck is that?";
                 Char2name.text = "";
                 Char2speech.text = "";
-                
+                Item3.SetActive(true);
+                GameHandler.teeth = true;
+
         } 
         else if (primeInt == 44){
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "Felix";
                 Char2speech.text = "What's the plan now?";
+                Item3.SetActive(false);
 
                 nextButton.SetActive(false);
                 allowSpace = false;

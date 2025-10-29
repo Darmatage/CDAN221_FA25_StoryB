@@ -25,6 +25,8 @@ public class Scene3cDialogue : MonoBehaviour {
        public GameObject ArtChar1e;
        //public GameObject ArtChar2;
         public GameObject ArtBG1;
+        public GameObject Item1;
+        public GameObject Item2;
         public GameObject Choice1a;
         public GameObject Choice1b;
         public GameObject Choice1c;
@@ -44,6 +46,8 @@ public class Scene3cDialogue : MonoBehaviour {
 		ArtChar1e.SetActive(false);
 			 
              ArtBG1.SetActive(true);
+             Item1.SetActive(false);
+             Item2.SetActive(false);
              Choice1a.SetActive(false);
              Choice1b.SetActive(false);
              Choice1c.SetActive(false);
@@ -135,10 +139,11 @@ public void Next(){
                 Char1speech.text = "...";
                 Char2name.text = "";
                 Char2speech.text = "";
+                Item1.SetActive(true);
         }        
         else if (primeInt == 12){
                 Char1name.text = playerName;
-                Char1speech.text = "Thats, uh, disgusting.";
+                Char1speech.text = "Thats, uh, disgusting. It's all wet.";
                 Char2name.text = "";
                 Char2speech.text = "";
         }
@@ -151,7 +156,7 @@ public void Next(){
                 Char1speech.text = "These are for sure a fire hazard.";
                 Char2name.text = "";
                 Char2speech.text = "";
-                
+                Item2.SetActive(true);
         }
         else if (primeInt == 22){
                 SkipTo();
@@ -252,6 +257,8 @@ public void Next(){
                 Char1speech.text = "I could try that door over there. I think it's an employee only area. They seem a bit scatterbrained, so it's probably unlocked.";
                 Char2name.text = "";
                 Char2speech.text = "";
+                Item1.SetActive(false);
+                Item2.SetActive(false);
         }
         
 }
