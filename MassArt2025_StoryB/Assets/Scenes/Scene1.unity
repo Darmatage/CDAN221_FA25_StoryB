@@ -1185,7 +1185,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7639e7aa26c7ee5488118ff084344557, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerName: 
   primeInt: 1
   Char1name: {fileID: 1044605231}
   Char1speech: {fileID: 628994032}
@@ -3416,6 +3415,30 @@ PrefabInstance:
     - target: {fileID: 4475901798221893129, guid: 546b0d0df9aabfd449255d13a1b2ae65, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4529427112106553041, guid: 546b0d0df9aabfd449255d13a1b2ae65, type: 3}
+      propertyPath: m_fontSize
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 4529427112106553041, guid: 546b0d0df9aabfd449255d13a1b2ae65, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 9da3af02672d5964f8ebf9c44d530492, type: 2}
+    - target: {fileID: 4529427112106553041, guid: 546b0d0df9aabfd449255d13a1b2ae65, type: 3}
+      propertyPath: m_fontStyle
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4529427112106553041, guid: 546b0d0df9aabfd449255d13a1b2ae65, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 4529427112106553041, guid: 546b0d0df9aabfd449255d13a1b2ae65, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 6265027190157177096, guid: 9da3af02672d5964f8ebf9c44d530492, type: 2}
+    - target: {fileID: 4529427112106553041, guid: 546b0d0df9aabfd449255d13a1b2ae65, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5933504422403853866, guid: 546b0d0df9aabfd449255d13a1b2ae65, type: 3}
       propertyPath: m_text
