@@ -16,11 +16,11 @@ public class Scene3bDialogue : MonoBehaviour {
        //public TMP_Text Char3name;
        //public TMP_Text Char3speech;
         public GameObject DialogueDisplay;
-        public GameObject ArtChar1a;
-        public GameObject ArtChar1b;
-        public GameObject ArtChar1c;
-        public GameObject ArtChar1d;
-        public GameObject ArtChar1e;
+        public GameObject ArtChar1a; 	//neutral
+        public GameObject ArtChar1b;	//happy
+        public GameObject ArtChar1c;	//prty (don't use for this scene)
+        public GameObject ArtChar1d;	//perplexed
+        public GameObject ArtChar1e;	//questioning
        //public GameObject ArtChar2;
         public GameObject ArtBG1;
         public GameObject Item1;
@@ -41,7 +41,12 @@ public class Scene3bDialogue : MonoBehaviour {
 // Set initial visibility. Added images or buttons need to also be SetActive(false);
         void Start(){  
              DialogueDisplay.SetActive(false);
-             ArtChar1a.SetActive(false);
+		ArtChar1a.SetActive(false);
+		ArtChar1b.SetActive(false);
+		ArtChar1c.SetActive(false);
+		ArtChar1d.SetActive(false);
+		ArtChar1e.SetActive(false);
+
              ArtBG1.SetActive(true);
              Item1.SetActive(false);
              Item2.SetActive(false);
@@ -74,190 +79,295 @@ public class Scene3bDialogue : MonoBehaviour {
 //Players hit [NEXT] to progress to the next primeInt:
 public void Next(){
         primeInt += 1;
-        if (primeInt == 1){
-                // audioSource1.Play();
-        }
-        else if (primeInt == 2){
-                ArtChar1b.SetActive(true);
-                DialogueDisplay.SetActive(true);
-                Char1name.text = "";
-                Char1speech.text = "";
-                Char2name.text = "Felix";
-                Char2speech.text = "Do you copy? Over.";
-        }
-       else if (primeInt ==3){
-                Char1name.text = playerName;
-                Char1speech.text = "Just got to the rest corner to investigate. Some witnesses said the girl was seen around here. What about you?";
-                Char2name.text = "";
-                Char2speech.text = "";
-                //gameHandler.AddPlayerStat(1);
-        }
-       else if (primeInt == 4){
-                Char1name.text = "";
-                Char1speech.text = "";
-                Char2name.text = "Felix";
-                Char2speech.text = "...";
-        }
-       else if (primeInt == 5){
-                Char1name.text = playerName;
-                Char1speech.text = "...over.";
-                Char2name.text = "";
-                Char2speech.text = "";
-        }
-       else if (primeInt == 6){
-                Char1name.text = "";
-                Char1speech.text = "";
-                Char2name.text = "Felix";
-                Char2speech.text = "Great! I just got to the Murder Mills Motel. I'm about to check in.";
-        }
-       else if (primeInt ==7){
-                Char1name.text = playerName;
-                Char1speech.text = "Good luck with that. Hey, this is a nice little spot! Except for everything in it, I guess. Where should I start?";
-                Char2name.text = "";
-                Char2speech.text = "";
-        }
-       else if (primeInt == 8){
-                Char1name.text = "";
-                Char1speech.text = "";
-                Char2name.text = "Felix";
-                Char2speech.text = "Come on, you have to use the codewords.";
-        }        
-       else if (primeInt ==9){
-                Char1name.text = playerName;
-                Char1speech.text = "We're literally talking on the phone.";
-                Char2name.text = "";
-                Char2speech.text = "";        
-        }
-        else if (primeInt ==10){
-                Char1name.text = playerName;
-                Char1speech.text = "";
-                Char2name.text = "";
-                Char2speech.text = "";        
-                
-                nextButton.SetActive(false);
-                allowSpace = false;
-                Choice1a.SetActive(true); 
-                Choice1b.SetActive(true); 
-                Choice1c.SetActive(true); 
-        }
-// after choice 1a vending machine
-       else if (primeInt == 21){
-                Char1name.text = "";
-                Char1speech.text = "";
-                Char2name.text = "Felix";
-                Char2speech.text = "Snacks! Probably expired, though.";
-        } 
-       else if (primeInt == 22){
-                Char1name.text = playerName;
-                Char1speech.text = "Now what is this piece of trash doing here?";
-                Char2name.text = "";
-                Char2speech.text = "";
-                Item1.SetActive(true);
-                GameHandler.note = true;
-        } 
+		if (primeInt == 1)
+		{
+			// audioSource1.Play();
+		}
+		else if (primeInt == 2)
+		{
+			DialogueDisplay.SetActive(true);
+			Char1name.text = playerName;
+			Char1speech.text = "So this is a rest corner.";
+			Char2name.text = "";
+			Char2speech.text = "";
+			//gameHandler.AddPlayerStat(1);
+		}
+		else if (primeInt == 3)
+		{
 
-        else if (primeInt == 21){
-                Char1name.text = "";
-                Char1speech.text = "";
-                Char2name.text = "Felix";
-                Char2speech.text = "Unsuccesful snacking, uh? What's the next step?";
-                Item1.SetActive(false);
+			Char1name.text = playerName;
+			Char1speech.text = "Hey, this is a nice little spot! Except for everything in it, I guess.";
+			Char2name.text = "";
+			Char2speech.text = "";
+			//gameHandler.AddPlayerStat(1);
+		}
+		else if (primeInt == 4)
+		{
+			ArtChar1b.SetActive(false);
+			ArtChar1a.SetActive(true);
+			Char1name.text = "";
+			Char1speech.text = "";
+			Char2name.text = "Felix";
+			Char2speech.text = "Do you copy? Over.";
+		}
+		else if (primeInt == 5)
+		{
+			ArtChar1b.SetActive(true);
+			ArtChar1a.SetActive(false);
+			Char1name.text = "";
+			Char1speech.text = "";
+			Char2name.text = "Felix";
+			Char2speech.text = "Have you found anything on your case? Over.";
+		}
+		else if (primeInt == 6)
+		{
+			ArtChar1b.SetActive(false);
+			ArtChar1a.SetActive(true);
+			Char1name.text = playerName;
+			Char1speech.text = "Some witnesses said the girl was seen around here.";
+			Char2name.text = "";
+			Char2speech.text = "";
+		}
+		else if (primeInt == 7)
+		{
+			Char1name.text = playerName;
+			Char1speech.text = "What about your case?";
+			Char2name.text = "";
+			Char2speech.text = "";
+		}
+		else if (primeInt == 8)
+		{
+			ArtChar1b.SetActive(false);
+			ArtChar1a.SetActive(false);
+			ArtChar1e.SetActive(true);
+			Char1name.text = "";
+			Char1speech.text = "";
+			Char2name.text = "Felix";
+			Char2speech.text = "...";
+		}
+		else if (primeInt == 9)
+		{
+			Char1name.text = playerName;
+			Char1speech.text = "...over.";
+			Char2name.text = "";
+			Char2speech.text = "";
+		}
+		else if (primeInt == 10)
+		{	
+			ArtChar1b.SetActive(true);
+			ArtChar1e.SetActive(false);
+			Char1name.text = "";
+			Char1speech.text = "";
+			Char2name.text = "Felix";
+			Char2speech.text = "It's going great! I just got to the Murder Mills Motel. I'm about to check in. Over.";
+		}
 
-                nextButton.SetActive(false);
-                allowSpace = false;
-                NextScene1Button.SetActive(true);
-                NextScene2Button.SetActive(true);
-        }
+		else if (primeInt == 11)
+		{
+			Char1name.text = playerName;
+			Char1speech.text = "Geez. Why did you take that job? Doesn't the name bother you?";
+			Char2name.text = "";
+			Char2speech.text = "";
+		}
+		else if (primeInt == 12)
+		{
+			Char1name.text = "";
+			Char1speech.text = "";
+			Char2name.text = "Felix";
+			Char2speech.text = "...";
+		}
+		else if (primeInt == 13)
+		{
+			Char1name.text = "";
+			Char1speech.text = "";
+			Char2name.text = "Felix";
+			Char2speech.text = "Come on, you have to use the codewords.";
+		}
+		else if (primeInt == 14)
+		{
+			Char1name.text = playerName;
+			Char1speech.text = "We're literally talking on the phone.";
+			Char2name.text = "";
+			Char2speech.text = "";
+		}
+		else if (primeInt == 15)
+		{
+			Char1name.text = playerName;
+			Char1speech.text = "why did you take that job, OVER.";
+			Char2name.text = "";
+			Char2speech.text = "";
+		}
+		else if (primeInt == 16)
+		{
+			Char1name.text = "";
+			Char1speech.text = "";
+			Char2name.text = "Felix";
+			Char2speech.text = "Murder Mill's just the name of the town, you scaredy cat";
+		}
+		else if (primeInt == 17)
+		{
+			Char1name.text = "";
+			Char1speech.text = "";
+			Char2name.text = "Felix";
+			Char2speech.text = "I just need to snap some pis of the mayor's cheating husband. \nCake walk.";
+		}
+		else if (primeInt == 18)
+		{
+			Char1name.text = playerName;
+			Char1speech.text = "Good luck with that, buddy.";
+			Char2name.text = "";
+			Char2speech.text = "";
+		}
 
-// after choice 1b couch cushions
-       else if (primeInt == 31){
-                Char1name.text = playerName;
-                Char1speech.text = "Is that...hair?";
-                Char2name.text = "";
-                Char2speech.text = "";
-                Item2.SetActive(true);
-                GameHandler.hair = true;
-        }
-        else if (primeInt == 32){
-                Char1name.text = "";
-                Char1speech.text = "";
-                Char2name.text = "Felix";
-                Char2speech.text = "Any coins? What's the next step?";
-                Item2.SetActive(false);
+		else if (primeInt == 19)
+		{
+			Char1name.text = playerName;
+			Char1speech.text = "";
+			Char2name.text = "";
+			Char2speech.text = "";
 
-                nextButton.SetActive(false);
-                allowSpace = false;
-                NextScene1Button.SetActive(true);
-                NextScene2Button.SetActive(true);
-        }
-// after choice1c water fountain
-       else if (primeInt == 41){
-                Char1name.text = "";
-                Char1speech.text = "";
-                Char2name.text = "Felix";
-                Char2speech.text = "...";
-                
-        }
-        else if (primeInt == 42){
-                Char1name.text = playerName;
-                Char1speech.text = "Not even gonna say anything, uh?";
-                Char2name.text = "";
-                Char2speech.text = "";
-                
-        }
-       else if (primeInt == 43){
-                Char1name.text = playerName;
-                Char1speech.text = "Oh god, what the fuck is that?";
-                Char2name.text = "";
-                Char2speech.text = "";
-                Item3.SetActive(true);
-                GameHandler.teeth = true;
+			nextButton.SetActive(false);
+			allowSpace = false;
+			Choice1a.SetActive(true);
+			Choice1b.SetActive(true);
+			Choice1c.SetActive(true);
+		}
 
-        } 
-        else if (primeInt == 44){
-                Char1name.text = "";
-                Char1speech.text = "";
-                Char2name.text = "Felix";
-                Char2speech.text = "What's the plan now?";
-                Item3.SetActive(false);
+		// after choice 1a vending machine
+		else if (primeInt == 21)
+		{
+			Char1name.text = "";
+			Char1speech.text = "";
+			Char2name.text = "Felix";
+			Char2speech.text = "Snacks! Probably expired, though.";
+		}
+		else if (primeInt == 22)
+		{
+			Char1name.text = playerName;
+			Char1speech.text = "Now what is this piece of trash doing here?";
+			Char2name.text = "";
+			Char2speech.text = "";
+			Item1.SetActive(true);
+			GameHandler.note = true;
+		}
 
-                nextButton.SetActive(false);
-                allowSpace = false;
-                NextScene1Button.SetActive(true);
-                NextScene2Button.SetActive(true);
-        }
-        else if (primeInt == 51){
-                Char1name.text = "";
-                Char1speech.text = "";
-                Char2name.text = "Felix";
-                Char2speech.text = "You would have been a terrible actuary.";
-        }
-        else if (primeInt == 52){
-                Char1name.text = playerName;
-                Char1speech.text = "I didn't ask you.";
-                Char2name.text = "";
-                Char2speech.text = "";
+		else if (primeInt == 21)
+		{
+			Char1name.text = "";
+			Char1speech.text = "";
+			Char2name.text = "Felix";
+			Char2speech.text = "Unsuccesful snacking, uh? What's the next step?";
+			Item1.SetActive(false);
 
-                if (canScene1 == true){        
-                Char1name.text = playerName;
-                Char1speech.text = "Maybe the receptionist has thought of something?";
-                Char2name.text = "";
-                Char2speech.text = "";
-                primeInt = 60;}
+			nextButton.SetActive(false);
+			allowSpace = false;
+			NextScene1Button.SetActive(true);
+			NextScene2Button.SetActive(true);
+		}
 
-                else if (canScene2 == true){
-                Char1name.text = playerName;
-                Char1speech.text = "I should go back to my room and take a look at what's been said about this place. Gives me the creeps.";
-                Char2name.text = "";
-                Char2speech.text = "";
-                primeInt = 70;}
-        }        
-        else if (primeInt == 61){  
-                SceneChange1();  
-        }     
-        else if (primeInt == 71){   
-                SceneChange2();     
-        }
+		// after choice 1b couch cushions
+		else if (primeInt == 31)
+		{
+			Char1name.text = playerName;
+			Char1speech.text = "Is that...hair?";
+			Char2name.text = "";
+			Char2speech.text = "";
+			Item2.SetActive(true);
+			GameHandler.hair = true;
+		}
+		else if (primeInt == 32)
+		{
+			Char1name.text = "";
+			Char1speech.text = "";
+			Char2name.text = "Felix";
+			Char2speech.text = "Any coins? What's the next step?";
+			Item2.SetActive(false);
+
+			nextButton.SetActive(false);
+			allowSpace = false;
+			NextScene1Button.SetActive(true);
+			NextScene2Button.SetActive(true);
+		}
+		// after choice1c water fountain
+		else if (primeInt == 41)
+		{
+			Char1name.text = "";
+			Char1speech.text = "";
+			Char2name.text = "Felix";
+			Char2speech.text = "...";
+
+		}
+		else if (primeInt == 42)
+		{
+			Char1name.text = playerName;
+			Char1speech.text = "Not even gonna say anything, uh?";
+			Char2name.text = "";
+			Char2speech.text = "";
+
+		}
+		else if (primeInt == 43)
+		{
+			Char1name.text = playerName;
+			Char1speech.text = "Oh god, what the fuck is that?";
+			Char2name.text = "";
+			Char2speech.text = "";
+			Item3.SetActive(true);
+			GameHandler.teeth = true;
+
+		}
+		else if (primeInt == 44)
+		{
+			Char1name.text = "";
+			Char1speech.text = "";
+			Char2name.text = "Felix";
+			Char2speech.text = "What's the plan now?";
+			Item3.SetActive(false);
+
+			nextButton.SetActive(false);
+			allowSpace = false;
+			NextScene1Button.SetActive(true);
+			NextScene2Button.SetActive(true);
+		}
+		else if (primeInt == 51)
+		{
+			Char1name.text = "";
+			Char1speech.text = "";
+			Char2name.text = "Felix";
+			Char2speech.text = "You would have been a terrible actuary.";
+		}
+		else if (primeInt == 52)
+		{
+			Char1name.text = playerName;
+			Char1speech.text = "I didn't ask you.";
+			Char2name.text = "";
+			Char2speech.text = "";
+
+			if (canScene1 == true)
+			{
+				Char1name.text = playerName;
+				Char1speech.text = "Maybe the receptionist has thought of something?";
+				Char2name.text = "";
+				Char2speech.text = "";
+				primeInt = 60;
+			}
+
+			else if (canScene2 == true)
+			{
+				Char1name.text = playerName;
+				Char1speech.text = "I should go back to my room and take a look at what's been said about this place. Gives me the creeps.";
+				Char2name.text = "";
+				Char2speech.text = "";
+				primeInt = 70;
+			}
+		}
+		else if (primeInt == 61)
+		{
+			SceneChange1();
+		}
+		else if (primeInt == 71)
+		{
+			SceneChange2();
+		}
         }
 
 // FUNCTIONS FOR BUTTONS TO ACCESS (Choice #1 and SceneChanges)
