@@ -481,7 +481,7 @@ GameObject:
   - component: {fileID: 598767949}
   - component: {fileID: 598767948}
   m_Layer: 5
-  m_Name: ImageChar1A
+  m_Name: ImageChar1A_neuetral
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1217,7 +1217,7 @@ GameObject:
   - component: {fileID: 1359517112}
   - component: {fileID: 1359517111}
   m_Layer: 5
-  m_Name: ImageChar1B
+  m_Name: ImageChar1B_happy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1413,7 +1413,7 @@ GameObject:
   - component: {fileID: 1635016385}
   - component: {fileID: 1635016384}
   m_Layer: 5
-  m_Name: ImageChar1E
+  m_Name: ImageChar1E_questioning
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1488,7 +1488,7 @@ GameObject:
   - component: {fileID: 1635159556}
   - component: {fileID: 1635159555}
   m_Layer: 5
-  m_Name: ImageChar1D
+  m_Name: ImageChar1D_perlplexed
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1746,7 +1746,7 @@ GameObject:
   - component: {fileID: 1901252856}
   - component: {fileID: 1901252855}
   m_Layer: 5
-  m_Name: ImageChar1C
+  m_Name: ImageChar1C_party
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
