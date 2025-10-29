@@ -92,6 +92,17 @@ public void Next(){
 		}
 		else if (primeInt == 3)
 		{
+			//ArtChar1a.SetActive(true);
+			DialogueDisplay.SetActive(true);
+			Char1name.text = "ME";
+			Char1speech.text = "Oh. My pager-phone is buzzing.";
+			Char2name.text = "";
+			Char2speech.text = "";
+			Char3name.text = "";
+			Char3speech.text = "";
+		}
+		else if (primeInt == 4)
+		{
 			ArtChar1b.SetActive(true);
 			Char1name.text = "";
 			Char1speech.text = "";
@@ -101,16 +112,16 @@ public void Next(){
 			Char3speech.text = "";
 			//gameHandler.AddPlayerStat(1);
 		}
-		else if (primeInt == 4)
+		else if (primeInt == 5)
 		{
 			Char1name.text = "ME";
-			Char1speech.text = "I just got to the hotel";
+			Char1speech.text = "Hey, Felix. I just got to the hotel";
 			Char2name.text = "";
 			Char2speech.text = "";
 			Char3name.text = "";
 			Char3speech.text = "";
 		}
-		else if (primeInt == 5)
+		else if (primeInt == 6)
 		{
 			ArtChar1b.SetActive(false);
 			ArtChar1a.SetActive(true);
@@ -121,7 +132,7 @@ public void Next(){
 			Char3name.text = "";
 			Char3speech.text = "";
 		}
-		else if (primeInt == 6)
+		else if (primeInt == 7)
 		{
 			Char1name.text = "ME";
 			Char1speech.text = "I think I'll check in for the night, then I'll start my investigation.";
@@ -130,7 +141,7 @@ public void Next(){
 			Char3name.text = "";
 			Char3speech.text = "";
 		}
-		else if (primeInt == 7)
+		else if (primeInt == 8)
 		{
 			ArtChar1a.SetActive(false);
 			Char1name.text = "";
@@ -138,7 +149,17 @@ public void Next(){
 			Char2name.text = "";
 			Char2speech.text = "";
 			Char3name.text = "Receptionist";
-			Char3speech.text = "Good afternoon, dear guest! How might I help you today?";
+			Char3speech.text = "Good afternoon, dear guest! \nHow might I help you today?";
+		}
+		else if (primeInt == 9)
+		{
+			ArtChar1a.SetActive(false);
+			Char1name.text = "ME";
+			Char1speech.text = "Hmmm...";
+			Char2name.text = "";
+			Char2speech.text = "";
+			Char3name.text = "";
+			Char3speech.text = "";
 
 			nextButton.SetActive(false);
 			allowSpace = false;
@@ -146,8 +167,7 @@ public void Next(){
 			Choice1b.SetActive(true); // function Choice1bFunct()
 		}
 
-
-// after choice 1a
+		// after choice 1a
 		else if (primeInt == 11)
 		{
 			Char1name.text = "";
@@ -211,7 +231,7 @@ public void Next(){
 		}
 
 
-// after choice 1b
+		// after choice 1b
 		else if (primeInt == 21)
 		{
 			Char1name.text = "";
