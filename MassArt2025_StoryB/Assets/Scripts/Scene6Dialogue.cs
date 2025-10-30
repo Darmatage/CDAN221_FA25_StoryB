@@ -89,15 +89,20 @@ public void Next(){
                 Char2name.text = "";
                 Char2speech.text = "";
         }
-       else if (primeInt ==3){
+        else if (primeInt == 3){
+                Char1name.text = "";
+                Char1speech.text = "You lean down, unhooking the key from the monster's belt.";
+                Char2name.text = "";
+                Char2speech.text = "";
+                Key.SetActive(true);
+        }
+       else if (primeInt == 4){
                 Char1name.text = playerName;
                 Char1speech.text = "Got a key...I can probably use this to open that terrible looking door.";
                 Char2name.text = "";
                 Char2speech.text = "";
-                Key.SetActive(true);
-                
         }
-       else if (primeInt == 4){
+       else if (primeInt == 5){
                 ArtChar2.SetActive(true);
                 Char1name.text = playerName;
                 Char1speech.text = "Hey, I'm alive for now. Are you there?";
@@ -105,33 +110,33 @@ public void Next(){
                 Char2speech.text = "";
                 Key.SetActive(false);
         }
-       else if (primeInt == 5){
+       else if (primeInt == 6){
                 Char1name.text = playerName;
                 Char1speech.text = "...";
                 Char2name.text = "";
                 Char2speech.text = "";
         }
-        else if (primeInt == 6)
+        else if (primeInt == 7)
         {
             Char1name.text = playerName;
             Char1speech.text = "...Over?";
             Char2name.text = "";
             Char2speech.text = "";
         }
-        else if (primeInt == 7){
+        else if (primeInt == 8){
                 Char1name.text = playerName;
                 Char1speech.text = "Shit, my phone...";
                 Char2name.text = "";
                 Char2speech.text = "";
         }
-       else if (primeInt == 8){
+       else if (primeInt == 9){
             ArtChar2.SetActive(false);
             Char1name.text = playerName;
                 Char1speech.text = "I don't know if I wanna follow through with this alone.";
                 Char2name.text = "";
                 Char2speech.text = "";
         }
-        else if (primeInt == 9){
+        else if (primeInt == 10){
             Char1name.text = playerName;
                 Char1speech.text = "";
                 Char2name.text = "";
@@ -260,38 +265,44 @@ public void Next(){
             ArtChar1a.SetActive(false);
             ArtChar1b.SetActive(false);
             ArtChar1c.SetActive(true);
-            Char1name.text = GameHandler.playerName;
-            Char1speech.text = "It's...";
+            Char1name.text = "";
+            Char1speech.text = "A voice worms its way into your mind. It sounds like everyone you've ever loved.";
             Char2name.text = "";
             Char2speech.text = "";
         }
         else if (primeInt == 52){
                 Char1name.text = playerName;
-                Char1speech.text = "...talking to me.";
+                Char1speech.text = "It's...";
                 Char2name.text = "";
                 Char2speech.text = "";      
         } 
         else if (primeInt == 53){
                 Char1name.text = playerName;
+                Char1speech.text = "...talking to me.";
+                Char2name.text = "";
+                Char2speech.text = "";      
+        } 
+        else if (primeInt == 54){
+                Char1name.text = playerName;
                 Char1speech.text = "It's telling me to join it.";
                 Char2name.text = "";
                 Char2speech.text = "";
         }
-        else if (primeInt == 54)
+        else if (primeInt == 55)
         {
             Char1name.text = playerName;
             Char1speech.text = "I'll be warm. I'll be safe.";
             Char2name.text = "";
             Char2speech.text = "";
         }
-        else if (primeInt == 55)
+        else if (primeInt == 56)
         {
             Char1name.text = playerName;
             Char1speech.text = "All of my worries... gone. Forever. Like they never existed at all...";
             Char2name.text = "";
             Char2speech.text = "";
         }
-        else if (primeInt == 56)
+        else if (primeInt == 57)
         {
             Char1name.text = playerName;
             Char1speech.text = "";
@@ -383,7 +394,7 @@ public void Next(){
                 ArtChar1a.SetActive(true);
                 ArtChar1b.SetActive(false);
                 Char1name.text = playerName;
-                Char1speech.text = "I've taken on too much. I don't wanna die like this!";
+                Char1speech.text = "I've seen too much already. I don't wanna die like this!";
                 Char2name.text = "";
                 Char2speech.text = "";
                 primeInt = 20;
