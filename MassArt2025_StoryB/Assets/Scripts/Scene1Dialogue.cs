@@ -27,8 +27,9 @@ public class Scene1Dialogue : MonoBehaviour {
 	public GameObject ArtChar1e;
        public GameObject ArtChar2a;
 	public GameObject ArtChar2b;
-	   
-        public GameObject ArtBG1;
+    public GameObject ArtChar2c;
+
+    public GameObject ArtBG1;
         public GameObject Choice1a; //be straightforward
         public GameObject Choice1b; //make conversation
         public GameObject NextScene1Button;
@@ -51,9 +52,10 @@ public class Scene1Dialogue : MonoBehaviour {
 		ArtChar1e.SetActive(false);
 			 ArtChar2a.SetActive(false);
              ArtChar2b.SetActive(false);
+        ArtChar2c.SetActive(true);
 
 
-             ArtBG1.SetActive(true);
+        ArtBG1.SetActive(true);
              Choice1a.SetActive(false);
              Choice1b.SetActive(false);
              NextScene1Button.SetActive(false);
@@ -158,7 +160,8 @@ public void Next(){
 		else if (primeInt == 9)
 		{
 			ArtChar1a.SetActive(false);
-			ArtChar2a.SetActive(true);
+            ArtChar2c.SetActive(false);
+            ArtChar2a.SetActive(true);
 			Char1name.text = "";
 			Char1speech.text = "";
 			Char2name.text = "";
@@ -184,7 +187,9 @@ public void Next(){
 		// after choice 1a
 		else if (primeInt == 11)
 		{
-			Char1name.text = "";
+            ArtChar2c.SetActive(true);
+            ArtChar2a.SetActive(false);
+            Char1name.text = "";
 			Char1speech.text = "";
 			Char2name.text = "";
 			Char2speech.text = "";
