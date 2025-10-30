@@ -52,7 +52,7 @@ public class Scene1Dialogue : MonoBehaviour {
 		ArtChar1e.SetActive(false);
 			 ArtChar2a.SetActive(false);
              ArtChar2b.SetActive(false);
-        ArtChar2c.SetActive(true);
+        	ArtChar2c.SetActive(false);
         ArtBG1.SetActive(true);
              Choice1a.SetActive(false);
              Choice1b.SetActive(false);
@@ -197,6 +197,7 @@ public void Next(){
 		else if (primeInt == 12)
 		{
 			ArtChar2a.SetActive(false);
+			ArtChar2c.SetActive(false);
 			ArtChar2b.SetActive(true);
 			Char1name.text = "";
 			Char1speech.text = "";
