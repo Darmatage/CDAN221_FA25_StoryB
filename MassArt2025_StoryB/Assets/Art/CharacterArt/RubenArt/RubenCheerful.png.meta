@@ -1,10 +1,22 @@
 fileFormatVersion: 2
-guid: ed0afb1dbac52c546b8f5b7339278f8f
+guid: 8c8e3aafc2eda4e44a6d44ccf0061e7f
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -3407811519229858471
-    second: buzzboyphotoback_0
+      213: 6381259391890564911
+    second: RubenCheerful_0
+  - first:
+      213: -8595183257448725719
+    second: RubenCheerful_1
+  - first:
+      213: -6024243050840458157
+    second: RubenCheerful_2
+  - first:
+      213: 837934094223124850
+    second: RubenCheerful_3
+  - first:
+      213: 8328043118862443239
+    second: RubenCheerful_4
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +125,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: buzzboyphotoback_0
+      name: RubenCheerful_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 1280
-        height: 720
+        x: 464
+        y: 1265
+        width: 6
+        height: 8
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +140,96 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 95de1d68a7505b0d0800000000000000
-      internalID: -3407811519229858471
+      spriteID: f2723498b99ce8850800000000000000
+      internalID: 6381259391890564911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RubenCheerful_1
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 0
+        width: 441
+        height: 1231
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9234268dd56c7b880800000000000000
+      internalID: -8595183257448725719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RubenCheerful_2
+      rect:
+        serializedVersion: 2
+        x: 547
+        y: 534
+        width: 59
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 35cf902fcd6956ca0800000000000000
+      internalID: -6024243050840458157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RubenCheerful_3
+      rect:
+        serializedVersion: 2
+        x: 606
+        y: 534
+        width: 44
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 279ab5f7e90f0ab00800000000000000
+      internalID: 837934094223124850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RubenCheerful_4
+      rect:
+        serializedVersion: 2
+        x: 649
+        y: 534
+        width: 71
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7e2aeedb717239370800000000000000
+      internalID: 8328043118862443239
       vertices: []
       indices: 
       edges: []
@@ -147,8 +247,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      buzzboyphotoback_0: -3407811519229858471
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

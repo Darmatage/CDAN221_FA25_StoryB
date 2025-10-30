@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: ed0afb1dbac52c546b8f5b7339278f8f
+guid: 4804703c26185224c86b58729b9a46b9
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -3407811519229858471
-    second: buzzboyphotoback_0
+      213: 4972824240778453015
+    second: IDphoto_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: buzzboyphotoback_0
+      name: IDphoto_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 1280
-        height: 720
+        x: 8
+        y: 11
+        width: 202
+        height: 249
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 95de1d68a7505b0d0800000000000000
-      internalID: -3407811519229858471
+      spriteID: 7102d02cc45030540800000000000000
+      internalID: 4972824240778453015
       vertices: []
       indices: 
       edges: []
@@ -147,8 +147,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      buzzboyphotoback_0: -3407811519229858471
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
