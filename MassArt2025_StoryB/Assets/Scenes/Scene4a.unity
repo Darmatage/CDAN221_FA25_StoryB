@@ -676,9 +676,9 @@ MonoBehaviour:
   CharacterNameTag: {fileID: 594850839}
   ArtChar1a: {fileID: 1704192176}
   ArtBG1: {fileID: 1243399250}
-  Choice1a: {fileID: 599964911}
+  Choice1a: {fileID: 1425984626}
   Choice1b: {fileID: 599964912}
-  Choice1c: {fileID: 1425984626}
+  Choice1c: {fileID: 599964911}
   Choice2a: {fileID: 409089747}
   Choice2b: {fileID: 1742713092}
   Choice2aText: {fileID: 2095904044}
@@ -1484,7 +1484,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1025389288312488619, guid: 546b0d0df9aabfd449255d13a1b2ae65, type: 3}
       propertyPath: m_text
-      value: 'Be worried
+      value: 'Be mean
 
 '
       objectReference: {fileID: 0}
@@ -1524,7 +1524,7 @@ PrefabInstance:
       objectReference: {fileID: 627891054}
     - target: {fileID: 2093586344386452614, guid: 546b0d0df9aabfd449255d13a1b2ae65, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: Choice1aFunct
+      value: Choice1cFunct
       objectReference: {fileID: 0}
     - target: {fileID: 2093586344386452614, guid: 546b0d0df9aabfd449255d13a1b2ae65, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
@@ -1556,7 +1556,7 @@ PrefabInstance:
       objectReference: {fileID: 627891054}
     - target: {fileID: 2783346362527251281, guid: 546b0d0df9aabfd449255d13a1b2ae65, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: Choice1cFunct
+      value: Choice1aFunct
       objectReference: {fileID: 0}
     - target: {fileID: 2783346362527251281, guid: 546b0d0df9aabfd449255d13a1b2ae65, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
@@ -1588,7 +1588,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3861675511769458044, guid: 546b0d0df9aabfd449255d13a1b2ae65, type: 3}
       propertyPath: m_text
-      value: 'Be mean
+      value: 'Be worried
 
 '
       objectReference: {fileID: 0}
@@ -1603,6 +1603,22 @@ PrefabInstance:
     - target: {fileID: 4475901798221893129, guid: 546b0d0df9aabfd449255d13a1b2ae65, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4529427112106553041, guid: 546b0d0df9aabfd449255d13a1b2ae65, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 9da3af02672d5964f8ebf9c44d530492, type: 2}
+    - target: {fileID: 4529427112106553041, guid: 546b0d0df9aabfd449255d13a1b2ae65, type: 3}
+      propertyPath: m_fontStyle
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4529427112106553041, guid: 546b0d0df9aabfd449255d13a1b2ae65, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 6265027190157177096, guid: 9da3af02672d5964f8ebf9c44d530492, type: 2}
+    - target: {fileID: 4529427112106553041, guid: 546b0d0df9aabfd449255d13a1b2ae65, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5933504422403853866, guid: 546b0d0df9aabfd449255d13a1b2ae65, type: 3}
       propertyPath: m_text
