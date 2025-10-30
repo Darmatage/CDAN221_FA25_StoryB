@@ -2339,7 +2339,7 @@ MonoBehaviour:
   phoneRing: {fileID: 710902399}
   doorLock: {fileID: 404283320}
   basementRoar: {fileID: 1280504032}
-  gunshot: {fileID: 0}
+  gunshot: {fileID: 623049982}
   canAmbush: 0
   canCharge: 0
   canThrow: 0

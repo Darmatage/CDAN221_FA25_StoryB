@@ -1280,6 +1280,7 @@ MonoBehaviour:
   ArtChar1e: {fileID: 160663879}
   ArtChar2a: {fileID: 1645245368}
   ArtChar2b: {fileID: 1107083365}
+  ArtChar2c: {fileID: 1088207706}
   ArtBG1: {fileID: 1243399250}
   Choice1a: {fileID: 1478773435}
   Choice1b: {fileID: 1478449320}
@@ -3745,6 +3746,10 @@ PrefabInstance:
     - target: {fileID: 3861675511769458044, guid: 546b0d0df9aabfd449255d13a1b2ae65, type: 3}
       propertyPath: m_text
       value: Be straightforward
+      objectReference: {fileID: 0}
+    - target: {fileID: 4187263821515160953, guid: 546b0d0df9aabfd449255d13a1b2ae65, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4220242984224648939, guid: 546b0d0df9aabfd449255d13a1b2ae65, type: 3}
       propertyPath: m_IsActive
