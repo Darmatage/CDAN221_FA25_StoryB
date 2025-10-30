@@ -254,7 +254,7 @@ public void Next(){
         public void SkipTo(){
                 primeInt = 40;
                 Char1name.text = playerName;
-                Char1speech.text = "I could try that door over there. I think it's an employee only area. They seem a bit scatterbrained, so it's probably unlocked.";
+                Char1speech.text = "I could try the employees only area. They seem a bit scatterbrained, so it's probably unlocked.";
                 Char2name.text = "";
                 Char2speech.text = "";
                 Item1.SetActive(false);

@@ -319,7 +319,7 @@ public void Next(){
                 Char2name.text = "";
                 Char2speech.text = "";
         }
-        else if (primeInt == 48){
+        else if (primeInt == 49){
                 //gameHandler.AddPlayerStat(1);
                 Char1name.text = GameHandler.playerName;
                 Char1speech.text = "";

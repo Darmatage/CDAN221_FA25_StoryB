@@ -253,7 +253,8 @@ public void Next(){
                 Char3speech.text = "";
         }  
        else if (primeInt == 55){
-                ArtChar2c.SetActive(false);
+            ArtChar2a.SetActive(false);
+            ArtChar2c.SetActive(false);
                 ArtChar2d.SetActive(true);
                 Char1name.text = "";
                 Char1speech.text = "";
