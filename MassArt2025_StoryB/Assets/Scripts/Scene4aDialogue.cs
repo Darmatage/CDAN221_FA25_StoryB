@@ -254,6 +254,11 @@ public void Next(){
         }
         else if (primeInt == 22)
         {
+            ArtChar1a.SetActive(false);
+            ArtChar1b.SetActive(false);
+            ArtChar1c.SetActive(false);
+            ArtChar1d.SetActive(false);
+            ArtChar1e.SetActive(true);
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "Felix";
