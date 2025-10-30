@@ -16,9 +16,9 @@ public class Scene4cDialogue : MonoBehaviour {
         public TMP_Text Char3name; //Maid
         public TMP_Text Char3speech;
         public GameObject DialogueDisplay;
-        //public GameObject ArtChar1a;
-        //public GameObject ArtChar1b;
-        //public GameObject ArtChar1c;
+        public GameObject ArtChar1a;
+        public GameObject ArtChar1b;
+        public GameObject ArtChar1c;
         public GameObject ArtChar2a;
         public GameObject ArtChar2b;
         public GameObject ArtChar2c;
@@ -101,7 +101,6 @@ public void Next(){
                 Char3speech.text = "";
          }
         else if (primeInt == 5){
-                ArtChar2a.SetActive(true);
                 Char1name.text = playerName;
                 Char1speech.text = "";
                 Char2name.text = "";
@@ -146,8 +145,6 @@ public void Next(){
                 Char3speech.text = "";  
         }
         else if (primeInt == 14){
-                ArtChar2b.SetActive(false);
-                ArtChar2c.SetActive(true);
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "";
@@ -181,8 +178,6 @@ public void Next(){
                 Char3speech.text = "Yes, dear guest, wouldn't wanna upset us, no?"; 
         }
         else if (primeInt == 23){
-                ArtChar2a.SetActive(false);
-                ArtChar2b.SetActive(true);
                 Char1name.text = GameHandler.playerName;
                 Char1speech.text = "";
                 Char2name.text = "";
@@ -258,6 +253,8 @@ public void Next(){
                 Char3speech.text = "";
         }  
        else if (primeInt == 55){
+                ArtChar2c.SetActive(false);
+                ArtChar2d.SetActive(true);
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "Bellboy";
@@ -300,7 +297,7 @@ public void Next(){
                 Char3speech.text = "";
         }
         else if (primeInt == 42){
-                beeBuzz.Play();
+                //beeBuzz.Play();
                 ArtChar2d.SetActive(false);
                 ArtChar2e.SetActive(true);
                 Char1name.text = "";
