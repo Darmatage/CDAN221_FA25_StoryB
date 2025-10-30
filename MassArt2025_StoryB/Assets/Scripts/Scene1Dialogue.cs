@@ -97,7 +97,7 @@ public void Next(){
 		else if (primeInt == 3)
 		{
 			Char1name.text = "ME";
-			Char1speech.text = "Oh. My pager-phone is buzzing.";
+			Char1speech.text = "Oh. My beeper is buzzing.";
 			Char2name.text = "";
 			Char2speech.text = "";
 			Char3name.text = "";
@@ -130,7 +130,7 @@ public void Next(){
 			Char1name.text = "";
 			Char1speech.text = "";
 			Char2name.text = "Felix";
-			Char2speech.text = "Signal's bad. Over. \nI'm still travelling to my job. Over.  \nWill call later--(crackle)";
+			Char2speech.text = "Signal's bad. Over. \nI'm still travelling to my job. Over.  \nWill call lat-(crackle)";
 			Char3name.text = "";
 			Char3speech.text = "";
 		}
@@ -271,6 +271,15 @@ public void Next(){
 		}
 		else if (primeInt == 23)
 		{
+			Char1name.text = "ME";
+			Char1speech.text = "About this tall, slight build, brown hair?";
+			Char2name.text = "";
+			Char2speech.text = "";
+			Char3name.text = "";
+			Char3speech.text = "";
+		}
+		else if (primeInt == 24)
+		{
 			ArtChar2a.SetActive(false);
 			ArtChar2b.SetActive(true);
 			Char1name.text = "";
@@ -280,7 +289,7 @@ public void Next(){
 			Char3name.text = "Receptionist";
 			Char3speech.text = "Well, I see a lot of people daily, so it might be hard to recall.";
 		}
-		else if (primeInt == 24)
+		else if (primeInt == 25)
 		{
 			Char1name.text = "";
 			Char1speech.text = "";
@@ -289,7 +298,7 @@ public void Next(){
 			Char3name.text = "Receptionist";
 			Char3speech.text = "I'll think about it and come back to you if I remember anything.";
 		}
-		else if (primeInt == 25)
+		else if (primeInt == 26)
 		{
 			Char1name.text = "";
 			Char1speech.text = "";
@@ -298,7 +307,7 @@ public void Next(){
 			Char3name.text = "Receptionist";
 			Char3speech.text = "Are you a detective with the local department?";
 		}
-		else if (primeInt == 26)
+		else if (primeInt == 27)
 		{
 			Char1name.text = "ME";
 			Char1speech.text = "Private investigator, actually.";
@@ -307,7 +316,7 @@ public void Next(){
 			Char3name.text = "";
 			Char3speech.text = "";
 		}
-		else if (primeInt == 27)
+		else if (primeInt == 28)
 		{
 			Char1name.text = "";
 			Char1speech.text = "";

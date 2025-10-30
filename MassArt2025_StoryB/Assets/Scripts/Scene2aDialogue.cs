@@ -94,7 +94,6 @@ public void Next(){
 		}
 		else if (primeInt == 4)
 		{
-
 			DialogueDisplay.SetActive(true);
 			Char1name.text = playerName;
 			Char1speech.text = "";
@@ -133,7 +132,7 @@ public void Next(){
 		else if (primeInt == 13)
 		{
 			Char1name.text = playerName;
-			Char1speech.text = "I thought I was booking a luxury suite for that price";
+			Char1speech.text = "I thought I was booking a luxury suite for that price.";
 			Char2name.text = "";
 			Char2speech.text = "";
 		}
@@ -160,15 +159,15 @@ public void Next(){
 			Char1name.text = "";
 			Char1speech.text = "";
 			Char2name.text = "Maid";
-			Char2speech.text = "All done, dear guest.";
+			Char2speech.text = "I'll be going, dear guest.";
 		}
 		else if (primeInt == 17)
 		{
 			ArtChar1a.SetActive(false);
 			ArtChar1b.SetActive(true);
-			Char1name.text = "";
+			Char1name.text = GameHandler.playerName;
 			Char1speech.text = "";
-			Char2name.text = "Maid";
+			Char2name.text = "";
 			Char2speech.text = "";
 
 			nextButton.SetActive(false);
@@ -245,12 +244,26 @@ public void Next(){
 
 		else if (primeInt == 31)
 		{
+			Char1name.text = GameHandler.playerName;
+			Char1speech.text = "Have you seen a guest fitting this description?";
+			Char2name.text = "";
+			Char2speech.text = "";
+		}
+		else if (primeInt == 32)
+		{
+			Char1name.text = GameHandler.playerName;
+			Char1speech.text = "About this tall, slight build, brown hair?";
+			Char2name.text = "";
+			Char2speech.text = "";
+		}
+		else if (primeInt == 33)
+		{
 			Char1name.text = "";
 			Char1speech.text = "";
 			Char2name.text = "Maid";
 			Char2speech.text = "The rest corner at the end of the hallway. She was there.";
 		}
-		else if (primeInt == 32)
+		else if (primeInt == 34)
 		{
 			nextButton.SetActive(false);
 			allowSpace = false;
@@ -267,18 +280,25 @@ public void Next(){
 		else if (primeInt == 42)
 		{
 			Char1name.text = playerName;
-			Char1speech.text = "The unexpected incident. Seems pretty grim. Those bedsheets are ruined.";
+			Char1speech.text = "The unexpected incident.";
 			Char2name.text = "";
 			Char2speech.text = "";
 		}
 		else if (primeInt == 43)
+		{
+			Char1name.text = playerName;
+			Char1speech.text = "Seems pretty grim. Those bedsheets are ruined.";
+			Char2name.text = "";
+			Char2speech.text = "";
+		}
+		else if (primeInt == 44)
 		{
 			Char1name.text = "";
 			Char1speech.text = "";
 			Char2name.text = "Maid";
 			Char2speech.text = "Oh. You shouldn't have asked that, dear guest.";
 		}
-		else if (primeInt == 44)
+		else if (primeInt == 45)
 		{
 			nextButton.SetActive(false);
 			allowSpace = false;
@@ -336,7 +356,7 @@ public void Next(){
 // scene changes
         public void NextScene1ButtonFunct(){ // sweet talk
                 Char1name.text = playerName;
-                Char1speech.text = "Wait! Before you leave. Have you seen a guest fitting this description?";
+                Char1speech.text = "Wait! Before you leave.";
                 Char2name.text = "";
                 Char2speech.text = "";
                 primeInt = 30; 

@@ -100,7 +100,7 @@ public void Next(){
         }
         else if (primeInt == 22){
                 Char1name.text = playerName;
-                Char1speech.text = "The pool! Could you point me towards the pool, please?";
+                Char1speech.text = "The pool!";
                 Char2name.text = "";
                 Char2speech.text = "";
         }
@@ -114,7 +114,7 @@ public void Next(){
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "Receptionist";
-                Char2speech.text = "Sure thing dear guest!";
+                Char2speech.text = "Sure thing, dear guest!";
         }
         else if (primeInt == 25){
                 Char1name.text = "";
@@ -122,30 +122,35 @@ public void Next(){
                 Char2name.text = "Receptionist";
                 Char2speech.text = "It's down that corridor, you'll have to go down to the floor and open the dark door.";
         }
-        else if (primeInt == 27){
+        else if (primeInt == 26){
                 Char1name.text = playerName;
-                Char1speech.text = "Weird way of answering, but alright.";
+                Char1speech.text = "Suspicious way of answering, but alright.";
                 Char2name.text = "";
                 Char2speech.text = "";
         }
-       else if (primeInt == 28){
+       else if (primeInt == 27){
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "Receptionist";
                 Char2speech.text = "I don't see what you mean, dear guest.";
         }
-        else if (primeInt == 29){
+        else if (primeInt == 28){
                 Char1name.text = GameHandler.playerName;
                 Char1speech.text = "Everyone in this place is...weird.";
                 Char2name.text = "";
                 Char2speech.text = "";
-                // Turn off the "Next" button, turn on "Scene" button/s
+        }
+        else if (primeInt == 29){
+                Char1name.text = GameHandler.playerName;
+                Char1speech.text = "";
+                Char2name.text = "";
+                Char2speech.text = "";
+               
                 nextButton.SetActive(false);
                 allowSpace = false;
                 NextScene1Button.SetActive(true);
                 NextScene2Button.SetActive(true);
         }
-
        // after choice 1b
         else if (primeInt == 31){
                 Char1name.text = "";
@@ -188,7 +193,6 @@ public void Next(){
                 NextScene2Button.SetActive(true);
         }
 
-
         //scene choice: leave
         else if (primeInt == 40){
                 Char1name.text = playerName;
@@ -210,11 +214,17 @@ public void Next(){
         //scene choice: accuse
         else if (primeInt == 50){
                 Char1name.text = playerName;
-                Char1speech.text = "You! You're clearly hiding something! You didn't even call the police when that poor girl disappeared. I know there's something going on, and you're covering it up.";
+                Char1speech.text = "You didn't even call the police when that poor girl disappeared.";
                 Char2name.text = "";
                 Char2speech.text = "";
         }
         else if (primeInt == 51){
+                Char1name.text = playerName;
+                Char1speech.text = "I know there's something going on, and you're covering it up.";
+                Char2name.text = "";
+                Char2speech.text = "";
+        }
+        else if (primeInt == 52){
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "Receptionist";
@@ -267,6 +277,8 @@ public void Next(){
                 Char2speech.text = "";
                 nextButton.SetActive(true);
                 allowSpace = true;
+                 NextScene1Button.SetActive(false);
+                NextScene2Button.SetActive(false);
         }
 
         public void SceneChange1(){ //leave
