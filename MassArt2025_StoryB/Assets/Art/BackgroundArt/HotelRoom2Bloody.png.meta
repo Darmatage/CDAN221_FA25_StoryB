@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      HotelRoom2Bloody_0: 8167401550842486643
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

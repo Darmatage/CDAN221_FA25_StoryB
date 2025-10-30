@@ -96,11 +96,11 @@ public void Next(){
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "Bellboy";
-                Char2speech.text = "Come on, REDACTED, I've told you not to talk like that. It freaks the guests out.";
+                Char2speech.text = "Come on (BUZZZZ) I've told you not to talk like that. It freaks the guests out.";
                 Char3name.text = "";
                 Char3speech.text = "";
          }
-        else if (primeInt == 4){
+        else if (primeInt == 5){
                 ArtChar2a.SetActive(true);
                 Char1name.text = playerName;
                 Char1speech.text = "";
@@ -143,6 +143,16 @@ public void Next(){
                 Char2name.text = "Bellboy";
                 Char2speech.text = "Seems unlikely.";
                 Char3name.text = "";
+                Char3speech.text = "";  
+        }
+        else if (primeInt == 14){
+                ArtChar2b.SetActive(false);
+                ArtChar2c.SetActive(true);
+                Char1name.text = "";
+                Char1speech.text = "";
+                Char2name.text = "";
+                Char2speech.text = "";
+                Char3name.text = "";
                 Char3speech.text = "";
 
         // Turn off the "Next" button, turn on "Scene" button/s
@@ -168,13 +178,21 @@ public void Next(){
                 Char2name.text = "";
                 Char2speech.text = "";
                 Char3name.text = "Bellboy";
-                Char3speech.text = "Yes, dear guest, wouldn't wanna upset us, no?";
+                Char3speech.text = "Yes, dear guest, wouldn't wanna upset us, no?"; 
+        }
+        else if (primeInt == 23){
+                ArtChar2a.SetActive(false);
+                ArtChar2b.SetActive(true);
+                Char1name.text = GameHandler.playerName;
+                Char1speech.text = "";
+                Char2name.text = "";
+                Char2speech.text = "";
+                Char3name.text = "";
+                Char3speech.text = "";
 
                 nextButton.SetActive(false);
                 allowSpace = false;
                 NextScene1Button.SetActive(true);
-            //scene 2 button missing. seems intentional tho
-                
         }
 // after choice1c Blood
        else if (primeInt == 31){
@@ -192,6 +210,14 @@ public void Next(){
                 Char2speech.text = "";
                 Char3name.text = "Bellboy";
                 Char3speech.text = "...";
+        }
+        else if (primeInt == 33){
+                Char1name.text = GameHandler.playerName;
+                Char1speech.text = "";
+                Char2name.text = "";
+                Char2speech.text = "";
+                Char3name.text = "";
+                Char3speech.text = "";
 
                 nextButton.SetActive(false);
                 allowSpace = false;
