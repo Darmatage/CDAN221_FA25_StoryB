@@ -5,12 +5,15 @@ using UnityEngine.UI;
 using TMPro;
 using UnityEngine.SceneManagement;
 using UnityEngine.Audio;
+using System.Runtime.CompilerServices;
 
 public class Scene4bDialogue : MonoBehaviour {
 // These are the script variables.
 // For more character images / buttons, copy & renumber the variables:
         public int primeInt = 1;        // This integer drives game progress!
-        public TMP_Text Char1name;
+    //public int primeIntSave;
+    public bool photoSequence = false;
+    public TMP_Text Char1name;
         public TMP_Text Char1speech;
         public TMP_Text Char2name;
         public TMP_Text Char2speech;
@@ -22,11 +25,16 @@ public class Scene4bDialogue : MonoBehaviour {
        public GameObject ArtChar1c; //smile
        //public GameObject ArtChar2;
         public GameObject ArtBG1;
+    public GameObject PhotoFront;
+    public GameObject PhotoBack;
+    public GameObject PhotoBG;
         public GameObject Choice1a;
         public GameObject Choice1b;
         public GameObject NextScene1Button;
         public GameObject NextScene2Button;
         public GameObject nextButton;
+    public GameObject PhotoButton;
+    public GameObject PhotoNext;
         public string playerName = GameHandler.playerName;
        //public AudioSource audioSource1;
         private bool allowSpace = true;
@@ -43,6 +51,11 @@ public class Scene4bDialogue : MonoBehaviour {
              NextScene1Button.SetActive(false);
              NextScene2Button.SetActive(false);
              nextButton.SetActive(true);
+        PhotoFront.SetActive(false);
+        PhotoBack.SetActive(false);
+        PhotoBG.SetActive(true);
+        PhotoButton.SetActive(true);
+        PhotoNext.SetActive(false);
         playerName = GameHandler.playerName;
     }
 
@@ -305,4 +318,26 @@ public void Next(){
                 GameHandler.endingNumber = 4;
                 SceneManager.LoadScene("EndLose");
         }
+
+        public void photoClick()
+    {
+        PhotoFront.SetActive(true);
+        PhotoNext.SetActive(true);
+    }
+    public void photoNext()
+    {
+       if (!photoSequence)
+        {
+            PhotoFront.SetActive(false);
+            PhotoBack.SetActive(true);
+        }
+        else
+        {
+            PhotoBack.SetActive(false);
+            PhotoNext.SetActive(false);
+            PhotoBG.SetActive(false);
+            PhotoButton.SetActive(false);
+        }
+        
+    }
 }

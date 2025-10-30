@@ -523,6 +523,26 @@ PrefabInstance:
       propertyPath: m_Name
       value: Button_QUIT
       objectReference: {fileID: 0}
+    - target: {fileID: 4301105743233903434, guid: f54d4a0b4be273246ac4e30f1630b2ef, type: 3}
+      propertyPath: m_Type
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4301105743233903434, guid: f54d4a0b4be273246ac4e30f1630b2ef, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -7920654353425278264, guid: b46d9fdeace28f544a7a3482b6dd2558, type: 3}
+    - target: {fileID: 9216547007853093285, guid: f54d4a0b4be273246ac4e30f1630b2ef, type: 3}
+      propertyPath: m_Colors.m_NormalColor.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9216547007853093285, guid: f54d4a0b4be273246ac4e30f1630b2ef, type: 3}
+      propertyPath: m_Colors.m_NormalColor.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9216547007853093285, guid: f54d4a0b4be273246ac4e30f1630b2ef, type: 3}
+      propertyPath: m_Colors.m_NormalColor.r
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 9216547007853093285, guid: f54d4a0b4be273246ac4e30f1630b2ef, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -652,6 +672,26 @@ PrefabInstance:
     - target: {fileID: 3900239744293670006, guid: f54d4a0b4be273246ac4e30f1630b2ef, type: 3}
       propertyPath: m_Name
       value: Button_CREDITS
+      objectReference: {fileID: 0}
+    - target: {fileID: 4301105743233903434, guid: f54d4a0b4be273246ac4e30f1630b2ef, type: 3}
+      propertyPath: m_Type
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4301105743233903434, guid: f54d4a0b4be273246ac4e30f1630b2ef, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -7920654353425278264, guid: b46d9fdeace28f544a7a3482b6dd2558, type: 3}
+    - target: {fileID: 9216547007853093285, guid: f54d4a0b4be273246ac4e30f1630b2ef, type: 3}
+      propertyPath: m_Colors.m_NormalColor.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9216547007853093285, guid: f54d4a0b4be273246ac4e30f1630b2ef, type: 3}
+      propertyPath: m_Colors.m_NormalColor.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9216547007853093285, guid: f54d4a0b4be273246ac4e30f1630b2ef, type: 3}
+      propertyPath: m_Colors.m_NormalColor.r
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9216547007853093285, guid: f54d4a0b4be273246ac4e30f1630b2ef, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
