@@ -53,8 +53,6 @@ public class Scene1Dialogue : MonoBehaviour {
 			 ArtChar2a.SetActive(false);
              ArtChar2b.SetActive(false);
         ArtChar2c.SetActive(true);
-
-
         ArtBG1.SetActive(true);
              Choice1a.SetActive(false);
              Choice1b.SetActive(false);
