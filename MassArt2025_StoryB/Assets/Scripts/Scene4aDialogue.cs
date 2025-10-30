@@ -63,13 +63,13 @@ public class Scene4aDialogue : MonoBehaviour {
             {
             primeInt = 99;
             Choice2aText.text = "Keep searching";
-            Choice2bText.text = "Skedaddle";
+            Choice2bText.text = "Leave";
         }
             else if (GameHandler.prevScene == "Scene5" && GameHandler.monsterAlive == false)
             {
             primeInt = 109;
             Choice2aText.text = "Keep searching";
-            Choice2bText.text = "Skedaddle";
+            Choice2bText.text = "Leave";
         }
             else if (GameHandler.singleDouble == true) //from single
             {
@@ -219,7 +219,6 @@ public void Next(){
             Char2speech.text = "";
             nextButton.SetActive(false);
             allowSpace = false;
-            Choice1a.SetActive(true); // function Choice1aFunct()
             Choice1b.SetActive(true); // function Choice1bFunct()
             Choice1c.SetActive(true);
         }
