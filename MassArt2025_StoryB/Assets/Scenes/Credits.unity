@@ -265,13 +265,54 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1195475973}
     m_Modifications:
+    - target: {fileID: 2097793435119444405, guid: 5dd1bddce751cc1478cb5d47d517d72b, type: 3}
+      propertyPath: m_text
+      value: 'Status: Feelin'' it'
+      objectReference: {fileID: 0}
+    - target: {fileID: 2419304878910742597, guid: 5dd1bddce751cc1478cb5d47d517d72b, type: 3}
+      propertyPath: m_text
+      value: 'Area: Coding Extras'
+      objectReference: {fileID: 0}
+    - target: {fileID: 3185114518861414067, guid: 5dd1bddce751cc1478cb5d47d517d72b, type: 3}
+      propertyPath: m_text
+      value: 'Remarks:
+
+        Something''s strange about that photo in reception...
+
+
+        No,
+        not that reception! The other one!
+
+
+        Coding-Backgrounds-Monster art'
+      objectReference: {fileID: 0}
+    - target: {fileID: 3185114518861414067, guid: 5dd1bddce751cc1478cb5d47d517d72b, type: 3}
+      propertyPath: m_fontStyle
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3384476103286173036, guid: 5dd1bddce751cc1478cb5d47d517d72b, type: 3}
       propertyPath: m_text
       value: 'Name: Rennie Jee'
       objectReference: {fileID: 0}
+    - target: {fileID: 3601536315096388145, guid: 5dd1bddce751cc1478cb5d47d517d72b, type: 3}
+      propertyPath: m_text
+      value: 'Alias: ABrickToTheHead'
+      objectReference: {fileID: 0}
     - target: {fileID: 4536728989413245859, guid: 5dd1bddce751cc1478cb5d47d517d72b, type: 3}
       propertyPath: m_Name
       value: File (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4794761192912275588, guid: 5dd1bddce751cc1478cb5d47d517d72b, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 6120914730915384989, guid: 00a6f462fec5d6e4cbfb9993a8407ae6, type: 3}
+    - target: {fileID: 4794761192912275588, guid: 5dd1bddce751cc1478cb5d47d517d72b, type: 3}
+      propertyPath: m_Color.a
+      value: 0.9098039
+      objectReference: {fileID: 0}
+    - target: {fileID: 4794761192912275588, guid: 5dd1bddce751cc1478cb5d47d517d72b, type: 3}
+      propertyPath: m_PreserveAspect
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9128657436222090462, guid: 5dd1bddce751cc1478cb5d47d517d72b, type: 3}
       propertyPath: m_Pivot.x

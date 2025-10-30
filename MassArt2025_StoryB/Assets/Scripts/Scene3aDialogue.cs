@@ -37,6 +37,7 @@ public class Scene3aDialogue : MonoBehaviour {
         public AudioSource phoneRing;
         public AudioSource doorLock;
     public AudioSource basementRoar;
+    public AudioSource gunshot;
         private bool allowSpace = true;
 
         public bool canAmbush = false;
@@ -342,6 +343,7 @@ public void Next(){
         }
         else if (primeInt == 112)
         {
+            gunshot.Play();
             Char1name.text = "";
             Char1speech.text = "You steady your revolver at the monster, and shoot it square in the forehead!";
         }

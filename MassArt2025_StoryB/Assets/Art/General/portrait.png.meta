@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: ecad496689c9a9940ad28484abd177ff
+guid: 00a6f462fec5d6e4cbfb9993a8407ae6
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 7547530293646793607
-    second: MissingGirl3_0
+      213: 6120914730915384989
+    second: portrait_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: MissingGirl3_0
+      name: portrait_0
       rect:
         serializedVersion: 2
-        x: 626
+        x: 0
         y: 0
-        width: 356
-        height: 642
+        width: 455
+        height: 467
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 78b115440d63eb860800000000000000
-      internalID: 7547530293646793607
+      spriteID: d9ecaac848bd1f450800000000000000
+      internalID: 6120914730915384989
       vertices: []
       indices: 
       edges: []
@@ -147,8 +147,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      MissingGirl3_0: 7547530293646793607
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

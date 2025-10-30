@@ -322,15 +322,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      receptiondesk_0: 6748503070242446551
-      receptiondesk_1: 7628929369405951438
-      receptiondesk_2: 4810096859855514467
-      receptiondesk_3: -3127165675222944804
-      receptiondesk_4: -6619612574545606435
-      receptiondesk_5: 7492712397384654042
-      receptiondesk_6: -5574324260812718887
-      receptiondesk_7: 157079739372576288
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
