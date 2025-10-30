@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: ae909d47d188f5d4b9c96114a65ada84
+guid: b46d9fdeace28f544a7a3482b6dd2558
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -7611664818693459574
-    second: Speech_Button_Red_0
+      213: -7920654353425278264
+    second: ChoiceButton (1)_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -46,7 +46,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -113,7 +113,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Speech_Button_Red_0
+      name: ChoiceButton (1)_0
       rect:
         serializedVersion: 2
         x: 0
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a81307cfc2fed5690800000000000000
-      internalID: -7611664818693459574
+      spriteID: 8ca5f6bb4de241290800000000000000
+      internalID: -7920654353425278264
       vertices: []
       indices: 
       edges: []
@@ -138,7 +138,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -147,8 +147,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      Speech_Button_Red_0: -7611664818693459574
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
