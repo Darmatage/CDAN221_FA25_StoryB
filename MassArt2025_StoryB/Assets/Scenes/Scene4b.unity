@@ -1432,6 +1432,22 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 2532438588986157359, guid: 546b0d0df9aabfd449255d13a1b2ae65, type: 3}
+      propertyPath: m_fontColor.b
+      value: 0.1882353
+      objectReference: {fileID: 0}
+    - target: {fileID: 2532438588986157359, guid: 546b0d0df9aabfd449255d13a1b2ae65, type: 3}
+      propertyPath: m_fontColor.g
+      value: 0.21176471
+      objectReference: {fileID: 0}
+    - target: {fileID: 2532438588986157359, guid: 546b0d0df9aabfd449255d13a1b2ae65, type: 3}
+      propertyPath: m_fontColor.r
+      value: 0.27058825
+      objectReference: {fileID: 0}
+    - target: {fileID: 2532438588986157359, guid: 546b0d0df9aabfd449255d13a1b2ae65, type: 3}
+      propertyPath: m_fontColor32.rgba
+      value: 4281349701
+      objectReference: {fileID: 0}
     - target: {fileID: 2596446383990945369, guid: 546b0d0df9aabfd449255d13a1b2ae65, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -1462,6 +1478,22 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4529427112106553041, guid: 546b0d0df9aabfd449255d13a1b2ae65, type: 3}
+      propertyPath: m_fontColor.b
+      value: 0.09019608
+      objectReference: {fileID: 0}
+    - target: {fileID: 4529427112106553041, guid: 546b0d0df9aabfd449255d13a1b2ae65, type: 3}
+      propertyPath: m_fontColor.g
+      value: 0.09411765
+      objectReference: {fileID: 0}
+    - target: {fileID: 4529427112106553041, guid: 546b0d0df9aabfd449255d13a1b2ae65, type: 3}
+      propertyPath: m_fontColor.r
+      value: 0.5764706
+      objectReference: {fileID: 0}
+    - target: {fileID: 4529427112106553041, guid: 546b0d0df9aabfd449255d13a1b2ae65, type: 3}
+      propertyPath: m_fontColor32.rgba
+      value: 4279703699
+      objectReference: {fileID: 0}
     - target: {fileID: 5933504422403853866, guid: 546b0d0df9aabfd449255d13a1b2ae65, type: 3}
       propertyPath: m_text
       value: Accuse of hiding something
@@ -1469,6 +1501,38 @@ PrefabInstance:
     - target: {fileID: 6407037423156922695, guid: 546b0d0df9aabfd449255d13a1b2ae65, type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7466701233129260760, guid: 546b0d0df9aabfd449255d13a1b2ae65, type: 3}
+      propertyPath: m_fontColor.b
+      value: 0.09019608
+      objectReference: {fileID: 0}
+    - target: {fileID: 7466701233129260760, guid: 546b0d0df9aabfd449255d13a1b2ae65, type: 3}
+      propertyPath: m_fontColor.g
+      value: 0.09411765
+      objectReference: {fileID: 0}
+    - target: {fileID: 7466701233129260760, guid: 546b0d0df9aabfd449255d13a1b2ae65, type: 3}
+      propertyPath: m_fontColor.r
+      value: 0.5764706
+      objectReference: {fileID: 0}
+    - target: {fileID: 7466701233129260760, guid: 546b0d0df9aabfd449255d13a1b2ae65, type: 3}
+      propertyPath: m_fontColor32.rgba
+      value: 4279703699
+      objectReference: {fileID: 0}
+    - target: {fileID: 7939459287748039589, guid: 546b0d0df9aabfd449255d13a1b2ae65, type: 3}
+      propertyPath: m_fontColor.b
+      value: 0.1882353
+      objectReference: {fileID: 0}
+    - target: {fileID: 7939459287748039589, guid: 546b0d0df9aabfd449255d13a1b2ae65, type: 3}
+      propertyPath: m_fontColor.g
+      value: 0.21176471
+      objectReference: {fileID: 0}
+    - target: {fileID: 7939459287748039589, guid: 546b0d0df9aabfd449255d13a1b2ae65, type: 3}
+      propertyPath: m_fontColor.r
+      value: 0.27058825
+      objectReference: {fileID: 0}
+    - target: {fileID: 7939459287748039589, guid: 546b0d0df9aabfd449255d13a1b2ae65, type: 3}
+      propertyPath: m_fontColor32.rgba
+      value: 4281349701
       objectReference: {fileID: 0}
     - target: {fileID: 8429478271873713529, guid: 546b0d0df9aabfd449255d13a1b2ae65, type: 3}
       propertyPath: m_Name

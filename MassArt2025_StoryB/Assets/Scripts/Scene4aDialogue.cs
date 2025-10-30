@@ -269,6 +269,13 @@ public void Next(){
         else if (primeInt == 30)
         {
             Char1name.text = playerName;
+            Char1speech.text = "Why can't it ever be a simple case where the person is alive and well and just broke their phone...";
+            Char2name.text = "";
+            Char2speech.text = "";
+        }
+        else if (primeInt == 31)
+        {
+            Char1name.text = playerName;
             Char1speech.text = "But noooo, there's always some weird crap going on.";
             Char2name.text = "";
             Char2speech.text = "";
@@ -278,12 +285,19 @@ public void Next(){
         else if (primeInt == 40)
         {
             Char1name.text = playerName;
-            Char1speech.text = "God, this must have been going on for a while. How many people have disappeared here without anyone noticing?";
+            Char1speech.text = "God, this must have been going on for a while.";
+            Char2name.text = "";
+            Char2speech.text = "";
+        }
+        else if (primeInt == 41)
+        {
+            Char1name.text = playerName;
+            Char1speech.text = "How many people have disappeared here without anyone noticing?";
             Char2name.text = "";
             Char2speech.text = "";
         }
         //continue
-        else if (primeInt == 41)
+        else if (primeInt == 42)
         {
             ArtChar1a.SetActive(false);
             ArtChar1b.SetActive(false);
@@ -295,14 +309,21 @@ public void Next(){
             Char2name.text = "Felix";
             Char2speech.text = "Very glad I didn't take that job.";
         }
-        else if (primeInt == 42)
+        else if (primeInt == 43)
         {
             Char1name.text = playerName;
-            Char1speech.text = "The blood looks like it leads down that way, but there might be more clues in this room.";
+            Char1speech.text = "The blood looks like it leads down that way...";
             Char2name.text = "";
             Char2speech.text = "";
         }
-        else if (primeInt == 43)
+        else if (primeInt == 44)
+        {
+            Char1name.text = playerName;
+            Char1speech.text = "...but there might be more clues in this room.";
+            Char2name.text = "";
+            Char2speech.text = "";
+        }
+        else if (primeInt == 45)
         {
             Char1name.text = "";
             Char1speech.text = "";
@@ -465,7 +486,7 @@ public void Next(){
                if (GameHandler.singleDouble == true) //from single
                 {
                     Char1name.text = playerName;
-                    Char1speech.text = "This idiot couldn't keep themself alive, huh?";
+                    Char1speech.text = "This idiot couldn't keep themselves alive, huh?";
                     Char2name.text = "";
                     Char2speech.text = "";
                     primeInt = 19;
@@ -488,7 +509,7 @@ public void Next(){
         }
         public void Choice1bFunct(){ //ANNOYED
                 Char1name.text = playerName;
-                Char1speech.text = "How does this job keep getting weirder? Why can't it ever be a simple case where the person is alive and well and just broke their phone...";
+                Char1speech.text = "How does this job keep getting weirder?";
                 Char2name.text = "";
                 Char2speech.text = "";
                 primeInt = 29; // so hitting "NEXT" goes to primeInt==30!
