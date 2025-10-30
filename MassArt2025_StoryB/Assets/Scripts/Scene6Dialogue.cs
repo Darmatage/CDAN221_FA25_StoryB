@@ -33,6 +33,7 @@ public class Scene6Dialogue : MonoBehaviour {
         public GameObject NextScene1Button;
         public GameObject NextScene2Button;
         public GameObject nextButton;
+        
        //public AudioSource audioSource1;
         private bool allowSpace = true;
 

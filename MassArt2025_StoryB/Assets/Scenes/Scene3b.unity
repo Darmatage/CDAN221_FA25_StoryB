@@ -688,14 +688,15 @@ MonoBehaviour:
   ArtChar1d: {fileID: 1635159553}
   ArtChar1e: {fileID: 1635016382}
   ArtBG1: {fileID: 1243399250}
-  Item1: {fileID: 530743632}
-  Item2: {fileID: 2104148179}
-  Item3: {fileID: 1083687417}
+  note: {fileID: 530743632}
+  hair: {fileID: 2104148179}
+  teeth: {fileID: 1083687417}
   Choice1a: {fileID: 187092222}
   Choice1b: {fileID: 1174525129}
   Choice1c: {fileID: 699152530}
   NextScene1Button: {fileID: 866838511}
   NextScene2Button: {fileID: 502944773}
+  NextScene3Button: {fileID: 935029245}
   nextButton: {fileID: 4229811803855364286}
   canScene1: 0
   canScene2: 0
@@ -838,6 +839,11 @@ RectTransform:
 --- !u!1 &866838511 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 223387538535126950, guid: 546b0d0df9aabfd449255d13a1b2ae65, type: 3}
+  m_PrefabInstance: {fileID: 1631430632927961401}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &935029245 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 410073777772341173, guid: 546b0d0df9aabfd449255d13a1b2ae65, type: 3}
   m_PrefabInstance: {fileID: 1631430632927961401}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &992116816
@@ -1984,7 +1990,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 410073777772341173, guid: 546b0d0df9aabfd449255d13a1b2ae65, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 737346541412695984, guid: 546b0d0df9aabfd449255d13a1b2ae65, type: 3}
+      propertyPath: m_text
+      value: Keep searching
       objectReference: {fileID: 0}
     - target: {fileID: 906044723573297059, guid: 546b0d0df9aabfd449255d13a1b2ae65, type: 3}
       propertyPath: m_text
@@ -2035,6 +2045,22 @@ PrefabInstance:
       value: Scene3bDialogue, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 2093586344386452614, guid: 546b0d0df9aabfd449255d13a1b2ae65, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 2495293394714134090, guid: 546b0d0df9aabfd449255d13a1b2ae65, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 627891054}
+    - target: {fileID: 2495293394714134090, guid: 546b0d0df9aabfd449255d13a1b2ae65, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: NextScene3ButtonFunct
+      objectReference: {fileID: 0}
+    - target: {fileID: 2495293394714134090, guid: 546b0d0df9aabfd449255d13a1b2ae65, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: Scene3bDialogue, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 2495293394714134090, guid: 546b0d0df9aabfd449255d13a1b2ae65, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}

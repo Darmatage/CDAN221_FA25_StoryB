@@ -23,14 +23,15 @@ public class Scene3bDialogue : MonoBehaviour {
         public GameObject ArtChar1e;	//questioning
        //public GameObject ArtChar2;
         public GameObject ArtBG1;
-        public GameObject Item1;
-        public GameObject Item2;
-        public GameObject Item3;
+        public GameObject note;
+        public GameObject hair;
+        public GameObject teeth;
         public GameObject Choice1a;
         public GameObject Choice1b;
         public GameObject Choice1c;
         public GameObject NextScene1Button;
         public GameObject NextScene2Button;
+		public GameObject NextScene3Button; //keep searching
         public GameObject nextButton;
        //public AudioSource audioSource1;
         private bool allowSpace = true;
@@ -48,14 +49,15 @@ public class Scene3bDialogue : MonoBehaviour {
 		ArtChar1e.SetActive(false);
 
              ArtBG1.SetActive(true);
-             Item1.SetActive(false);
-             Item2.SetActive(false);
-             Item3.SetActive(false);
+             note.SetActive(false);
+             hair.SetActive(false);
+             teeth.SetActive(false);
              Choice1a.SetActive(false);
              Choice1b.SetActive(false);
              Choice1c.SetActive(false);
              NextScene1Button.SetActive(false);
              NextScene2Button.SetActive(false);
+			 NextScene3Button.SetActive(false);
              nextButton.SetActive(true);
         playerName = GameHandler.playerName;
     }
@@ -193,7 +195,7 @@ public void Next(){
 		else if (primeInt == 15)
 		{
 			Char1name.text = playerName;
-			Char1speech.text = "why did you take that job, OVER.";
+			Char1speech.text = "Why did you take that job, OVER.";
 			Char2name.text = "";
 			Char2speech.text = "";
 		}
@@ -202,14 +204,14 @@ public void Next(){
 			Char1name.text = "";
 			Char1speech.text = "";
 			Char2name.text = "Felix";
-			Char2speech.text = "Murder Mill's just the name of the town, you scaredy cat";
+			Char2speech.text = "Murder Mill's just the name of the town.";
 		}
 		else if (primeInt == 17)
 		{
 			Char1name.text = "";
 			Char1speech.text = "";
 			Char2name.text = "Felix";
-			Char2speech.text = "I just need to snap some pis of the mayor's cheating husband. \nCake walk.";
+			Char2speech.text = "I just need to snap some pics of the mayor's cheating husband. \nCake walk.";
 		}
 		else if (primeInt == 18)
 		{
@@ -247,22 +249,30 @@ public void Next(){
 			Char1speech.text = "Now what is this piece of trash doing here?";
 			Char2name.text = "";
 			Char2speech.text = "";
-			Item1.SetActive(true);
+			note.SetActive(true);
 			GameHandler.note = true;
 		}
 
-		else if (primeInt == 21)
+		else if (primeInt == 23)
 		{
 			Char1name.text = "";
 			Char1speech.text = "";
 			Char2name.text = "Felix";
 			Char2speech.text = "Unsuccesful snacking, uh? What's the next step?";
-			Item1.SetActive(false);
+		}
+		else if (primeInt == 24)
+		{
+			Char1name.text = GameHandler.playerName;
+			Char1speech.text = "";
+			Char2name.text = "";
+			Char2speech.text = "";
+			note.SetActive(false);
 
 			nextButton.SetActive(false);
 			allowSpace = false;
 			NextScene1Button.SetActive(true);
 			NextScene2Button.SetActive(true);
+			if(teeth == false || hair == false || note == false){NextScene3Button.SetActive(true);}
 		}
 
 		// after choice 1b couch cushions
@@ -272,7 +282,7 @@ public void Next(){
 			Char1speech.text = "Is that...hair?";
 			Char2name.text = "";
 			Char2speech.text = "";
-			Item2.SetActive(true);
+			hair.SetActive(true);
 			GameHandler.hair = true;
 		}
 		else if (primeInt == 32)
@@ -281,7 +291,14 @@ public void Next(){
 			Char1speech.text = "";
 			Char2name.text = "Felix";
 			Char2speech.text = "Any coins? What's the next step?";
-			Item2.SetActive(false);
+		}
+		else if (primeInt == 33)
+		{
+			Char1name.text = GameHandler.playerName;
+			Char1speech.text = "";
+			Char2name.text = "";
+			Char2speech.text = "";
+			hair.SetActive(false);
 
 			nextButton.SetActive(false);
 			allowSpace = false;
@@ -311,7 +328,7 @@ public void Next(){
 			Char1speech.text = "Oh god, what the fuck is that?";
 			Char2name.text = "";
 			Char2speech.text = "";
-			Item3.SetActive(true);
+			teeth.SetActive(true);
 			GameHandler.teeth = true;
 
 		}
@@ -321,7 +338,14 @@ public void Next(){
 			Char1speech.text = "";
 			Char2name.text = "Felix";
 			Char2speech.text = "What's the plan now?";
-			Item3.SetActive(false);
+		}
+		else if (primeInt == 44)
+		{
+			Char1name.text = GameHandler.playerName;
+			Char1speech.text = "";
+			Char2name.text = "";
+			Char2speech.text = "";
+			teeth.SetActive(false);
 
 			nextButton.SetActive(false);
 			allowSpace = false;
@@ -415,6 +439,7 @@ public void Next(){
                 primeInt = 50; 
                 NextScene1Button.SetActive(false);
                 NextScene2Button.SetActive(false);
+				NextScene3Button.SetActive(false);
                 nextButton.SetActive(true);
                 allowSpace = true;
                 canScene1 = true;
@@ -427,6 +452,20 @@ public void Next(){
                 primeInt = 50; 
                 NextScene1Button.SetActive(false);
                 NextScene2Button.SetActive(false);
+				NextScene3Button.SetActive(false);
+                nextButton.SetActive(true);
+                allowSpace = true;
+                canScene2 = true;
+        }
+		public void NextScene3ButtonFunct(){
+                Char1name.text = playerName;
+                Char1speech.text = "Better keep looking.";
+                Char2name.text = "";
+                Char2speech.text = "";
+                primeInt = 19; 
+                NextScene1Button.SetActive(false);
+                NextScene2Button.SetActive(false);
+				NextScene3Button.SetActive(false);
                 nextButton.SetActive(true);
                 allowSpace = true;
                 canScene2 = true;

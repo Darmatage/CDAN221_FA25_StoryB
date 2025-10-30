@@ -35,6 +35,7 @@ public class Scene3aDialogue : MonoBehaviour {
         public GameObject NextScene2Button;
         public GameObject nextButton;
         public AudioSource phoneRing;
+        public AudioSource doorLock;
         private bool allowSpace = true;
 
         public bool canAmbush = false;
@@ -176,6 +177,7 @@ public void Next(){
         }
         else if (primeInt == 11)
         {
+            doorLock.Play();
             Char1name.text = playerName;
             Char1speech.text = "Shit, did the door just lock?";
             primeInt = 14;
