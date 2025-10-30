@@ -330,6 +330,7 @@ public void Next(){
         {
             PhotoFront.SetActive(false);
             PhotoBack.SetActive(true);
+            photoSequence = true;
         }
         else
         {
