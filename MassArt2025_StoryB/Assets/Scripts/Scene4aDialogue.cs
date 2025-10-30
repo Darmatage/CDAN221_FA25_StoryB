@@ -21,8 +21,10 @@ public class Scene4aDialogue : MonoBehaviour {
 	public GameObject CharacterNameTag;	
 
         public GameObject ArtChar1a;
-       //public GameObject ArtChar1b;
-       //public GameObject ArtChar1c;
+       public GameObject ArtChar1b;
+       public GameObject ArtChar1c;
+       public GameObject ArtChar1d;
+       public GameObject ArtChar1e;
        //public GameObject ArtChar2;
         public GameObject ArtBG1;
         //Choice: reaction
@@ -48,6 +50,10 @@ public class Scene4aDialogue : MonoBehaviour {
 			DialogueDisplay.SetActive(false);
 			 
              ArtChar1a.SetActive(false);
+             ArtChar1b.SetActive(false);
+             ArtChar1c.SetActive(false);
+             ArtChar1d.SetActive(false);
+             ArtChar1e.SetActive(false);
              ArtBG1.SetActive(true);
              Choice1a.SetActive(false);
              Choice1b.SetActive(false);
@@ -128,6 +134,7 @@ public void Next(){
         }
         else if (primeInt == 4)
         {
+            ArtChar1d.SetActive(true);
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "Felix";
@@ -142,6 +149,8 @@ public void Next(){
         }
         else if (primeInt == 6)
         {
+            ArtChar1d.SetActive(false);
+            ArtChar1a.SetActive(true);
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "Felix";
@@ -149,6 +158,7 @@ public void Next(){
         }
         else if (primeInt == 7)
         {
+            ArtChar1a.SetActive(false);
             Char1name.text = playerName;
             Char1speech.text = "";
             Char2name.text = "";
@@ -199,6 +209,8 @@ public void Next(){
         }
         else if (primeInt == 15)
         {
+            ArtChar1a.SetActive(false);
+            ArtChar1b.SetActive(true);
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "Felix";
@@ -206,6 +218,8 @@ public void Next(){
         }
         else if (primeInt == 16)
         {
+            ArtChar1a.SetActive(true);
+            ArtChar1b.SetActive(false);
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "Felix";
@@ -266,6 +280,11 @@ public void Next(){
         //continue
         else if (primeInt == 41)
         {
+            ArtChar1a.SetActive(false);
+            ArtChar1b.SetActive(false);
+            ArtChar1c.SetActive(false);
+            ArtChar1e.SetActive(false);
+            ArtChar1d.SetActive(true);
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "Felix";
