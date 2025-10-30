@@ -251,6 +251,7 @@ public void Next(){
 			Char2speech.text = "";
 			note.SetActive(true);
 			GameHandler.note = true;
+
 		}
 
 		else if (primeInt == 23)
@@ -258,7 +259,7 @@ public void Next(){
 			Char1name.text = "";
 			Char1speech.text = "";
 			Char2name.text = "Felix";
-			Char2speech.text = "Unsuccesful snacking, uh? What's the next step?";
+			Char2speech.text = "Unsuccesful snacking, eh? What's the next step?";
 		}
 		else if (primeInt == 24)
 		{
@@ -272,7 +273,10 @@ public void Next(){
 			allowSpace = false;
 			NextScene1Button.SetActive(true);
 			NextScene2Button.SetActive(true);
-			if(teeth == false || hair == false || note == false){NextScene3Button.SetActive(true);}
+			if(GameHandler.teeth == false || GameHandler.hair == false || GameHandler.note == false){ //if any items not found, allow keepsearching
+				NextScene3Button.SetActive(true);
+			}
+			Debug.Log("teeth: " + teeth);
 		}
 
 		// after choice 1b couch cushions
@@ -304,7 +308,11 @@ public void Next(){
 			allowSpace = false;
 			NextScene1Button.SetActive(true);
 			NextScene2Button.SetActive(true);
-		}
+            if (GameHandler.teeth == false || GameHandler.hair == false || GameHandler.note == false)
+            { //if any items not found, allow keepsearching
+                NextScene3Button.SetActive(true);
+            }
+        }
 		// after choice1c water fountain
 		else if (primeInt == 41)
 		{
@@ -339,7 +347,7 @@ public void Next(){
 			Char2name.text = "Felix";
 			Char2speech.text = "What's the plan now?";
 		}
-		else if (primeInt == 44)
+		else if (primeInt == 45)
 		{
 			Char1name.text = GameHandler.playerName;
 			Char1speech.text = "";
@@ -351,7 +359,11 @@ public void Next(){
 			allowSpace = false;
 			NextScene1Button.SetActive(true);
 			NextScene2Button.SetActive(true);
-		}
+            if (GameHandler.teeth == false || GameHandler.hair == false || GameHandler.note == false)
+            { //if any items not found, allow keepsearching
+                NextScene3Button.SetActive(true);
+            }
+        }
 		else if (primeInt == 51)
 		{
 			Char1name.text = "";
@@ -395,36 +407,70 @@ public void Next(){
         }
 
 // FUNCTIONS FOR BUTTONS TO ACCESS (Choice #1 and SceneChanges)
-        public void Choice1aFunct(){
-                Char1name.text = playerName;
-                Char1speech.text = "That vending machine looks like it hasn't been used in years.";
-                Char2name.text = "";
-                Char2speech.text = "";
-                primeInt = 20; 
+        public void Choice1aFunct(){ // VENDING MACHINE
+             if (GameHandler.note == false)
+				{
+				Char1name.text = playerName;
+				Char1speech.text = "That vending machine looks like it hasn't been used in years.";
+				Char2name.text = "";
+				Char2speech.text = "";
+				primeInt = 20; 
+				}
+			else
+				{
+				Char1name.text = playerName;
+				Char1speech.text = "Nothing's here anymore.";
+				Char2name.text = "";
+				Char2speech.text = "";
+				primeInt = 18;
+			    }
+
+			Choice1a.SetActive(false);
+                Choice1b.SetActive(false);
+                Choice1c.SetActive(false);
+                nextButton.SetActive(true);
+                allowSpace = true;
+        }
+        public void Choice1bFunct(){ // COUCH
+        if (GameHandler.hair == false)
+        {
+            Char1name.text = playerName;
+            Char1speech.text = "Let's go the old fashioned coins in the couch route.";
+            Char2name.text = "";
+            Char2speech.text = "";
+            primeInt = 30;
+        }
+        else
+        {
+            Char1name.text = playerName;
+            Char1speech.text = "Not sticking my hand in there again.";
+            Char2name.text = "";
+            Char2speech.text = "";
+            primeInt = 18;
+        }
                 Choice1a.SetActive(false);
                 Choice1b.SetActive(false);
                 Choice1c.SetActive(false);
                 nextButton.SetActive(true);
                 allowSpace = true;
         }
-        public void Choice1bFunct(){
-                Char1name.text = playerName;
-                Char1speech.text = "Let's go the old fashioned coins in the couch route.";
-                Char2name.text = "";
-                Char2speech.text = "";
-                primeInt = 30; 
-                Choice1a.SetActive(false);
-                Choice1b.SetActive(false);
-                Choice1c.SetActive(false);
-                nextButton.SetActive(true);
-                allowSpace = true;
+        public void Choice1cFunct(){ //FOUNTAIN
+        if (GameHandler.teeth == false)
+        {
+            Char1name.text = playerName;
+            Char1speech.text = "Man, that trip made me thirsty!";
+            Char2name.text = "";
+            Char2speech.text = "";
+            primeInt = 40;
         }
-        public void Choice1cFunct(){
-                Char1name.text = playerName;
-                Char1speech.text = "Man, that trip made me thirsty.";
-                Char2name.text = "";
-                Char2speech.text = "";
-                primeInt = 40; 
+        else
+        {
+            Char1name.text = playerName;
+            Char1speech.text = "I don't want to drink from the teeth fountain, thanks.";
+            Char2name.text = "";
+            Char2speech.text = "";
+            primeInt = 18;
+        }
                 Choice1a.SetActive(false);
                 Choice1b.SetActive(false);
                 Choice1c.SetActive(false);
@@ -457,12 +503,12 @@ public void Next(){
                 allowSpace = true;
                 canScene2 = true;
         }
-		public void NextScene3ButtonFunct(){
+		public void NextScene3ButtonFunct(){ //keep searching
                 Char1name.text = playerName;
                 Char1speech.text = "Better keep looking.";
                 Char2name.text = "";
                 Char2speech.text = "";
-                primeInt = 19; 
+                primeInt = 18; 
                 NextScene1Button.SetActive(false);
                 NextScene2Button.SetActive(false);
 				NextScene3Button.SetActive(false);
