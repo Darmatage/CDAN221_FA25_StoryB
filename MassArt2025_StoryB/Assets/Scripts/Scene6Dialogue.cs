@@ -129,12 +129,19 @@ public void Next(){
                 Char1speech.text = "I don't know if I wanna follow through with this alone.";
                 Char2name.text = "";
                 Char2speech.text = "";
+        }
+        else if (primeInt == 9){
+            Char1name.text = playerName;
+                Char1speech.text = "";
+                Char2name.text = "";
+                Char2speech.text = "";
 
                 nextButton.SetActive(false);
                 allowSpace = false;
                 Choice1a.SetActive(true); 
                 Choice1b.SetActive(true); 
         }
+       
        
        
         // 1a - FLEE
@@ -243,58 +250,50 @@ public void Next(){
                 Char2name.text = "Girl";
                 Char2speech.text = "...?!";
         } 
-        else if (primeInt == 45){
+        else if (primeInt == 44){
                 SkipTo();
         } 
         //continue after choice 2
-        else if (primeInt == 51){
-                Char1name.text = "";
-                Char1speech.text = "Suddenly, the glow from the boiler's maw becomes blinding.";
-                Char2name.text = "";
-                Char2speech.text = "";
-        }
-        else if (primeInt == 52)
-        {
-            Char1name.text = "";
-            Char1speech.text = "And yet, you can't help but stare. It's beautiful...";
-            Char2name.text = "";
-            Char2speech.text = "";
-        }
-        else if (primeInt == 53)
+        else if (primeInt == 51)
         {
             ArtChar1a.SetActive(false);
             ArtChar1b.SetActive(false);
             ArtChar1c.SetActive(true);
-            Char1name.text = "";
-            Char1speech.text = "";
-            Char2name.text = "Girl";
-            Char2speech.text = "...?!";
+            Char1name.text = GameHandler.playerName;
+            Char1speech.text = "It's...";
+            Char2name.text = "";
+            Char2speech.text = "";
         }
-        else if (primeInt == 54){
+        else if (primeInt == 52){
                 Char1name.text = playerName;
-                Char1speech.text = "It's...talking to me.";
+                Char1speech.text = "...talking to me.";
                 Char2name.text = "";
-                Char2speech.text = "";
-
-                
+                Char2speech.text = "";      
         } 
-        else if (primeInt == 55){
+        else if (primeInt == 53){
                 Char1name.text = playerName;
                 Char1speech.text = "It's telling me to join it.";
                 Char2name.text = "";
                 Char2speech.text = "";
         }
-        else if (primeInt == 56)
+        else if (primeInt == 54)
         {
             Char1name.text = playerName;
             Char1speech.text = "I'll be warm. I'll be safe.";
             Char2name.text = "";
             Char2speech.text = "";
         }
-        else if (primeInt == 57)
+        else if (primeInt == 55)
         {
             Char1name.text = playerName;
             Char1speech.text = "All of my worries... gone. Forever. Like they never existed at all...";
+            Char2name.text = "";
+            Char2speech.text = "";
+        }
+        else if (primeInt == 56)
+        {
+            Char1name.text = playerName;
+            Char1speech.text = "";
             Char2name.text = "";
             Char2speech.text = "";
 
