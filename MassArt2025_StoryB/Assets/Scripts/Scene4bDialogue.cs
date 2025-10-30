@@ -63,18 +63,28 @@ public class Scene4bDialogue : MonoBehaviour {
 //Players hit [NEXT] to progress to the next primeInt:
 public void Next(){
         primeInt += 1;
-        if (primeInt == 1){
-               Char1name.text = "";
-                Char1speech.text = "You go back to talk to the receptionist. The area looks different.";
-                Char2name.text = "";
-                Char2speech.text = ""; 
+         if (primeInt == 1){
+
         }
-        else if (primeInt == 2){
+        if (primeInt == 2){
+                DialogueDisplay.SetActive(true);
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "Receptionist";
-                Char2speech.text = "Good afternoon, dear guest. What can I do for you?";
-                // Turn off the "Next" button, turn on "Choice" buttons
+                Char2speech.text = "Good afternoon, dear guest."; 
+        }
+        else if (primeInt == 3){
+                Char1name.text = "";
+                Char1speech.text = "";
+                Char2name.text = "Receptionist";
+                Char2speech.text = "What can I do for you?";
+                
+        }
+        else if (primeInt == 4){
+                Char1name.text = GameHandler.playerName;
+                Char1speech.text = "";
+                Char2name.text = "";
+                Char2speech.text = "";
                 nextButton.SetActive(false);
                 allowSpace = false;
                 Choice1a.SetActive(true); // ASK
@@ -82,12 +92,6 @@ public void Next(){
         }
 
        // after choice 1a
-       else if (primeInt == 20){
-                Char1name.text = playerName;
-                Char1speech.text = "Yes, um, could you tell me where the…";
-                Char2name.text = "";
-                Char2speech.text = "";
-        }
         else if (primeInt == 21){
                 Char1name.text = "";
                 Char1speech.text = "";
@@ -100,36 +104,49 @@ public void Next(){
                 Char2name.text = "";
                 Char2speech.text = "";
         }
-         else if (primeInt == 23){
+        else if (primeInt == 23){
+                Char1name.text = playerName;
+                Char1speech.text = "Could you point me towards the pool, please?";
+                Char2name.text = "";
+                Char2speech.text = "";
+        }
+         else if (primeInt == 24){
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "Receptionist";
-                Char2speech.text = "Sure thing dear guest! It's down that corridor, you'll have to go down to the floor and open the dark door.";
+                Char2speech.text = "Sure thing dear guest!";
         }
-        else if (primeInt == 24){
+        else if (primeInt == 25){
+                Char1name.text = "";
+                Char1speech.text = "";
+                Char2name.text = "Receptionist";
+                Char2speech.text = "It's down that corridor, you'll have to go down to the floor and open the dark door.";
+        }
+        else if (primeInt == 27){
                 Char1name.text = playerName;
                 Char1speech.text = "Weird way of answering, but alright.";
                 Char2name.text = "";
                 Char2speech.text = "";
         }
-       else if (primeInt == 25){
+       else if (primeInt == 28){
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "Receptionist";
                 Char2speech.text = "I don't see what you mean, dear guest.";
+        }
+        else if (primeInt == 29){
+                Char1name.text = GameHandler.playerName;
+                Char1speech.text = "Everyone in this place is...weird.";
+                Char2name.text = "";
+                Char2speech.text = "";
                 // Turn off the "Next" button, turn on "Scene" button/s
                 nextButton.SetActive(false);
                 allowSpace = false;
                 NextScene1Button.SetActive(true);
+                NextScene2Button.SetActive(true);
         }
 
        // after choice 1b
-       else if (primeInt == 30){
-                Char1name.text = playerName;
-                Char1speech.text = "Now what the hell is going on in this place?";
-                Char2name.text = "";
-                Char2speech.text = "";
-        }
         else if (primeInt == 31){
                 Char1name.text = "";
                 Char1speech.text = "";
@@ -138,13 +155,39 @@ public void Next(){
         }
         else if (primeInt == 32){
                 Char1name.text = playerName;
-                Char1speech.text = "Yes, there's been a problem. There's clearly something weird going on in here. All your employees are acting oddly, everyone seems to be hiding something, and a girl disappeared and no one seems to know or care!";
+                Char1speech.text = "Yes, there's been a problem.";
+                Char2name.text = "";
+                Char2speech.text = "";
+        }
+        else if (primeInt == 33){
+                Char1name.text = playerName;
+                Char1speech.text = "There's clearly something weird going on in here.";
+                Char2name.text = "";
+                Char2speech.text = "";
+        }
+        else if (primeInt == 34){
+                Char1name.text = playerName;
+                Char1speech.text = "All your employees are acting oddly, everyone seems to be hiding something...";
+                Char2name.text = "";
+                Char2speech.text = "";
+        }
+        else if (primeInt == 35){
+                Char1name.text = playerName;
+                Char1speech.text = "...and a girl disappeared and no one seems to know or care!";
+                Char2name.text = "";
+                Char2speech.text = "";
+        }
+        else if (primeInt == 36){
+                Char1name.text = playerName;
+                Char1speech.text = "";
                 Char2name.text = "";
                 Char2speech.text = "";
                 nextButton.SetActive(false);
                 allowSpace = false;
+                NextScene1Button.SetActive(true);
                 NextScene2Button.SetActive(true);
         }
+
 
         //scene choice: leave
         else if (primeInt == 40){
@@ -193,16 +236,35 @@ public void Next(){
 
 // FUNCTIONS FOR BUTTONS TO ACCESS (Choice #1 and SceneChanges)
         public void Choice1aFunct(){
-                primeInt = 19; // so hitting "NEXT" goes to primeInt==20!
+                primeInt = 20; // so hitting "NEXT" goes to primeInt==20!
                 Choice1a.SetActive(false);
                 Choice1b.SetActive(false);
                 nextButton.SetActive(true);
                 allowSpace = true;
+                Char1name.text = playerName;
+                Char1speech.text = "Yes, um, could you tell me where the…";
+                Char2name.text = "";
+                Char2speech.text = "";
+
+
         }
         public void Choice1bFunct(){
-                primeInt = 29; // so hitting "NEXT" goes to primeInt==30!
+                primeInt = 30; // so hitting "NEXT" goes to primeInt==30!
                 Choice1a.SetActive(false);
                 Choice1b.SetActive(false);
+                nextButton.SetActive(true);
+                allowSpace = true;
+                Char1name.text = playerName;
+                Char1speech.text = "Now what the hell is going on in this place?";
+                Char2name.text = "";
+                Char2speech.text = "";
+        }
+        public void NextScene2ButtonFunct(){
+                primeInt = 49;
+                Char1name.text = playerName;
+                Char1speech.text = "You! You're clearly hiding something! ";
+                Char2name.text = "";
+                Char2speech.text = "";
                 nextButton.SetActive(true);
                 allowSpace = true;
         }
