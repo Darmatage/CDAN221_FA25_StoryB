@@ -184,6 +184,13 @@ public void Next(){
             Char1speech.text = "I've got to do something fast.";
             Char2name.text = "";
             Char2speech.text = "";
+        }
+        else if (primeInt == 34)
+        {
+            Char1name.text = playerName;
+            Char1speech.text = "";
+            Char2name.text = "";
+            Char2speech.text = "";
             nextButton.SetActive(false);
             allowSpace = false;
             Choice2a.SetActive(true); // function Choice1aFunct()
