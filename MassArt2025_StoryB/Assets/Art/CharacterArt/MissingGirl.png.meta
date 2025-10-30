@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 9f6d60b4a2d11aa4d9075c614ee808b6
+guid: a34743e91df3c7446bf8bf93ab938f93
 TextureImporter:
   internalIDToNameTable:
   - first:
@@ -116,10 +116,10 @@ TextureImporter:
       name: MissingGirl_0
       rect:
         serializedVersion: 2
-        x: 624
+        x: 626
         y: 0
-        width: 289
-        height: 647
+        width: 356
+        height: 642
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -147,8 +147,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      MissingGirl_0: 3068793580018628361
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
