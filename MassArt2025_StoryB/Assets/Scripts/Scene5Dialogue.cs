@@ -31,6 +31,7 @@ public class Scene5Dialogue : MonoBehaviour {
         public GameObject NextScene1Button;
         public GameObject NextScene2Button;
         public GameObject nextButton;
+    public AudioSource bathroomRoar;
         public string playerName = GameHandler.playerName;
        //public AudioSource audioSource1;
         private bool allowSpace = true;
@@ -153,6 +154,7 @@ public void Next(){
         //post choices
         else if (primeInt == 30)
         {
+            bathroomRoar.Play();
             ArtChar1a.SetActive(true);
             ArtChar1c.SetActive(false);
             ArtChar2.SetActive(true);

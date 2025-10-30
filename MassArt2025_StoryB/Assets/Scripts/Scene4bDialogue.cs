@@ -17,9 +17,9 @@ public class Scene4bDialogue : MonoBehaviour {
        //public TMP_Text Char3name;
        //public TMP_Text Char3speech;
         public GameObject DialogueDisplay;
-        public GameObject ArtChar1a;
-       //public GameObject ArtChar1b;
-       //public GameObject ArtChar1c;
+        public GameObject ArtChar1a; //eyes closed
+       public GameObject ArtChar1b; //eyes open, frown
+       public GameObject ArtChar1c; //smile
        //public GameObject ArtChar2;
         public GameObject ArtBG1;
         public GameObject Choice1a;
@@ -34,8 +34,10 @@ public class Scene4bDialogue : MonoBehaviour {
 // Set initial visibility. Added images or buttons need to also be SetActive(false);
         void Start(){  
              DialogueDisplay.SetActive(false);
-             ArtChar1a.SetActive(false);
-             ArtBG1.SetActive(true);
+             ArtChar1a.SetActive(true);
+        ArtChar1b.SetActive(false);
+        ArtChar1c.SetActive(false);
+        ArtBG1.SetActive(true);
              Choice1a.SetActive(false);
              Choice1b.SetActive(false);
              NextScene1Button.SetActive(false);
@@ -74,7 +76,9 @@ public void Next(){
                 Char2speech.text = "Good afternoon, dear guest."; 
         }
         else if (primeInt == 3){
-                Char1name.text = "";
+            ArtChar1a.SetActive(false);
+            ArtChar1c.SetActive(true);
+            Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "Receptionist";
                 Char2speech.text = "What can I do for you?";
@@ -111,13 +115,17 @@ public void Next(){
                 Char2speech.text = "";
         }
          else if (primeInt == 24){
-                Char1name.text = "";
+            ArtChar1c.SetActive(false);
+            ArtChar1a.SetActive(true);
+            Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "Receptionist";
                 Char2speech.text = "Sure thing, dear guest!";
         }
         else if (primeInt == 25){
-                Char1name.text = "";
+            ArtChar1a.SetActive(false);
+            ArtChar1c.SetActive(true);
+            Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "Receptionist";
                 Char2speech.text = "It's down that corridor, you'll have to go down to the floor and open the dark door.";
@@ -129,7 +137,9 @@ public void Next(){
                 Char2speech.text = "";
         }
        else if (primeInt == 27){
-                Char1name.text = "";
+            ArtChar1c.SetActive(false);
+            ArtChar1b.SetActive(true);
+            Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "Receptionist";
                 Char2speech.text = "I don't see what you mean, dear guest.";
@@ -153,7 +163,9 @@ public void Next(){
         }
        // after choice 1b
         else if (primeInt == 31){
-                Char1name.text = "";
+            ArtChar1c.SetActive(false);
+            ArtChar1b.SetActive(true);
+            Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "Receptionist";
                 Char2speech.text = "Has there been a problem, dear guest?";
@@ -201,7 +213,9 @@ public void Next(){
                 Char2speech.text = "";
         }
         else if (primeInt == 41){
-                Char1name.text = "";
+            ArtChar1b.SetActive(false);
+            ArtChar1a.SetActive(true);
+            Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "Receptionist";
                 Char2speech.text = "If that's what you want, dear guest, I'll do that right away.";

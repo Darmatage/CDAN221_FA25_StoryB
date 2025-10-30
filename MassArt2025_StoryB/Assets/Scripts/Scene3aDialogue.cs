@@ -36,6 +36,7 @@ public class Scene3aDialogue : MonoBehaviour {
         public GameObject nextButton;
         public AudioSource phoneRing;
         public AudioSource doorLock;
+    public AudioSource basementRoar;
         private bool allowSpace = true;
 
         public bool canAmbush = false;
@@ -179,6 +180,11 @@ public void Next(){
         {
             doorLock.Play();
             Char1name.text = playerName;
+            Char1speech.text = "!!!";
+        }
+        else if (primeInt == 12)
+        {
+            Char1name.text = playerName;
             Char1speech.text = "Shit, did the door just lock?";
             primeInt = 14;
         }
@@ -231,6 +237,7 @@ public void Next(){
         else if (primeInt == 50)
         {
             ArtChar2.SetActive(true);
+            basementRoar.Play();
             Char1name.text = playerName;
             Char1speech.text = "?!";
             Char2name.text = "";
