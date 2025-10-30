@@ -1,13 +1,10 @@
 fileFormatVersion: 2
-guid: a3ad5983b08c11a4baec7a192d76d85d
+guid: dc43d2cfb46c8e349a7264d8062959b1
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -4073711757763854412
-    second: MissingGirlHope_0
-  - first:
-      213: 7772413218745533130
-    second: MissingGirlHope_1
+      213: 8659693937340546901
+    second: MissingGirl2_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -49,7 +46,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -116,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: MissingGirlHope_0
+      name: MissingGirl2_0
       rect:
         serializedVersion: 2
-        x: 624
+        x: 626
         y: 0
-        width: 289
-        height: 647
+        width: 356
+        height: 642
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -131,30 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 4bf37216db44777c0800000000000000
-      internalID: -4073711757763854412
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: MissingGirlHope_1
-      rect:
-        serializedVersion: 2
-        x: 1039
-        y: 60
-        width: 12
-        height: 9
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: ac2c0e674a82ddb60800000000000000
-      internalID: 7772413218745533130
+      spriteID: 55f79c641c96d2870800000000000000
+      internalID: 8659693937340546901
       vertices: []
       indices: 
       edges: []
@@ -163,7 +138,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -172,9 +147,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      MissingGirlHope_0: -4073711757763854412
-      MissingGirlHope_1: 7772413218745533130
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
